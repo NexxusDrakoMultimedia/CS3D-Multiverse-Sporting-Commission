@@ -1,0 +1,108 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Jarokn
+! Country "Jarokn"
+! Names "data/names/Jarokn_1st.txt" "data/names/Jarokn_2nd.txt"
+* Jarokn Trial of Heroes
++ Country "Jarokn"
++ reputation 12
+# Rank decides how many trials a club must survive.
++ round 1 "Trial of Mortals" 33-64 3
++ draw 4
+# the Pantheon is spared both early trials; the Mortals League starts at the bottom
++ add 16 from "Jarokn"
++ add 16 from "Jarokn"
++ add 32 from "Jarokn"
++ round 2 "Trial of Heroes" 17-48 5
++ round 3 "Trial of Demigods" 1-32 9
++ round 4 "Trial of Titans" 1-16 14
++ round 5 "Trial of Gods" 1-8 21
++ round 6 "Ascension" 1-4 30
++ round 7 "Apotheosis" 1-2 41
+: Jarokn Pantheon
++ division 1
++ promotions 0
++ relegations 2
++ reputation 15
+Hesperan Court
+Basilisk Gate Wolves
+Sirens of Kelpie Loch
+Titanhold Basilisks
+Krakens of Lamia Wold
+Phoenixmark Wyverns
+Sirens of Yggdris
+Nemeanfell Hold
+Wyvernrest Centaurs
+Sons of Wyvernrest
+Aegisfell Wyverns
+Titanhold Harpies
+Phoenixmark Basilisks
+Lamia Wold Krakens
+Gryphons of Basilisk Gate
+Minotaur Cross Gryphons
+: Jarokn Demigod Tier
++ division 2
++ promotions 2
++ relegations 3
++ reputation 13
+Mimirsvale Gryphons
+Valkhold Gryphons
+Valkhold Giants
+Sons of Fenrirsberg
+Fenrirsberg Sirens
+Mimirsvale Harpies
+Valkhold Harpies
+Kraknar FC
+Rocwatch Chimeras
+Titans of Rocwatch
+Chimeras of Valkhold
+Krakens of Aegisfell
+Hydra Deep Titans
+Basilisks of Orphean Rise
+Nemeanfell Harpies
+Wyverns of Basilisk Gate
+: Jarokn Heroes League
++ division 3
++ promotions 3
++ relegations 3
++ reputation 11
+Titans of Nemeanfell
+Cerberus Ford Court
+Harpies of Wyvernrest
+Jarokn FC
+Jarokn Harpies
+Harpies of Mimirsvale
+Cerberus Ford Harpies
+Centaurs of Orphean Rise
+House of Yggdris
+Gryphons of Cerberus Ford
+Sons of Gorgonhelm
+Basilisk Gate FC
+Krakens of Gorgonhelm
+Giants of Wyvernrest
+Wolves of Cerberus Ford
+Wolves of Phoenixmark
+: Jarokn Mortals League
++ division 4
++ promotions 3
++ relegations 0
++ reputation 9
+Rocwatch Titans
+Krakens of Wyvernrest
+Titans of Hydra Deep
+Cerberus Ford Centaurs
+Titanhold Sirens
+Hesperan Giants
+House of Wyvernrest
+Centaurs of Yggdris
+Jarokn Sirens
+Orphean Rise Krakens
+Wyverns of Sphinxmoor
+Krakens of Phoenixmark
+Giants of Mimirsvale
+Gryphons of Kraknar
+Sirens of Jarokn
+Gorgonhelm Krakens

@@ -1,0 +1,109 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Determi
+! Country "Determi"
+! Names "data/names/Determi_1st.txt" "data/names/Determi_2nd.txt"
+* Determi Requiem Cup
++ Country "Determi"
++ reputation 12
+# Every round is mourned twice. Only the final rite is settled in one night.
++ round 1 "First Wake" 1-64
++ week 3 5
++ draw 2
++ add 64 from "Determi"
++ round 2 "Second Wake" 1-32
++ week 7 9
++ round 3 "Third Wake" 1-16
++ week 11 13
++ round 4 "Quarter Requiem" 1-8
++ week 17 19
++ round 5 "Semi Requiem" 1-4
++ week 27 29
++ round 6 "Final Rite" 1-2 39
+: Determi High Requiem
++ division 1
++ promotions 0
++ relegations 3
++ reputation 15
+Morvael Sepulchre
+Morvael Vigil
+Sablewake Vigil
+Hollowgate Sepulchre
+Thornmere Revenants
+Order of Morvael
+Black Ebonrest
+Sepulchre Hill Dirge
+Morvael Requiem
+Tenebrae FC
+Mournhollow Wake
+Sanctum Wintermourn
+Sepulchre Hill Vigil
+Wintermourn Ossuary
+Sanctum Sorrowfen
+Palewater Revenants
+: Determi Second Vigil
++ division 2
++ promotions 3
++ relegations 3
++ reputation 13
+Sorrowfen Reliquary
+Gravemoor Vigil
+Ravensgloom Vigil
+Hollowgate FC
+Vesperkeep Wake
+Thornmere Nocturne
+Sanctum Thornmere
+Hollowgate Wake
+Blackvein Lament
+Palewater FC
+Order of Wintermourn
+Wintermourn Nocturne
+Crowmarch Shroud
+Morvael Reliquary
+Sanctum Nightbriar
+Duskveil Sepulchre
+: Determi Third Vigil
++ division 3
++ promotions 3
++ relegations 3
++ reputation 11
+Cinderveil Vigil
+SC Blackvein
+SC Ashfen
+Cinderveil Requiem
+Cathedral Pallid Reach
+Nightbriar Wake
+Mournhollow Requiem
+Black Mournhollow
+Nachtfall Reliquary
+Tenebrae Sepulchre
+Ravensgloom Ossuary
+Ashfen Ossuary
+Morvael Revenants
+Sablewake Ossuary
+Sorrowfen Sepulchre
+Nightbriar Vigil
+: Determi Pauper's Tier
++ division 4
++ promotions 3
++ relegations 0
++ reputation 9
+Sanctum Nachtfall
+Black Wintermourn
+Duskveil Shroud
+Cathedral Ashfen
+Gravemoor Sepulchre
+Gravemoor Shroud
+SC Ravensgloom
+Black Wraithmoor
+Sorrowfen Nocturne
+Cathedral Thornmere
+Duskveil Ossuary
+Gravemoor Wake
+Palewater Nocturne
+Sanctum Vesperkeep
+Sorrowfen Lament
+Sepulchre Hill Lament

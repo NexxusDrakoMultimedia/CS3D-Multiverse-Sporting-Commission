@@ -1,0 +1,354 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Itavrnai Union
+! Country "Itavrnai Union"
+! Names "data/names/Itavrnai Union_1st.txt" "data/names/Itavrnai Union_2nd.txt"
+* Wyrmfire Cup
++ Country "Itavrnai Union"
++ reputation 15
+# Every club in the Union enters at the first round.
+# Semi finals are settled over two legs; the final is one match at the Wyrmspire.
++ round 1 "First Flight Round" 1-256 3
++ draw 1
++ add 256 from "Itavrnai Union"
++ round 2 "Second Flight Round" 1-128 5
++ round 3 "Third Flight Round" 1-64 8
++ round 4 "Fourth Flight Round" 1-32 12
++ round 5 "Round of 16" 1-16 17
++ round 6 "Quarter Finals" 1-8 24
++ round 7 "Semi Finals" 1-4
++ week 32 34
++ round 8 "Final" 1-2 41
+* Itavrnai Grand Conclave
++ Country "Itavrnai Union"
++ reputation 13
+# The top two flights only: eight groups of four, two advance from each.
++ round 1 "Conclave group stage" 1-32
++ groups 8
++ week 3 5 7 9 11 13
++ draw 4
++ add 32 from "Itavrnai Union"
++ round 2 "Round of 16" 1-16 15
++ round 3 "Quarter Finals" 1-8 17
++ round 4 "Semi Finals" 1-4
++ week 26 28
++ round 5 "Final" 1-2 41
+: Itavrnai Prime Flight
++ division 1
++ promotions 0
++ relegations 1
++ reputation 19
+Obsidian Reach Skyclaw
+Orovash Drakes
+Lumengarde Sable Wing
+Caldrathax Drakes
+Solvenrath Pyre
+Verdigris Hollow Drakes
+Cindervault Glasswyrms
+Morvexis AC
+Radavast Basilisks
+Stormwyrm Warders
+Kaszirrah Chimaera
+Drakhaun Scales
+Aegrisvale Hoardguard
+House Aegrisvale
+Morvexis Skyclaw
+Morvexis Stormwing
+Solvenrath Talons
+Cindaros Wyrmguard
+: Itavrnai First Flight
++ division 2
++ promotions 1
++ relegations 2
++ reputation 18
+Aurathane Wyrms
+Ssyrixa Ashfall
+House Erevanth
+Itavrn Warders
+Ecliptha Ascendants
+FC Ecliptha
+Aurathane AC
+Cindaros Glasswyrms
+Ssyrixa Warders
+Tempestwyrm Clutch
+Molthaven Serpents
+Ashenspire Drakes
+Aurathane Sable Wing
+Wyrmgate Brood
+Sporting Myrrithax
+Radavast Hoardguard
+Vaskarai Basilisks
+Vorruun Brood
+: Itavrnai Second Flight
++ division 3
++ promotions 2
++ relegations 2
++ reputation 17
+Khaldresh Basilisks
+Sylvarrix Sentinels
+Ozmyrr Glasswyrms
+Clutch of Ymbrathis
+Nyxaroth Ashfall
+Ferrovax Aerie
+Caldrathax Talons
+Hoardkeep Cinders
+Clutch of Wyrmgate
+Talonmere AC
+Halcyth Drakes
+Solvenrath Scales
+Molthaven Warders
+Wyrmgate Drakes
+Solvenrath Riftwing
+Orovash Hoardguard
+Ymbrathis AC
+Itavrn Hoardguard
+: Itavrnai Third Flight
++ division 4
++ promotions 2
++ relegations 2
++ reputation 16
+FC Pyrelund
+Nyxaroth Flameborne
+Ssyrixa Talons
+Frostfang Fangs
+Sablecrest Warders
+Aurathane Ashfall
+Brinefang Flameborne
+Petrathon Basilisks
+Skyrend Skyclaw
+Ecliptha Brood
+Sporting Orovash
+Radavast Pyre
+Caldrathax Aerie
+Aurathane Aerie
+Ashenspire Chimaera
+Glaivehold Flameborne
+Sablecrest Basilisks
+Aurelvant Stormwing
+: Itavrnai Fourth Flight
++ division 5
++ promotions 2
++ relegations 3
++ reputation 15
+Vaelgorn Ascendancy
+Myrrithax AC
+Petrathon Rooks
+Hoardkeep Emberguard
+Frostfang Sentinels
+House Nethergale
+Obsidian Reach AC
+Radavast Wyrms
+Frostfang Drakes
+Zephrynne Aerie
+Vaelgorn Stormwing
+Velcrisse Wyrms
+Ignisthal Wyrmguard
+Cindaros Hoardguard
+Gravenscale Cinders
+Aegrisvale Brood
+Cindaros Serpents
+House Umbrathal
+Sporting Lumengarde
+Kaszirrah Clutch
+Ymbrathis Talons
+Ashenspire Glasswyrms
+: Itavrnai Fifth Flight
++ division 6
++ promotions 3
++ relegations 3
++ reputation 14
+Pyrelund Wyrmguard
+Ashenspire Brood
+Duskmaw Basilisks
+Ignisthal Drakes
+Threnvar Fangs
+Gravenscale Basilisks
+House Pyrelund
+Ondramyr Glasswyrms
+Sablecrest Aerie
+Kaelvrys Ascendancy
+Ferrovax Riftwing
+Hoardkeep Stormwing
+Nyxaroth AC
+Drakhaun Drakes
+Cryssalis Wyrmguard
+Aegrisvale Chimaera
+House Aurathane
+Myrrithax Talons
+Umbrathal Emberguard
+House Morvexis
+Ondramyr Cinders
+Ondramyr Basilisks
+: Itavrnai Sixth Flight
++ division 7
++ promotions 3
++ relegations 3
++ reputation 13
+Cindervault Rooks
+Quarrenex AC
+Vaskarai Riftwing
+Vaskarai Talons
+Sylvarrix Drakes
+FC Halcyth
+Wyrmgate AC
+Zaskaarn Ashfall
+Korvathis Clutch
+Ignisthal Chimaera
+Halcyth Warders
+Brinefang Glasswyrms
+Radavast Clutch
+Sporting Ferrovax
+Ravengard Rooks
+Ferrovax Chimaera
+Orovash Riftwing
+Nyxaroth Ascendants
+Nethergale AC
+FC Ozmyrr
+Pyrelund Wyrms
+Myrrithax Ascendants
+: Itavrnai Seventh Flight
++ division 8
++ promotions 3
++ relegations 3
++ reputation 12
+Umbrathal Brood
+Talonmere Basilisks
+Scaleholt Scales
+Threnvar Hoardguard
+Radavast Sable Wing
+Vaelgorn Emberguard
+Wyrmgate Cinders
+Stormwyrm Glasswyrms
+Thurokar Clutch
+Emberreach Sentinels
+Wyrmgate Wyrmguard
+Hoardkeep Ascendancy
+Orovash Chimaera
+Korvathis Flameborne
+FC Velcrisse
+Khaldresh Emberguard
+Sylvarrix Chimaera
+Vaskarai Chimaera
+Kaszirrah Wyrmguard
+Drakhaun Ashfall
+Erevanth AC
+Molthaven Ascendancy
+: Itavrnai Eighth Flight
++ division 9
++ promotions 3
++ relegations 4
++ reputation 11
+Aurathane Skyclaw
+Stormwyrm Pyre
+Velcrisse Talons
+Emberreach Ashfall
+Zaskaarn Aerie
+Radavast Sentinels
+Emberreach Riftwing
+Glaivehold Brood
+Thurokar Talons
+Orovash Stormwing
+Lumengarde Flameborne
+House Gravenscale
+Erevanth Scales
+Glaivehold Basilisks
+Tempestwyrm Basilisks
+Itavrn Serpents
+Stormwyrm Cinders
+Scaleholt Riftwing
+Morvexis Chimaera
+Scaleholt Ascendancy
+Cindervault Clutch
+Korvathis Brood
+Myrrithax Emberguard
+Vaelgorn Warders
+: Itavrnai Ninth Flight
++ division 10
++ promotions 4
++ relegations 4
++ reputation 10
+Lumengarde Fangs
+Itavrn Talons
+Drakhaun AC
+Stormwyrm Brood
+Emberreach Talons
+FC Ondramyr
+Aurathane Glasswyrms
+Molthaven Chimaera
+Myrrithax Serpents
+Brinefang Sentinels
+Ignisthal Skyclaw
+Velcrisse Aerie
+Cindervault Fangs
+Erevanth Wyrmguard
+Ozmyrr Ashfall
+Gravenscale Brood
+Ignisthal Emberguard
+Vorruun Sentinels
+Sporting Thurokar
+Ondramyr Clutch
+Nharun Ashfall
+Verdigris Hollow Warders
+Clutch of Malachar
+Skyrend Clutch
+: Itavrnai Tenth Flight
++ division 11
++ promotions 4
++ relegations 4
++ reputation 9
+Erevanth Brood
+Korvathis Basilisks
+Ozmyrr Clutch
+Lumengarde Drakes
+Myrrithax Fangs
+Ashenspire AC
+Ozmyrr Brood
+Aurathane Serpents
+Skyrend Riftwing
+Cindaros Ashfall
+Zephrynne Ashfall
+Ondramyr Ascendancy
+Ravengard Hoardguard
+Zaskaarn Rooks
+Zephrynne Brood
+Xelvaris Emberguard
+Cindervault Sentinels
+Velcrisse Riftwing
+Caldrathax Emberguard
+Verdigris Hollow Skyclaw
+Ondramyr Flameborne
+Nharun Pyre
+Lumengarde AC
+Malachar Sable Wing
+: Itavrnai Eleventh Flight
++ division 12
++ promotions 4
++ relegations 0
++ reputation 8
+Xelvaris Sentinels
+Quarrenex Ascendancy
+Threnvar Ascendancy
+Sablecrest Stormwing
+Molthaven Sentinels
+Lumengarde Skyclaw
+Gravenscale Chimaera
+FC Aurelvant
+Frostfang Cinders
+Ravengard Glasswyrms
+Thalassyr Brood
+Korvathis Ascendants
+Kaelvrys Brood
+House Obsidian Reach
+Solvenrath Drakes
+Zaskaarn Ascendants
+Cindervault Talons
+Stormwyrm Ascendancy
+Ilvaraxis Emberguard
+Sylvarrix Stormwing
+Emberreach Warders
+Nharun Fangs
+Ravengard Wyrmguard
+Ymbrathis Sable Wing

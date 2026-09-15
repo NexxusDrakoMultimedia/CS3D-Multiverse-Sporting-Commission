@@ -1,0 +1,213 @@
+# Scouting provider contract: scouting-provider-v1
+#  Created by Nexxus Drako, with Claude's assistance.
+# Built for the deep pyramids - the Itavrnai twelve flights above all.
+# Nothing above the top division - everything below it.
+# Macro-region reach means a market sells inside its own bloc only.
+! Provider "deepflight" 1
+! Name "DeepFlight"
+! Archetype lower-league-specialist
+! Standing specialist
+! Coverage family "deepflight.depth"
+! Annual price drift -300 400
+! Special offer chance 1600
+! Special offer kinds season-start winter-window new-customer win-back
+! Special offer discount 500 1500
+! Special offer validity weeks 4 8
+! Rotating product slots 0
+! Small club maximum reputation 8
+! Small club discount 600 1400
+
+: Product "deepflight.home" 1
++ Name "DeepFlight Home"
++ Family "deepflight.home"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope provider-market-nation
++ Sales relations core
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 2 99
++ Coverage 6000 8800
++ Contribution 2900 1900 600
++ Freshness days 21
++ Monthly reference factor 2500
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "deepflight.select" 2
++ Name "DeepFlight Select 3"
++ Family "deepflight.select"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations core regional export
++ Scope selections 3 3
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 2 99
++ Coverage 5000 7500
++ Contribution 3200 1800 500
++ Freshness days 24
++ Monthly reference factor 4000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "deepflight.select-six" 1
++ Name "DeepFlight Select 6"
++ Family "deepflight.select"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations core regional export
++ Scope selections 6 6
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 2 99
++ Coverage 5000 7500
++ Contribution 3200 1800 500
++ Freshness days 24
++ Monthly reference factor 7600
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "deepflight.select-eight" 1
++ Name "DeepFlight Select 8"
++ Family "deepflight.select"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations core regional export
++ Scope selections 8 8
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 2 99
++ Coverage 5000 7500
++ Contribution 3200 1800 500
++ Freshness days 24
++ Monthly reference factor 10000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "deepflight.abyssal" 1
++ Name "DeepFlight Abyssal"
++ Family "deepflight.abyssal"
++ Presentation data-dossier
++ Fields identity sporting development
++ Scope provider-market-nation
++ Sales relations core regional export
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 9 99
++ Coverage 3200 9400
++ Contribution 2600 1600 1400
++ Freshness days 28
++ Monthly reference factor 3000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Market "deepflight.itavrnai" 2
++ Name "DeepFlight Itavrnai Union"
++ Kind local
++ Home nation "Itavrnai Union"
++ Sales reach macro-region
++ Products "deepflight.home" "deepflight.select" "deepflight.select-six" "deepflight.select-eight" "deepflight.abyssal"
++ Core price factor 9000
++ Regional price factor 11000
++ Export price factor 0
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 400
+
+: Market "deepflight.bradman" 2
++ Name "DeepFlight New Bradman"
++ Kind local
++ Home nation "New Bradman"
++ Sales reach macro-region
++ Products "deepflight.home" "deepflight.select" "deepflight.select-six" "deepflight.select-eight" "deepflight.abyssal"
++ Core price factor 8800
++ Regional price factor 10800
++ Export price factor 0
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 300
+
+: Market "deepflight.vyktoria" 2
++ Name "DeepFlight Vyktoria"
++ Kind local
++ Home nation "Vyktoria"
++ Sales reach macro-region
++ Products "deepflight.home" "deepflight.select" "deepflight.select-six" "deepflight.select-eight" "deepflight.abyssal"
++ Core price factor 8500
++ Regional price factor 10500
++ Export price factor 0
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 250
+
+: Market "deepflight.mancunya" 2
++ Name "DeepFlight Mancunya"
++ Kind local
++ Home nation "Mancunya"
++ Sales reach macro-region
++ Products "deepflight.home" "deepflight.select" "deepflight.select-six" "deepflight.select-eight" "deepflight.abyssal"
++ Core price factor 8600
++ Regional price factor 10600
++ Export price factor 0
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 200
+
+: Market "deepflight.centralya" 2
++ Name "DeepFlight Centralya"
++ Kind local
++ Home nation "Centralya"
++ Sales reach macro-region
++ Products "deepflight.home" "deepflight.select" "deepflight.select-six" "deepflight.select-eight" "deepflight.abyssal"
++ Core price factor 8100
++ Regional price factor 10100
++ Export price factor 0
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 150
+
+: Market "deepflight.rythorn" 2
++ Name "DeepFlight New Rythorn"
++ Kind local
++ Home nation "New Rythorn"
++ Sales reach macro-region
++ Products "deepflight.home" "deepflight.select" "deepflight.select-six" "deepflight.select-eight" "deepflight.abyssal"
++ Core price factor 8000
++ Regional price factor 10000
++ Export price factor 0
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 100
+

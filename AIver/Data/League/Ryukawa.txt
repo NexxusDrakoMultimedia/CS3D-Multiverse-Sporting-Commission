@@ -1,0 +1,116 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Ryukawa
+! Country "Ryukawa"
+! Names "data/names/Ryukawa_1st.txt" "data/names/Ryukawa_2nd.txt"
+* Ryukawa Emperor's Cup
++ Country "Ryukawa"
++ reputation 12
+# Single matches throughout - a replay-free competition.
++ round 1 "First Round" 1-64 3
++ draw 4
++ add 64 from "Ryukawa"
++ round 2 "Second Round" 1-32 5
++ round 3 "Third Round" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+* Ryukawa Sakura Shield
++ Country "Ryukawa"
++ reputation 9
+# Ichibu clubs only: four groups of four, then a straight knockout.
++ round 1 "Sakura group stage" 1-16
++ groups 4
++ week 3 5 7 9 11 13
++ draw 1
++ add 16 from "Ryukawa"
++ round 2 "Quarter Finals" 1-8 15
++ round 3 "Semi Finals" 1-4 22
++ round 4 "Final" 1-2 41
+: Ryukawa Ichibu
++ division 1
++ promotions 0
++ relegations 2
++ reputation 15
+Shinonome Lupo
+Ishinomori Seiryu
+Higashino Verdia FC
+Hoshigaoka Aurora FC
+Seirin Byakko
+Fuyutsuki Seiryu FC
+Tachibana Suzaku
+Tobishima Genbu
+FC Hoshigaoka
+Sakuradai Genbu FC
+Higashino Azzurro
+Sakuradai Byakko FC
+Nagasato Antilope
+Kazehaya Aurora FC
+Hayabusa Verdia FC
+Minatoyama Seiryu
+: Ryukawa Nibu
++ division 2
++ promotions 2
++ relegations 2
++ reputation 13
+Ishinomori SC
+Tobishima Reverie
+Kurogane Reverie
+Kazehaya Tsubasa
+Deportivo Akatsuki
+Ryukawa Ventoso
+Akatsuki Verdia FC
+Kirigaya Tsubasa
+FC Nagasato
+Suzukaze Seiryu FC
+Sakuradai Seiryu FC
+Yatagarasu Aurora
+Kurosawa Tsubasa
+Sakuradai Lupo
+Uraminato Ventoso
+Hinomoto Lupo
+: Ryukawa Sanbu
++ division 3
++ promotions 2
++ relegations 2
++ reputation 11
+Ishinomori Verdia
+Nagasato Nero FC
+Kirigaya Sorriso FC
+Kurogane Ryujin
+Hoshigaoka Ventoso FC
+Sakuradai Lupo FC
+Yukimura Fujin
+Aoigawa Suzaku FC
+Yatagarasu Sole FC
+Takamori Homare FC
+Seirin Genbu
+Hinomoto Aurora FC
+Deportivo Oribe
+Kanzaki Antilope FC
+Narumi Ryujin
+Wakabayashi Reverie FC
+: Ryukawa Yonbu
++ division 4
++ promotions 2
++ relegations 0
++ reputation 9
+Hinomoto Tsubasa
+Kamishiro Ryujin FC
+Shinonome Verdia
+Kurogane Celeste FC
+Kaizuka Byakko FC
+Minatoyama Azzurro FC
+Deportivo Shinonome
+Yukimura Ventoso
+Hinomoto Ventoso
+Nagasato Raijin FC
+Kanzaki Verdia
+Uraminato Lupo
+Kaizuka Seiryu
+Seirin Sorriso
+Uraminato FC
+Yatagarasu Byakko

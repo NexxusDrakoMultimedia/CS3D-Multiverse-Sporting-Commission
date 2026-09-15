@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Norvalia
+! Country "Norvalia"
+! Names "data/names/Norvalia_1st.txt" "data/names/Norvalia_2nd.txt"
+* Norvalia Open Cup
++ Country "Norvalia"
++ reputation 8
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 7
++ add 64 from "Norvalia"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Norvalia Premier Soccer League
++ division 1
++ promotions 0
++ relegations 4
++ reputation 10
+Westhaven Republic
+Lakemont FC
+Stonebridge Athletic
+Club Oakmont
+Club Stonebridge
+Glenbrook Thunder
+Fairhaven Republic
+Westhaven United
+Westhaven Athletic
+Real Ironwood
+Summit City FC
+Cedarport Metros
+Northgate United
+Stonebridge Sentinels
+Prairie City FC
+Northgate FC
+: Norvalia Division One
++ division 2
++ promotions 4
++ relegations 4
++ reputation 8
+Crestwood Sentinels
+Ironwood Sentinels
+Bridgehaven Metros
+Cascade Falls Sentinels
+Eastlake SC
+Silver Lake Metros
+Westhaven Metros
+Redrock FC
+Granite Bay FC
+Prairie City SC
+Real Norvalia
+Lakemont Sentinels
+Millvale Comets
+Oakmont Comets
+Ironwood Thunder
+Kingsport Sentinels
+: Norvalia Division Two
++ division 3
++ promotions 4
++ relegations 4
++ reputation 6
+Northgate Sentinels
+Prairie City Republic
+Cedarport SC
+Lakemont Republic
+Granite Bay Republic
+Riverton Athletic
+Club Crestwood
+Redrock Thunder
+Crestwood Thunder
+Granite Bay United
+Oakmont Thunder
+Bridgehaven United
+Summit City Thunder
+Harborview SC
+Club Northgate
+Crestwood Metros
+: Norvalia Division Three
++ division 4
++ promotions 4
++ relegations 0
++ reputation 4
+Glenbrook SC
+Club Pinecrest
+Silver Lake United
+Fairhaven United
+Fairhaven FC
+Cascade Falls Metros
+Norvalia Sentinels
+Cedarport Sentinels
+Silver Lake Republic
+Cedarport United
+Lakemont SC
+Club Fairhaven
+Oakmont Athletic
+Redrock Sentinels
+Prairie City United
+Stonebridge Republic

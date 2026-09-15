@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Nexxie
+! Country "Nexxie"
+! Names "data/names/Nexxie_1st.txt" "data/names/Nexxie_2nd.txt"
+* Nexxie Friendship Trophy
++ Country "Nexxie"
++ reputation 12
+# One match, no replays, everybody gets a rosette.
++ round 1 "Everyone Plays Round" 1-64 3
++ draw 2
++ add 64 from "Nexxie"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Nexxie Super Sparkle League
++ division 1
++ promotions 0
++ relegations 4
++ reputation 15
+Cherryfizz Hedgehogs
+Jellybean Cove Wonders
+Honeydrop Cubs
+Marshmallow Meadow Lambs
+Team Gumdrop Glen
+Snugglebrook FC
+Jellybean Cove Penguins
+Happy Honeydrop
+Cloudpuff Puffins
+Puddlejump Ducklings
+Jellybean Cove Otters
+Cocoa Hollow Bumblebees
+Sweet Cocoa Hollow
+Cloudpuff Lambs
+Bubblebrook Foxes
+Cherryfizz Piglets
+: Nexxie Sparkle League
++ division 2
++ promotions 4
++ relegations 4
++ reputation 13
+Twinkle Town Puffins
+Cocoa Hollow Lambs
+Snugglebrook Ducklings
+Mochi Hill Ducklings
+Sprinkleton Piglets
+Team Blossomby
+Gumdrop Glen Wonders
+Lollipop Lake Penguins
+Waffletop Foxes
+Twinkle Town Cubs
+Starlight Lane Puffins
+Pillowfort FC
+Starlight Lane Otters
+Puddlejump Sparkles
+Pawprint Puffins
+Sprinkleton Hedgehogs
+: Nexxie Shiny League
++ division 3
++ promotions 4
++ relegations 4
++ reputation 11
+Buttercup Bend Pals
+Mochi Hill Wonders
+Peppermint Bay Bunnies
+Puddlejump Penguins
+Cherryfizz Stars
+Pawprint Bunnies
+Ribbonvale Penguins
+Mochi Hill Foxes
+Cloudpuff Pals
+Honeydrop Sparkles
+Cloudpuff Foxes
+Snugglebrook Penguins
+Tinsel Hollow Piglets
+Honeydrop Hedgehogs
+Twinkle Town Ducklings
+Waffletop Piglets
+: Nexxie Little League
++ division 4
++ promotions 4
++ relegations 0
++ reputation 9
+Cocoa Hollow Puffins
+Blossomby Hedgehogs
+Bubblebrook Sparkles
+Marshmallow Meadow Ducklings
+Jellybean Cove Piglets
+Gumdrop Glen Hedgehogs
+Peppermint Bay Penguins
+Sugarleaf Stars
+Bubblebrook Hedgehogs
+Sugarleaf Ducklings
+Pillowfort Stars
+Twinkle Town Wonders
+Mochi Hill Stars
+Snugglebrook Wonders
+Marshmallow Meadow Foxes
+Honeydrop Puffins

@@ -1,0 +1,198 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Vyktoria
+! Country "Vyktoria"
+! Names "data/names/Vyktoria_1st.txt" "data/names/Vyktoria_2nd.txt"
+* VFF Cup
++ Country "Vyktoria"
++ reputation 13
+# Open to the whole pyramid, amateurs included, from round one.
++ round 1 "First Round" 1-128 3
++ draw 3
++ add 128 from "Vyktoria"
++ round 2 "Second Round" 1-64 5
++ round 3 "Third Round" 1-32 9
++ round 4 "Fourth Round" 1-16 14
++ round 5 "Quarter Finals" 1-8 21
++ round 6 "Semi Finals" 1-4
++ week 30 32
++ round 7 "Final" 1-2 41
+* Vyktoria Charity Shield
++ Country "Vyktoria"
++ reputation 9
+# Champions against cup holders, one match, week two.
++ round 1 "Final" 1-2 2
++ draw 1
++ add 1 from "Vyktoria"
++ add 1 cup-winner "VFF Cup Final"
+: V-League One
++ division 1
++ promotions 0
++ relegations 2
++ reputation 16
+Wyckham Wanderers
+Indigo Bay Athletic
+Petervale FC
+Feldman United
+Williamstown United
+Nathan FC
+Port Myles United
+Martyn Athletic
+AFC Barry
+Jayde Athletic
+Edwardston Rovers
+Harriston FC
+AFC Lionvale
+Wyckham United
+Aston United
+Barry Town
+: V-League Two
++ division 2
++ promotions 2
++ relegations 2
++ reputation 14
+Jackson Athletic
+Georgetown FC
+Newtown FC
+Dartford Athletic
+Lionvale Rovers
+AFC Morton
+Jayde United
+Martyn Rovers
+Stirling United
+Quincy FC
+Partridge United
+Prestyn FC
+Darke United
+Jasondale FC
+Williamstown Wolves
+Darke Rovers
+: V-League Three
++ division 3
++ promotions 2
++ relegations 3
++ reputation 12
+Morston United
+Norton Athletic
+Stirling Athletic
+AFC Aston
+Edwardston United
+Sporting Xavier
+Georgetown United
+Maryvale United
+Wyckham Athletic
+Newtown United
+AFC Wyckham
+Nathan United
+Indigo Bay Rovers
+Partridge FC
+Maryvale FC
+Kyleston FC
+: V-League Four
++ division 4
++ promotions 3
++ relegations 3
++ reputation 11
+Wyckham Rovers
+Darke Athletic
+Norton Rovers
+Port Myles Athletic
+Dartford Rovers
+Newtown Rovers
+Kyleston United
+Aston Athletic
+AFC Dartford
+AFC Feldman
+AFC Indigo Bay
+Wilson FC
+Old Stellarians
+Stirling Rovers
+Old Lunarians
+Old Solarians
+: V-League Five
++ division 5
++ promotions 3
++ relegations 3
++ reputation 9
+Highfield Wanderers
+Calverton Rovers
+Xavier County
+Lionsgate Rangers
+Ashford Albion
+AFC Kingsford
+Barry FC
+Ironvale Wanderers
+Brunswick Albion
+Fulton City
+Martyn City
+Ryanvale Olympic
+Wexmoor Borough
+Marleston Borough
+Jayde FC
+Eastmere Athletic
+: V-League Six
++ division 6
++ promotions 3
++ relegations 3
++ reputation 7
+Oliver Rovers
+Oliver Borough
+Prestyn Rangers
+Ashton Wanderers
+Edwardston Athletic
+Petervale Rovers
+Lincoln County
+Sporting Lionvale
+Pennington Wanderers
+Ryansford City
+Marleston United
+Halloway Olympic
+Norton Olympic
+Marleston Rovers
+Northwick City
+Highfield Rovers
+: V-League Seven
++ division 7
++ promotions 3
++ relegations 4
++ reputation 5
+AFC Ryanvale
+Edwardston Olympic
+Quincy County
+Morton City
+Boltondale Olympic
+Indigo Bay FC
+Quincy Wanderers
+Blackmoor Town
+Boltondale City
+Kyleston Athletic
+Sporting Harrisfield
+Norton County
+Merrowdale Rangers
+Alexandra Albion
+Blackmoor Athletic
+Ellinbrook County
+: V-League Eight
++ division 8
++ promotions 4
++ relegations 0
++ reputation 3
+Lincoln Olympic
+Sporting Oliver
+Wyckham City
+SC Boltondale
+Ryansford Athletic
+AFC Leopold
+Parkinson Town
+Jameson United
+Lionsgate Sports
+Harrisfield Rovers
+Brookhaven Albion
+Northwick County
+Parkinson Rovers
+Xavier Albion
+Fulton Rovers
+Stirling Town

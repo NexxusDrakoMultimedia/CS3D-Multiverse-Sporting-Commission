@@ -1,0 +1,194 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Esmeraldys
+! Country "Esmeraldys"
+! Names "data/names/Esmeraldys_1st.txt" "data/names/Esmeraldys_2nd.txt"
+* Corn Esmeraldys
++ Country "Esmeraldys"
++ reputation 11
+# Staggered entry by rank; two-legged semi finals.
++ round 1 "First Round" 65-128 3
++ draw 5
+# seeded clubs enter later, as the Galatyan associations all insist
++ add 32 from "Esmeraldys"
++ add 32 from "Esmeraldys"
++ add 64 from "Esmeraldys"
++ round 2 "Second Round" 33-96 5
++ round 3 "Third Round" 1-64 8
++ round 4 "Fourth Round" 1-32 12
++ round 5 "Round of 16" 1-16 17
++ round 6 "Quarter Finals" 1-8 24
++ round 7 "Semi Finals" 1-4
++ week 32 34
++ round 8 "Final" 1-2 41
+: Esmeraldys Príomhroinn
++ division 1
++ promotions 0
++ relegations 3
++ reputation 14
+Ardnacraoibh FC
+Tobarmaigh Celtic
+Dromnashee Wanderers
+Cumann Áth Fhearna
+Currachmore Wanderers
+Gleann Dara Bay
+Rathmoylan Gaels
+Dromnashee Town
+Tullaghmore Rovers
+Rathmoylan Wanderers
+Dromnashee FC
+Inisfaolán Town
+Gleann Dara Celtic
+Sliabh Bán Harps
+Bohemians Corr na Madadh
+Portnabrone FC
+: Esmeraldys Roinn a hAon
++ division 2
++ promotions 3
++ relegations 3
++ reputation 13
+Dunmaragh FC
+Cill Fionnúir Rovers
+Baile na Móna FC
+Lisnaskerry Wanderers
+Tobarmaigh Gaels
+Ros Miadhach Bay
+Bohemians Baile na Faiche
+Tullaghmore Town
+Dromnashee Bay
+Ros Miadhach Wanderers
+Lisnaskerry United
+Inisfaolán Harps
+Cill Aodhán Harps
+Carraig Dhubh Harps
+Sliabh Bán Wanderers
+Tír na Sceilge Bay
+: Esmeraldys Roinn a Dó
++ division 3
++ promotions 3
++ relegations 3
++ reputation 12
+Bohemians Sliabh Bán
+Bohemians Lisnaskerry
+Áth Fhearna Harps
+Inisfaolán Wanderers
+Ardnacraoibh Bay
+Rathmoylan Celtic
+Áth Fhearna Wanderers
+Inisfaolán Gaels
+Loch Aoibhinn Athletic
+Cill Fionnúir United
+Cumann Sliabh Bán
+Loch Aoibhinn Celtic
+Cumann Baile na Móna
+Ballyfergus Wanderers
+Loch Aoibhinn Town
+Portnabrone Rovers
+: Esmeraldys Roinn a Trí
++ division 4
++ promotions 3
++ relegations 3
++ reputation 11
+Bohemians Áth Fhearna
+Tír na Sceilge Harps
+Cill Aodhán Gaels
+Cumann Corr na Madadh
+Uisce Glas Celtic
+Béal Átha Rí FC
+Rathvilly Beag Rovers
+Ardnacraoibh Town
+Ros Miadhach Harps
+Corr na Madadh Town
+Béal Átha Rí Bay
+Loch Aoibhinn Harps
+Cumann Kilnamara
+Tullaghmore United
+Clonbeigh Athletic
+Baile na Faiche Gaels
+: Esmeraldys Roinn a Ceathair
++ division 5
++ promotions 3
++ relegations 4
++ reputation 10
+Sceilg Mhór Wanderers
+Cnoc Aingil Wanderers
+Uisce Glas Bay
+Loch Aoibhinn United
+Tobarmaigh Wanderers
+Moynalta Town
+Bohemians Rathmoylan
+Corr na Madadh Celtic
+Béal Átha Rí Rovers
+Carraig Dhubh Bay
+Cill Aodhán Town
+Gleann Dara Rovers
+Cumann Currachmore
+Cumann Tobarmaigh
+Carraig Dhubh Athletic
+Drumcarrig United
+: Esmeraldys Roinn a Cúig
++ division 6
++ promotions 4
++ relegations 4
++ reputation 9
+Inisfaolán Rovers
+Bohemians Dunmaragh
+Currachmore Rovers
+Tullaghmore Harps
+Cill Fionnúir Town
+Sceilg Mhór Town
+Béal Átha Rí Gaels
+Bohemians Carraig Dhubh
+Bohemians Inisfaolán
+Áth Fhearna Gaels
+Bohemians Uisce Glas
+Tullaghmore Gaels
+Uisce Glas FC
+Drumcarrig Town
+Cumann Lisnaskerry
+Inisfaolán Athletic
+: Esmeraldys Roinn a Sé
++ division 7
++ promotions 4
++ relegations 4
++ reputation 8
+Ros Miadhach Celtic
+Ballyfergus Harps
+Cumann Rathvilly Beag
+Bohemians Tullaghmore
+Tír na Sceilge United
+Cnoc Aingil Harps
+Clonbeigh Bay
+Baile na Faiche Town
+Sliabh Bán FC
+Portnabrone Harps
+Cumann Sceilg Mhór
+Cumann Béal Átha Rí
+Carraig Dhubh Wanderers
+Cnoc Aingil Bay
+Bohemians Moynalta
+Sceilg Mhór United
+: Esmeraldys Roinn a Seacht
++ division 8
++ promotions 4
++ relegations 0
++ reputation 7
+Uisce Glas Athletic
+Tír na Sceilge Gaels
+Bohemians Kilnamara
+Dromnashee Celtic
+Sceilg Mhór FC
+Ardnacraoibh Wanderers
+Kilnamara Bay
+Tír na Sceilge FC
+Carraig Dhubh FC
+Cill Fionnúir Harps
+Sceilg Mhór Harps
+Kilnamara Rovers
+Dromnashee United
+Cumann Dunmaragh
+Uisce Glas Wanderers
+Bohemians Rathvilly Beag

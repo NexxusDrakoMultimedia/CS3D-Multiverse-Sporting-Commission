@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Valcarena
+! Country "Valcarena"
+! Names "data/names/Valcarena_1st.txt" "data/names/Valcarena_2nd.txt"
+* Copa Valcarena
++ Country "Valcarena"
++ reputation 10
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 4
++ add 64 from "Valcarena"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Primera División de Valcarena
++ division 1
++ promotions 0
++ relegations 3
++ reputation 12
+Club Cerro Lindo
+CD Iquitana
+Club Villa Dolores
+Independiente Iquitana
+Los Robledales FC
+Zacapala FC
+CD El Dorado Nuevo
+Real Bahía Azul
+Real Santa Lucía del Mar
+CD Nueva Cordillera
+Real Los Robledales
+Universidad Chacamayo
+Independiente Tepechán
+Club Atlético Río Verde
+Punta Arenal FC
+Club Atlético Tepechán
+: Segunda División de Valcarena
++ division 2
++ promotions 3
++ relegations 3
++ reputation 10
+Real Monteverde
+Club Atlético San Rafael del Llano
+Club San Rafael del Llano
+Deportivo Nueva Sucre
+CD Valcarena
+Unión El Dorado Nuevo
+Club Nueva Sucre
+Universidad Cuautemal
+Unión Valcarena
+Sporting Cerro Lindo
+CD Puerto Esperanza
+Chacamayo FC
+Unión Chacamayo
+Deportivo Río Verde
+Real Puerto Esperanza
+Racing Villa Dolores
+: Tercera División de Valcarena
++ division 3
++ promotions 3
++ relegations 3
++ reputation 8
+Real El Dorado Nuevo
+Deportivo Tepechán
+Universidad Zacapala
+Unión Cuautemal
+Deportivo San Rafael del Llano
+Racing Puerto Esperanza
+Club Atlético Villa Dolores
+Real Zacapala
+Club Atlético Chacamayo
+Unión San Jerónimo
+Club Atlético Palma Real
+Club Atlético Valcarena
+Unión Nueva Cordillera
+Deportivo Nueva Cordillera
+Deportivo Villa Dolores
+Club Atlético Zacapala
+: Cuarta División de Valcarena
++ division 4
++ promotions 3
++ relegations 0
++ reputation 6
+Real Nueva Sucre
+Deportivo Quebrada Honda
+Real San Rafael del Llano
+Sporting El Dorado Nuevo
+Independiente Valcarena
+Club Atlético Los Robledales
+Deportivo Valcarena
+Club Atlético Nueva Sucre
+CD Santa Lucía del Mar
+CD San Jerónimo
+Unión Nueva Sucre
+Independiente Cuautemal
+Club Atlético Nueva Cordillera
+Club Zacapala
+Unión Punta Arenal
+Universidad Iquitana

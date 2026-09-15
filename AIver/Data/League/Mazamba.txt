@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Mazamba
+! Country "Mazamba"
+! Names "data/names/Mazamba_1st.txt" "data/names/Mazamba_2nd.txt"
+* Mazamba Knockout Cup
++ Country "Mazamba"
++ reputation 9
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 4
++ add 64 from "Mazamba"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Mazamba Premiership
++ division 1
++ promotions 0
++ relegations 3
++ reputation 11
+Mbabaneni Arrows
+Nkosini Chiefs
+Khayelitsa Aces
+Windhoem Callies
+Soshangwe City
+Windhoem FC
+Maseruwe Buccaneers
+Soshangwe Leopards
+Otjiwara Arrows
+Kagisoni Chiefs
+Livingstoni Leopards
+Mafikengo Callies
+Polokwani Callies
+Ndolane Royals
+Highlands Khayelitsa
+Lusakwe Arrows
+: Mazamba First Division
++ division 2
++ promotions 3
++ relegations 3
++ reputation 9
+Maseruwe City
+Gaboroni United
+Lusakwe FC
+Kagisoni Royals
+Hararesi Royals
+Thabane Buccaneers
+Hararesi Buccaneers
+Umtatha Aces
+Katimana Leopards
+Ndolane Leopards
+Lusakwe United
+Polokwani Leopards
+Ziwane United
+Katimana Royals
+Maseruwe Leopards
+Mbabaneni Callies
+: Mazamba Second Division
++ division 3
++ promotions 3
++ relegations 3
++ reputation 7
+Ndolane Aces
+Khayelitsa FC
+Windhoem Leopards
+Ndolane City
+Polokwani City
+Ziwane City
+Thabane Callies
+Highlands Lusakwe
+Tembisani Buccaneers
+Highlands Soshangwe
+Kagisoni Aces
+Tembisani Aces
+Mbabaneni City
+Kagisoni City
+Bulawana United
+Tshwaneng City
+: Mazamba Third Division
++ division 4
++ promotions 3
++ relegations 0
++ reputation 5
+Gaboroni FC
+Nkosini Royals
+Bulawana Arrows
+Khayelitsa City
+Mbabaneni Aces
+Otjiwara Chiefs
+Highlands Windhoem
+Windhoem Royals
+Khayelitsa Chiefs
+Highlands Mbabaneni
+Tshwaneng United
+Highlands Mazamba
+Mazamba Royals
+Mazamba United
+Mbabaneni FC
+Katimana Chiefs

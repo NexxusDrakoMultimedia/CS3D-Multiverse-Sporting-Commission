@@ -1,0 +1,71 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Castolo and Minanda
+! Country "Castolo and Minanda"
+! Names "data/names/Castolo and Minanda_1st.txt" "data/names/Castolo and Minanda_2nd.txt"
+* Copa Unida
++ Country "Castolo and Minanda"
++ reputation 10
+# Both divisions enter together; semi finals over two legs.
++ round 1 "Primera Ronda" 1-32 3
++ draw 6
++ add 32 from "Castolo and Minanda"
++ round 2 "Segunda Ronda" 1-16 7
++ round 3 "Cuartos de Final" 1-8 15
++ round 4 "Semifinales" 1-4
++ week 26 28
++ round 5 "Final" 1-2 41
+* Supercopa Unida
++ Country "Castolo and Minanda"
++ reputation 8
+# Champions, runners-up, third place and the cup holders, over two match days.
++ round 1 "Semifinales" 1-4 2
++ draw 1
++ add 3 from "Castolo and Minanda"
++ add 1 cup-winner "Copa Unida Final"
++ round 2 "Final" 1-2 3
+: Primera Unida
++ division 1
++ promotions 0
++ relegations 4
++ reputation 13
+Recreativo Castolo
+Gimnàstic Cádena
+Deportivo Olivenza
+Gimnàstic Minanda
+SC Évoran
+SC Ribadouro
+Real Guimarona
+SC Vilanova
+Atlético Mirandela
+SC Minanda
+Racing de Estremonte
+Racing de Sierrablanca
+Unión Sierrablanca
+CD Montalbo
+Atlético Guimarona
+Deportivo Almadena
+: Segunda Unida
++ division 2
++ promotions 4
++ relegations 0
++ reputation 10
+Gimnàstic Braganza
+Castolo FC
+Real Olivenza
+Clube Meranza
+Foz do Verde FC
+Real Castelverde
+Atlético Estremonte
+Gimnàstic Estremonte
+Racing de Foz do Verde
+CF Braganza
+Deportivo Foz do Verde
+Racing de Quintanar
+Unión Castolo
+CF Vilanova
+CF Montalbo
+Racing de Castelverde

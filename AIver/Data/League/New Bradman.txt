@@ -1,0 +1,208 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# New Bradman
+! Country "New Bradman"
+! Names "data/names/New Bradman_1st.txt" "data/names/New Bradman_2nd.txt"
+* New Bradman FA Cup
++ Country "New Bradman"
++ reputation 14
+# Staggered entry: rank decides which round a club comes in at.
++ round 1 "First Round" 65-128 3
++ draw 2
+# the 32 best clubs are seeded straight into the third round
++ add 32 from "New Bradman"
+# the next 32 join at the second round
++ add 32 from "New Bradman"
+# the remaining 64 start in the first round
++ add 64 from "New Bradman"
++ round 2 "Second Round" 33-96 5
++ round 3 "Third Round" 1-64 8
++ round 4 "Fourth Round" 1-32 12
++ round 5 "Fifth Round" 1-16 17
++ round 6 "Quarter Finals" 1-8 24
++ round 7 "Semi Finals" 1-4 32
++ round 8 "Final" 1-2 41
+* New Bradman League Cup
++ Country "New Bradman"
++ reputation 10
+# Top four divisions only. Two-legged semi finals.
++ round 1 "First Round" 1-64 3
++ draw 5
++ add 64 from "New Bradman"
++ round 2 "Second Round" 1-32 5
++ round 3 "Third Round" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4
++ week 27 29
++ round 6 "Final" 1-2 39
+: New Bradman Premier League
++ division 1
++ promotions 0
++ relegations 3
++ reputation 17
+Alexandra United
+Whitehaven Wanderers
+Brunswick City
+Oakridge FC
+AFC Kingswood
+AFC Parker
+Fulton Town
+Kingsford United
+Ryanvale FC
+Westbridge Athletic
+Lillydale Jets
+Northwick Town
+Davidson City
+Harriswood Rovers
+Ashton Town
+Edwardsham Athletic
+: New Bradman First Division
++ division 2
++ promotions 3
++ relegations 3
++ reputation 15
+Fairmont Athletic
+Brookhaven Town
+Westbridge Rovers
+Oakridge Rangers
+Alexandra Rovers
+Whitehaven City
+Northwick Athletic
+Kingswood Rangers
+Ryanvale Rangers
+Ashton Rangers
+Davidson Athletic
+Greystone Wanderers
+Eastmere United
+Kingsmere Athletic
+Harriswood Athletic
+Blackmoor FC
+: New Bradman Second Division
++ division 3
++ promotions 3
++ relegations 3
++ reputation 13
+Highfield United
+Brunswick Athletic
+Kingswood Albion
+Oakridge United
+Fulton Athletic
+Davidson Rovers
+Edwardsham Town
+Ryanvale United
+Ashford United
+Lillydale United
+Brookhaven Athletic
+Alexandra Athletic
+Whitehaven Athletic
+Eastmere Rovers
+Kingsford Rovers
+Parker Rangers
+: New Bradman Third Division
++ division 4
++ promotions 3
++ relegations 3
++ reputation 12
+Brunswick Rovers
+Ashford Athletic
+Blackmoor Rangers
+Fulton Rangers
+Harriswood United
+Highfield Town
+Greystone FC
+Westbridge United
+Edwardsham United
+Parker Athletic
+Lillydale Town
+Kingsmere Rovers
+Kingsford Athletic
+Fairmont City
+Ashton United
+Northwick United
+: New Bradman Fourth Division
++ division 5
++ promotions 3
++ relegations 3
++ reputation 10
+AFC Westbridge
+Ashford Rangers
+Northwick Rangers
+Wrenford Olympic
+Kestrel Bay Athletic
+Jayde Town
+Westbridge Albion
+Harriswood County
+Sporting Parkinson
+Eastmere Olympic
+Kyleston Wanderers
+Wilson Rangers
+Coldharbour FC
+Redmarsh Albion
+Merrowdale FC
+Georgetown Olympic
+: New Bradman Fifth Division
++ division 6
++ promotions 3
++ relegations 3
++ reputation 8
+Sporting Kingswood
+Morston Wanderers
+Lillydale County
+Harrisfield County
+Northwick Rovers
+Marleston City
+Feldman County
+Morton Athletic
+Ryanvale Town
+Westbridge Wanderers
+Sporting Williamstown
+Parkinson Rangers
+Sporting Aldenshaw
+Parker FC
+Wrenford United
+AFC Harrisfield
+: New Bradman Sixth Division
++ division 7
++ promotions 3
++ relegations 3
++ reputation 6
+Sedgewick Athletic
+Jayde Rovers
+Nathan Albion
+Fulton United
+Jameson Athletic
+Stonecross City
+Nathan Athletic
+Thornbury United
+Wexmoor Wanderers
+Oakridge Olympic
+Wyckham Albion
+Wexmoor United
+Oliver City
+Sporting Maryvale
+Edwardsham Borough
+Quincy Albion
+: New Bradman Seventh Division
++ division 8
++ promotions 3
++ relegations 0
++ reputation 4
+Stonecross United
+Sporting Northwick
+Kingsmere Wanderers
+Petervale Albion
+Kestrel Bay FC
+Kingsford Borough
+Boltondale Town
+Sporting Alexandra
+Martyn Town
+Harriston Olympic
+Norton Town
+Sporting Eastmere
+Dartford Wanderers
+Parker County
+AFC Lionsgate
+Indigo Bay Olympic

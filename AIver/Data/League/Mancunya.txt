@@ -1,0 +1,194 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Mancunya
+! Country "Mancunya"
+! Names "data/names/Mancunya_1st.txt" "data/names/Mancunya_2nd.txt"
+* Mancunya Challenge Cup
++ Country "Mancunya"
++ reputation 13
+# Staggered entry by rank; two-legged semi finals.
++ round 1 "First Round" 65-128 3
++ draw 2
+# seeded clubs enter later, as the Galatyan associations all insist
++ add 32 from "Mancunya"
++ add 32 from "Mancunya"
++ add 64 from "Mancunya"
++ round 2 "Second Round" 33-96 5
++ round 3 "Third Round" 1-64 8
++ round 4 "Fourth Round" 1-32 12
++ round 5 "Round of 16" 1-16 17
++ round 6 "Quarter Finals" 1-8 24
++ round 7 "Semi Finals" 1-4
++ week 32 34
++ round 8 "Final" 1-2 41
+: Mancunya Premiership
++ division 1
++ promotions 0
++ relegations 3
++ reputation 16
+Clitherton County
+Saltburn City
+AFC Bacupdale
+Cloughton Wanderers
+Crompton Albion
+Shawclough County
+Gritstone County
+AFC Bolsover
+Marsden Albion
+Openshawe City
+Todforth Wanderers
+Ravensthwaite Wanderers
+Rothwell Wanderers
+Accringate Athletic
+Netherby Albion
+Smithybridge City
+: Mancunya League One
++ division 2
++ promotions 3
++ relegations 3
++ reputation 15
+Gritstone Albion
+Netherby Trinity
+Saltburn Wanderers
+Saltburn Albion
+Millbrook City
+Accringate Borough
+Brindlethorpe North End
+Denshaw North End
+Clitherton United
+AFC Crompton
+Littleborough North End
+Barnholme North End
+Hollinwood Wanderers
+Smithybridge Town
+Oldbury County
+AFC Shawclough
+: Mancunya League Two
++ division 3
++ promotions 3
++ relegations 3
++ reputation 14
+Accringate County
+Ramsbotham FC
+Ribblesby Borough
+Littleborough City
+Heaton FC
+Ackworth Rovers
+Norden County
+Bacupdale Albion
+Denshaw Rovers
+Norden Athletic
+Haslingden Borough
+Openshawe Borough
+Crompton FC
+Wharfedale Trinity
+Ribblesby Albion
+Gritstone Town
+: Mancunya League Three
++ division 4
++ promotions 3
++ relegations 3
++ reputation 13
+Norden Albion
+AFC Haslingden
+Haslingden Trinity
+Oldbury Wanderers
+Smithybridge Rovers
+Werneth Wanderers
+Padgate Albion
+Ramsbotham United
+Crompton Athletic
+Werneth Town
+Barnholme Borough
+Padgate Borough
+Denshaw FC
+Brindlethorpe Borough
+Oldbury City
+Bacupdale Wanderers
+: Mancunya League Four
++ division 5
++ promotions 3
++ relegations 3
++ reputation 12
+Brindlethorpe United
+Openshawe North End
+Bolsover Trinity
+Millbrook Rovers
+Accringate United
+Clitherton North End
+Delph North End
+Rothwell Rovers
+AFC Denshaw
+Bolsover FC
+Marsden Wanderers
+Millbrook Athletic
+Ribblesby Rovers
+Bolsover Borough
+Clitherton Athletic
+Ramsbotham Albion
+: Mancunya League Five
++ division 6
++ promotions 3
++ relegations 3
++ reputation 11
+Ribblesby United
+AFC Ackworth
+Werneth Trinity
+Padgate Trinity
+Saltburn FC
+Denshaw Trinity
+Marsden Borough
+Padgate Rovers
+Ravensthwaite Town
+Gritstone Wanderers
+Failsworth Town
+Ravensthwaite United
+Marsden United
+Delph Trinity
+Oldbury Trinity
+Hollinwood Town
+: Mancunya League Six
++ division 7
++ promotions 3
++ relegations 3
++ reputation 10
+Crompton North End
+Ribblesby Town
+Shawclough Town
+Werneth Athletic
+Heaton Athletic
+Delph Borough
+Crompton County
+Clitherton Rovers
+Ramsbotham Borough
+Millbrook Trinity
+Failsworth City
+Hollinwood United
+Werneth United
+AFC Millbrook
+Wharfedale County
+AFC Brindlethorpe
+: Mancunya League Seven
++ division 8
++ promotions 3
++ relegations 0
++ reputation 9
+Haslingden Wanderers
+Littleborough FC
+Chadderley FC
+Ackworth FC
+Ramsbotham City
+Smithybridge County
+Millbrook United
+Saltburn Borough
+Heaton Borough
+Denshaw Wanderers
+Ribblesby Athletic
+Chadderley Athletic
+Haslingden FC
+Netherby Wanderers
+Cloughton Rovers
+Ribblesby Trinity

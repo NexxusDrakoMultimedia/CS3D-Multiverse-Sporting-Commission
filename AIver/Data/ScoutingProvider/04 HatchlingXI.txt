@@ -1,0 +1,230 @@
+# Scouting provider contract: scouting-provider-v1
+#  Created by Nexxus Drako, with Claude's assistance.
+# MSC regions - itavrnai/vyktoria/new-rythorn form the Itavrnai Union,
+# new-bradman/ryukawa/castolo the New Bradmanian Commonwealth,
+# layns-wyred/determi/nexxie/jarokn Cyberya, and
+# mancunya/centralya/wyrmwoode/esmeraldys Galatyan.
+# Ten further nations are unregioned and are sold by nation only.
+# Academy and reserve coverage across the member associations.
+! Provider "hatchlingxi" 1
+! Name "HatchlingXI"
+! Archetype youth-network
+! Standing specialist
+! Coverage family "hatchlingxi.youth"
+! Annual price drift -200 500
+! Special offer chance 1700
+! Special offer kinds season-start winter-window new-customer win-back
+! Special offer discount 500 1500
+! Special offer validity weeks 4 8
+! Rotating product slots 0
+! Small club maximum reputation 7
+! Small club discount 500 1100
+
+: Product "hatchlingxi.home" 1
++ Name "HatchlingXI Home"
++ Family "hatchlingxi.home"
++ Presentation data-dossier
++ Fields identity sporting development
++ Scope provider-market-region
++ Sales relations core
++ Scope selections 0 0
++ Age 14 21
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 8200 7000
++ Contribution 3000 1700 2500
++ Freshness days 10
++ Monthly reference factor 2400
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "hatchlingxi.corridor" 2
++ Name "HatchlingXI Corridor 3"
++ Family "hatchlingxi.corridor"
++ Presentation data-dossier
++ Fields identity sporting development
++ Scope selected-nation
++ Sales relations core regional export
++ Scope selections 3 3
++ Age 14 23
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 7200 6200
++ Contribution 3300 1800 2700
++ Freshness days 10
++ Monthly reference factor 4200
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "hatchlingxi.corridor-six" 1
++ Name "HatchlingXI Corridor 6"
++ Family "hatchlingxi.corridor"
++ Presentation data-dossier
++ Fields identity sporting development
++ Scope selected-nation
++ Sales relations core regional export
++ Scope selections 6 6
++ Age 14 23
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 7200 6200
++ Contribution 3300 1800 2700
++ Freshness days 10
++ Monthly reference factor 8000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "hatchlingxi.corridor-eight" 1
++ Name "HatchlingXI Corridor 8"
++ Family "hatchlingxi.corridor"
++ Presentation data-dossier
++ Fields identity sporting development
++ Scope selected-nation
++ Sales relations core regional export
++ Scope selections 8 8
++ Age 14 23
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 7200 6200
++ Contribution 3300 1800 2700
++ Freshness days 10
++ Monthly reference factor 10400
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "hatchlingxi.union" 2
++ Name "HatchlingXI Union"
++ Family "hatchlingxi.union"
++ Presentation data-dossier
++ Fields identity sporting development
++ Scope selected-region
++ Sales relations core regional export
++ Scope selections 1 1
++ Allowed region "itavrnai"
++ Allowed region "vyktoria"
++ Allowed region "new-rythorn"
++ Allowed region "new-bradman"
++ Allowed region "ryukawa"
++ Allowed region "castolo"
++ Allowed region "layns-wyred"
++ Allowed region "determi"
++ Allowed region "nexxie"
++ Allowed region "jarokn"
++ Allowed region "mancunya"
++ Allowed region "centralya"
++ Allowed region "wyrmwoode"
++ Allowed region "esmeraldys"
++ Age 14 23
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 6500 5500
++ Contribution 3600 1900 2900
++ Freshness days 10
++ Monthly reference factor 6000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Market "hatchlingxi.itavrnai" 2
++ Name "HatchlingXI Itavrnai"
++ Kind regional
++ Home region "itavrnai"
++ Sales reach worldwide
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.corridor-six" "hatchlingxi.corridor-eight" "hatchlingxi.union"
++ Core price factor 8500
++ Regional price factor 10500
++ Export price factor 13000
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 400
+
+: Market "hatchlingxi.ryukawa" 2
++ Name "HatchlingXI Ryukawa"
++ Kind regional
++ Home region "ryukawa"
++ Sales reach worldwide
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.corridor-six" "hatchlingxi.corridor-eight" "hatchlingxi.union"
++ Core price factor 8800
++ Regional price factor 10800
++ Export price factor 13300
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 300
+
+: Market "hatchlingxi.rythorn" 2
++ Name "HatchlingXI New Rythorn"
++ Kind regional
++ Home region "new-rythorn"
++ Sales reach worldwide
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.corridor-six" "hatchlingxi.corridor-eight" "hatchlingxi.union"
++ Core price factor 8000
++ Regional price factor 10000
++ Export price factor 12500
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 250
+
+: Market "hatchlingxi.nexxie" 2
++ Name "HatchlingXI Nexxie"
++ Kind regional
++ Home region "nexxie"
++ Sales reach worldwide
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.corridor-six" "hatchlingxi.corridor-eight" "hatchlingxi.union"
++ Core price factor 7800
++ Regional price factor 9800
++ Export price factor 12300
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 200
+
+: Market "hatchlingxi.esmeraldys" 2
++ Name "HatchlingXI Esmeraldys"
++ Kind regional
++ Home region "esmeraldys"
++ Sales reach worldwide
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.corridor-six" "hatchlingxi.corridor-eight" "hatchlingxi.union"
++ Core price factor 8100
++ Regional price factor 10100
++ Export price factor 12600
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 150
+
+: Market "hatchlingxi.castolo" 2
++ Name "HatchlingXI Castolo"
++ Kind regional
++ Home region "castolo"
++ Sales reach worldwide
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.corridor-six" "hatchlingxi.corridor-eight" "hatchlingxi.union"
++ Core price factor 8200
++ Regional price factor 10200
++ Export price factor 12700
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 100
+

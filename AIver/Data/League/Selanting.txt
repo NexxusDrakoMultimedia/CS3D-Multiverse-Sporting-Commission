@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Selanting
+! Country "Selanting"
+! Names "data/names/Selanting_1st.txt" "data/names/Selanting_2nd.txt"
+* Piala Selanting
++ Country "Selanting"
++ reputation 8
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 6
++ add 64 from "Selanting"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Liga Utama Selanting
++ division 1
++ promotions 0
++ relegations 3
++ reputation 10
+Mandalar FC
+PS Surabayan
+PS Kota Ranau
+Kelab Seri Tanjung
+Mandalar United
+Chiang Muan United
+Kuala Serimbun Garuda
+Kelab Batu Lintang
+Phnomsan Garuda
+Sungai Emas Rangers
+Persa Sai Trang
+Tanjung Puri FC
+Kuala Serimbun Warriors
+Pahangwi Tigers
+Persa Makassari
+Bang Krua Garuda
+: Liga Pertama Selanting
++ division 2
++ promotions 3
++ relegations 3
++ reputation 8
+Harimau Kota Ranau
+Medanti Garuda
+Selanting Tigers
+Palembara FC
+Kota Ranau Warriors
+Persa Yan Gongri
+Davaoan United
+Medanti FC
+Vien Thara Garuda
+Ha Dinh FC
+PS Sungai Emas
+Davaoan FC
+PS Palembara
+Yan Gongri FC
+Sungai Emas Tigers
+Palembara Warriors
+: Liga Kedua Selanting
++ division 3
++ promotions 3
++ relegations 4
++ reputation 6
+Mandalar City
+Cebuana Garuda
+Seri Tanjung FC
+Bang Krua United
+Bang Krua FC
+Palembara Tigers
+Surabayan Warriors
+Persa Bang Krua
+Joharan FC
+Kelab Bandaraya
+Persa Vien Thara
+Selanting City
+Surabayan United
+PS Cebuana
+Persa Medanti
+Harimau Pahangwi
+: Liga Ketiga Selanting
++ division 4
++ promotions 4
++ relegations 0
++ reputation 4
+Ha Dinh Warriors
+Joharan City
+Bandaraya Warriors
+Sungai Emas United
+Selanting Garuda
+Kelab Surabayan
+Vien Thara Warriors
+Sai Trang United
+Persa Chiang Muan
+Harimau Mandalar
+Davaoan Tigers
+Vien Thara United
+PS Medanti
+Palembara Garuda
+Makassari Garuda
+Kota Ranau FC

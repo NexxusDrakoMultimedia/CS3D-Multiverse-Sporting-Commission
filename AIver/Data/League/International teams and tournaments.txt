@@ -1,0 +1,583 @@
+#
+#  MULTIVERSE SPORTING COMMISSION
+#  Created by Nexxus Drako, with Claude's assistance.
+#  International club competitions and national team tournaments.
+#
+#  24 member associations, every one of them with its own League file:
+#
+#    Itavrnai Union               Itavrnai Union, Vyktoria, New Rythorn
+#    New Bradmanian Commonwealth  New Bradman, Ryukawa, Castolo and Minanda
+#    Cyberya                      Layn's Wyred, Determi, Nexxie, Jarokn
+#    Galatyan                     Mancunya, Wyrmwoode, Centralya, Esmeraldys
+#    Unregioned                   Veslavia, Valcarena, Tianlu, Akwanta, Sindhara, Hanseong, Mazamba, Qamaria, Selanting, Norvalia
+#
+#  No AdditionalCountry declarations are needed here - every nation is
+#  activated by its own League dataset.
+#
+#
+#  MSC CLUB COMPETITIONS
+#
+#
+* MSC Champions Cup
++ reputation 20
++ international
++ round 1 "Qualification" 17-48
++ week 3 5
++ draw 1
+# 16 seeded clubs go straight to the group stage
++ add 3 from "Itavrnai Union"
++ add 2 from "New Bradman"
++ add 2 from "Vyktoria"
++ add 2 from "Mancunya"
++ add 2 from "Wyrmwoode"
++ add 1 from "Ryukawa"
++ add 1 from "Layn's Wyred"
++ add 1 from "Determi"
++ add 1 from "Nexxie"
++ add 1 from "Jarokn"
+# 32 clubs contest the qualifying round
++ add 2 from "Itavrnai Union"
++ add 2 from "New Bradman"
++ add 2 from "Vyktoria"
++ add 2 from "Mancunya"
++ add 2 from "Wyrmwoode"
++ add 1 from "Ryukawa"
++ add 1 from "Layn's Wyred"
++ add 1 from "Determi"
++ add 1 from "Nexxie"
++ add 1 from "Jarokn"
++ add 2 from "New Rythorn"
++ add 2 from "Centralya"
++ add 2 from "Esmeraldys"
++ add 1 from "Castolo and Minanda"
++ add 1 from "Veslavia"
++ add 1 from "Valcarena"
++ add 1 from "Tianlu"
++ add 1 from "Akwanta"
++ add 1 from "Sindhara"
++ add 1 from "Hanseong"
++ add 1 from "Mazamba"
++ add 1 from "Qamaria"
++ add 1 from "Selanting"
++ add 1 from "Norvalia"
++ round 2 "Group stage" 1-32
++ groups 8
++ week 15 17 19 21 23 25
++ round 3 "Round of 16" 1-16
++ week 28 30
++ round 4 "Quarter Finals" 1-8
++ week 32 34
++ round 5 "Semi Finals" 1-4
++ week 37 39
++ round 6 "Final" 1-2 43
+* MSC Challengers League
++ reputation 17
++ international
++ round 1 "Qualification" 17-48
++ week 7 9
++ exclude "MSC Champions Cup"
++ draw 6
+# STEP TWO OF THE CASCADE. Champions Cup qualifying ends in week 5, so the 16
+# clubs knocked out there are known by the time this draw is made in week 6.
+# They enter seeded, straight into the group stage.
++ noexclude add 16 rank 17 "MSC Champions Cup Qualification"
+# 32 more from the member associations play the qualifying round
++ add 2 from "Itavrnai Union"
++ add 2 from "New Bradman"
++ add 2 from "Vyktoria"
++ add 2 from "Mancunya"
++ add 2 from "Wyrmwoode"
++ add 1 from "Ryukawa"
++ add 1 from "Layn's Wyred"
++ add 1 from "Determi"
++ add 1 from "Nexxie"
++ add 1 from "Jarokn"
++ add 2 from "New Rythorn"
++ add 2 from "Centralya"
++ add 2 from "Esmeraldys"
++ add 1 from "Castolo and Minanda"
++ add 2 from "Veslavia"
++ add 2 from "Valcarena"
++ add 2 from "Tianlu"
++ add 1 from "Akwanta"
++ add 1 from "Sindhara"
++ add 1 from "Hanseong"
++ add 1 from "Mazamba"
++ round 2 "Group stage" 1-32
++ groups 8
++ week 15 17 19 21 23 25
++ round 3 "Round of 16" 1-16
++ week 28 30
++ round 4 "Quarter Finals" 1-8
++ week 32 34
++ round 5 "Semi Finals" 1-4
++ week 37 39
++ round 6 "Final" 1-2 43
+* MSC Conference Trophy
++ reputation 14
++ international
++ round 1 "Qualification" 17-48
++ week 11 13
++ exclude "MSC Champions Cup"
++ exclude "MSC Challengers League"
++ draw 10
+# STEP THREE OF THE CASCADE. Challengers League qualifying ends in week 9, so
+# the 16 clubs knocked out there are known by the time this draw is made in
+# week 10. They enter seeded, straight into the group stage.
++ noexclude add 16 rank 17 "MSC Challengers League Qualification"
+# 32 clubs from the smaller associations contest the qualifying round
++ add 2 from "Castolo and Minanda"
++ add 3 from "Veslavia"
++ add 3 from "Valcarena"
++ add 3 from "Tianlu"
++ add 3 from "Akwanta"
++ add 3 from "Sindhara"
++ add 3 from "Hanseong"
++ add 3 from "Mazamba"
++ add 3 from "Qamaria"
++ add 3 from "Selanting"
++ add 3 from "Norvalia"
++ round 2 "Group stage" 1-32
++ groups 8
++ week 15 17 19 21 23 25
++ round 3 "Round of 16" 1-16
++ week 28 30
++ round 4 "Quarter Finals" 1-8
++ week 32 34
++ round 5 "Semi Finals" 1-4
++ week 37 39
++ round 6 "Final" 1-2 43
+* MSC Cup Winners Cup
++ reputation 16
++ international
++ round 1 "First Round" 1-32
++ week 16 22
++ draw 10
+# every domestic knockout trophy in the Commission - 27 of them
++ add 1 cup-winner "Wyrmfire Cup Final"
++ add 1 cup-winner "Itavrnai Grand Conclave Final"
++ add 1 cup-winner "New Bradman FA Cup Final"
++ add 1 cup-winner "New Bradman League Cup Final"
++ add 1 cup-winner "VFF Cup Final"
++ add 1 cup-winner "Ryukawa Emperor's Cup Final"
++ add 1 cup-winner "Ryukawa Sakura Shield Final"
++ add 1 cup-winner "Rythornsmästerskapet Final"
++ add 1 cup-winner "Copa Unida Final"
++ add 1 cup-winner "Wyred Root Access Cup Final"
++ add 1 cup-winner "Determi Requiem Cup Final Rite"
++ add 1 cup-winner "Nexxie Friendship Trophy Final"
++ add 1 cup-winner "Jarokn Trial of Heroes Apotheosis"
++ add 1 cup-winner "Mancunya Challenge Cup Final"
++ add 1 cup-winner "Cwpan Wyrmwoode Final"
++ add 1 cup-winner "Centralya Cup Final"
++ add 1 cup-winner "Corn Esmeraldys Final"
++ add 1 cup-winner "Kup Veslavije Final"
++ add 1 cup-winner "Copa Valcarena Final"
++ add 1 cup-winner "Tianlu FA Cup Final"
++ add 1 cup-winner "Akwanta Challenge Cup Final"
++ add 1 cup-winner "Sindhara Federation Cup Final"
++ add 1 cup-winner "Hanseong National Cup Final"
++ add 1 cup-winner "Mazamba Knockout Cup Final"
++ add 1 cup-winner "Kas Qamaria Final"
++ add 1 cup-winner "Piala Selanting Final"
++ add 1 cup-winner "Norvalia Open Cup Final"
+# if a domestic cup was not played, the league places its best available club.
+# enough fallbacks are listed to fill all 32 places even if none resolved.
++ <32 add 1 from "Itavrnai Union"
++ <32 add 1 from "New Bradman"
++ <32 add 1 from "Vyktoria"
++ <32 add 1 from "Mancunya"
++ <32 add 1 from "Wyrmwoode"
++ <32 add 1 from "Ryukawa"
++ <32 add 1 from "Layn's Wyred"
++ <32 add 1 from "Determi"
++ <32 add 1 from "Nexxie"
++ <32 add 1 from "Jarokn"
++ <32 add 1 from "New Rythorn"
++ <32 add 1 from "Centralya"
++ <32 add 1 from "Esmeraldys"
++ <32 add 1 from "Castolo and Minanda"
++ <32 add 1 from "Veslavia"
++ <32 add 1 from "Valcarena"
++ <32 add 1 from "Tianlu"
++ <32 add 1 from "Akwanta"
++ <32 add 1 from "Sindhara"
++ <32 add 1 from "Hanseong"
++ <32 add 1 from "Mazamba"
++ <32 add 1 from "Qamaria"
++ <32 add 1 from "Selanting"
++ <32 add 1 from "Norvalia"
++ <32 add 1 from "Itavrnai Union"
++ <32 add 1 from "New Bradman"
++ <32 add 1 from "Vyktoria"
++ <32 add 1 from "Mancunya"
++ <32 add 1 from "Wyrmwoode"
++ <32 add 1 from "Ryukawa"
++ <32 add 1 from "Layn's Wyred"
++ <32 add 1 from "Determi"
++ round 2 "Round of 16" 1-16
++ week 27 29
++ round 3 "Quarter Finals" 1-8
++ week 31 33
++ round 4 "Semi Finals" 1-4
++ week 36 38
++ round 5 "Final" 1-2 42
+* MSC Super Cup
++ reputation 18
++ international
+# All four continental trophy holders in a single group - no knockout, no
+# second chances. Three match days, everyone plays everyone once, and the
+# club that tops the table goes through to the Ultimate Championship.
++ round 1 "Group stage" 1-4
++ groups 1
++ week 46 47 48
++ draw 45
++ add 1 cup-winner "MSC Champions Cup Final"
++ add 1 cup-winner "MSC Cup Winners Cup Final"
++ add 1 cup-winner "MSC Challengers League Final"
++ add 1 cup-winner "MSC Conference Trophy Final"
+* MSC Coronation Qualifier Itavrnai
++ reputation 17
++ international
+# 256 clubs - Itavrnai Union
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 256 from "Itavrnai Union"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Union South
++ reputation 17
++ international
+# 256 clubs - Vyktoria, New Rythorn
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 128 from "Vyktoria"
++ add 128 from "New Rythorn"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Galatyan North
++ reputation 17
++ international
+# 256 clubs - Mancunya, Wyrmwoode
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 128 from "Mancunya"
++ add 128 from "Wyrmwoode"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Galatyan West
++ reputation 17
++ international
+# 256 clubs - Centralya, Esmeraldys
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 128 from "Centralya"
++ add 128 from "Esmeraldys"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Commonwealth
++ reputation 17
++ international
+# 224 clubs - New Bradman, Ryukawa, Castolo and Minanda
+# the 14 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-224 2
++ draw 1
++ add 128 from "New Bradman"
++ add 64 from "Ryukawa"
++ add 32 from "Castolo and Minanda"
++ round 2 "Second Round" 1-112 4
++ round 3 "Third Round" 1-56 6
++ round 4 "Fourth Round" 1-28 8
+* MSC Coronation Qualifier Cyberya
++ reputation 17
++ international
+# 256 clubs - Layn's Wyred, Determi, Nexxie, Jarokn
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 64 from "Layn's Wyred"
++ add 64 from "Determi"
++ add 64 from "Nexxie"
++ add 64 from "Jarokn"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Open North
++ reputation 17
++ international
+# 256 clubs - Veslavia, Valcarena, Tianlu, Akwanta
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 64 from "Veslavia"
++ add 64 from "Valcarena"
++ add 64 from "Tianlu"
++ add 64 from "Akwanta"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Open South
++ reputation 17
++ international
+# 256 clubs - Sindhara, Hanseong, Mazamba, Qamaria
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-256 2
++ draw 1
++ add 64 from "Sindhara"
++ add 64 from "Hanseong"
++ add 64 from "Mazamba"
++ add 64 from "Qamaria"
++ round 2 "Second Round" 1-128 4
++ round 3 "Third Round" 1-64 6
++ round 4 "Fourth Round" 1-32 8
+* MSC Coronation Qualifier Open Reach
++ reputation 17
++ international
+# 128 clubs - Selanting, Norvalia
+# the 16 survivors go through to the Coronation Tournament
++ round 1 "First Round" 1-128 2
++ draw 1
++ add 64 from "Selanting"
++ add 64 from "Norvalia"
++ round 2 "Second Round" 1-64 4
++ round 3 "Third Round" 1-32 6
+* MSC Coronation Tournament
++ reputation 20
++ international
+# Every club in the Commission has a road in: the nine qualifiers between them
+# enter all 2144 clubs, and send 142 survivors here.
+# Nothing is seeded beyond that. From the round of 128 the draw is open.
+# The Coronation enters every club in the Commission, so like the Cup Winners
+# Cup it plays only in weeks the continental competitions leave empty.
++ round 1 "Preliminary Round" 115-142 10
++ draw 9
++ add 16 rank 1 "MSC Coronation Qualifier Itavrnai Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Union South Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Galatyan North Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Galatyan West Fourth Round"
++ add 14 rank 1 "MSC Coronation Qualifier Commonwealth Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Cyberya Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Open North Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Open South Fourth Round"
++ add 16 rank 1 "MSC Coronation Qualifier Open Reach Third Round"
++ round 2 "Round of 128" 1-128 12
++ round 3 "Round of 64" 1-64 14
++ round 4 "Round of 32" 1-32 20
++ round 5 "Round of 16" 1-16 26
++ round 6 "Quarter Finals" 1-8 35
++ round 7 "Semi Finals" 1-4 40
++ round 8 "Coronation Final" 1-2 50
+* MSC Ultimate Championship
++ reputation 20
++ international
+# The last match of the season. The club that won the Coronation Tournament -
+# a straight draw of every club in the Commission - against whoever topped the
+# Super Cup group. One match, week 52, and nothing else is played that week.
++ round 1 "Final" 1-2 52
++ draw 51
++ add 1 cup-winner "MSC Coronation Tournament Coronation Final"
++ add 1 rank 1 "MSC Super Cup Group stage"
+#
+#
+#  MSC NATIONAL TEAM COMPETITIONS
+#
+#
+* MSC World Cup
++ reputation 20
++ international
++ nations
++ round 1 "Group stage" 1-24
++ year 2002
++ offset 4
++ groups 8
++ week 48 49 49
++ add 1 venue
++ venue "Itavrnai Union"
++ venue "New Bradman"
++ venue "Vyktoria"
++ venue "Mancunya"
++ venue "Wyrmwoode"
++ venue "Ryukawa"
++ venue "Layn's Wyred"
++ venue "Determi"
++ venue "Nexxie"
++ venue "Jarokn"
++ venue "New Rythorn"
++ venue "Centralya"
++ venue "Esmeraldys"
++ venue "Castolo and Minanda"
++ venue "Veslavia"
++ venue "Valcarena"
++ venue "Tianlu"
++ venue "Akwanta"
++ venue "Sindhara"
++ venue "Hanseong"
++ venue "Mazamba"
++ venue "Qamaria"
++ venue "Selanting"
++ venue "Norvalia"
+# all 24 members contest the finals; hosts are drawn from the venue list
++ <24 add 1 team "Itavrnai Union"
++ <24 add 1 team "New Bradman"
++ <24 add 1 team "Vyktoria"
++ <24 add 1 team "Mancunya"
++ <24 add 1 team "Wyrmwoode"
++ <24 add 1 team "Ryukawa"
++ <24 add 1 team "Layn's Wyred"
++ <24 add 1 team "Determi"
++ <24 add 1 team "Nexxie"
++ <24 add 1 team "Jarokn"
++ <24 add 1 team "New Rythorn"
++ <24 add 1 team "Centralya"
++ <24 add 1 team "Esmeraldys"
++ <24 add 1 team "Castolo and Minanda"
++ <24 add 1 team "Veslavia"
++ <24 add 1 team "Valcarena"
++ <24 add 1 team "Tianlu"
++ <24 add 1 team "Akwanta"
++ <24 add 1 team "Sindhara"
++ <24 add 1 team "Hanseong"
++ <24 add 1 team "Mazamba"
++ <24 add 1 team "Qamaria"
++ <24 add 1 team "Selanting"
++ <24 add 1 team "Norvalia"
++ round 2 "Round of 16" 1-16 50
++ round 3 "Quarter finals" 1-8 50
++ round 4 "Half finals" 1-4 51
++ round 5 "Match for third place" 3-4 51
++ round 5 "Final" 1-2 51
+* MSC Nations League
++ reputation 18
++ international
++ nations
++ round 1 "League phase" 1-24
++ year 2003
++ offset 2
++ groups 4
++ week 10 14 18 22 26 30 34 38 42 46
++ add 1 team "Itavrnai Union"
++ add 1 team "New Bradman"
++ add 1 team "Vyktoria"
++ add 1 team "Mancunya"
++ add 1 team "Wyrmwoode"
++ add 1 team "Ryukawa"
++ add 1 team "Layn's Wyred"
++ add 1 team "Determi"
++ add 1 team "Nexxie"
++ add 1 team "Jarokn"
++ add 1 team "New Rythorn"
++ add 1 team "Centralya"
++ add 1 team "Esmeraldys"
++ add 1 team "Castolo and Minanda"
++ add 1 team "Veslavia"
++ add 1 team "Valcarena"
++ add 1 team "Tianlu"
++ add 1 team "Akwanta"
++ add 1 team "Sindhara"
++ add 1 team "Hanseong"
++ add 1 team "Mazamba"
++ add 1 team "Qamaria"
++ add 1 team "Selanting"
++ add 1 team "Norvalia"
++ round 2 "Nations League Quarter Finals" 1-8 49
++ round 3 "Nations League Semi Finals" 1-4 50
++ round 4 "Nations League Final" 1-2 51
+* Cyberya Championship
++ reputation 17
++ international
++ nations
+# The 4 members of the Cyberya bloc, one group, then a final.
++ round 1 "Group stage" 1-4
++ groups 1
++ week 6 9 12
++ year 2002
++ offset 4
++ add 1 team "Layn's Wyred"
++ add 1 team "Determi"
++ add 1 team "Nexxie"
++ add 1 team "Jarokn"
++ round 2 "Final" 1-2 16
+* Galatyan Championship
++ reputation 17
++ international
++ nations
+# The 4 members of the Galatyan bloc, one group, then a final.
++ round 1 "Group stage" 1-4
++ groups 1
++ week 6 9 12
++ year 2002
++ offset 4
++ add 1 team "Mancunya"
++ add 1 team "Wyrmwoode"
++ add 1 team "Centralya"
++ add 1 team "Esmeraldys"
++ round 2 "Final" 1-2 16
+* MSC Associates Trophy
++ reputation 13
++ international
++ nations
+# The ten unregioned nations - no bloc, no bloc championship, this instead.
++ round 1 "Group stage" 1-10
++ groups 2
++ week 6 9 12 16 20
++ year 2002
++ offset 4
++ add 1 team "Veslavia"
++ add 1 team "Valcarena"
++ add 1 team "Tianlu"
++ add 1 team "Akwanta"
++ add 1 team "Sindhara"
++ add 1 team "Hanseong"
++ add 1 team "Mazamba"
++ add 1 team "Qamaria"
++ add 1 team "Selanting"
++ add 1 team "Norvalia"
++ round 2 "Semi Finals" 1-4 28
++ round 3 "Final" 1-2 32
+* Nexxus Drako Shield
++ reputation 18
++ international
++ nations
+# The Itavrnai Union and the New Bradmanian Commonwealth compete together - six nations, two groups. This is the bloc championship for both.
++ round 1 "Group stage" 1-6
++ groups 2
++ week 6 9 12
++ year 2002
++ offset 4
++ add 1 team "Itavrnai Union"
++ add 1 team "New Bradman"
++ add 1 team "Vyktoria"
++ add 1 team "Ryukawa"
++ add 1 team "New Rythorn"
++ add 1 team "Castolo and Minanda"
++ round 2 "Semi Finals" 1-4 16
++ round 3 "Final" 1-2 20
+* MSC International Window 1
++ international
++ nations
++ round 1 "Friendly" 1-24 8
++ year 2002
++ offset 1
++ add 24 from everywhere
+* MSC International Window 2
++ international
++ nations
++ round 1 "Friendly" 1-24 24
++ year 2002
++ offset 1
++ add 24 from everywhere
+* MSC International Window 3
++ international
++ nations
++ round 1 "Friendly" 1-24 44
++ year 2002
++ offset 1
++ add 24 from everywhere

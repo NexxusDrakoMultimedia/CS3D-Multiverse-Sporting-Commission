@@ -1,0 +1,173 @@
+# Scouting provider contract: scouting-provider-v1
+#  Created by Nexxus Drako, with Claude's assistance.
+# MSC regions - itavrnai/vyktoria/new-rythorn form the Itavrnai Union,
+# new-bradman/ryukawa/castolo the New Bradmanian Commonwealth,
+# layns-wyred/determi/nexxie/jarokn Cyberya, and
+# mancunya/centralya/wyrmwoode/esmeraldys Galatyan.
+# Ten further nations are unregioned and are sold by nation only.
+# CharterScope sells by competition and by member association.
+! Provider "charterscope" 1
+! Name "CharterScope"
+! Archetype regional-catalog
+! Standing established
+! Coverage family "charterscope.catalog"
+! Annual price drift -100 500
+! Special offer chance 1500
+! Special offer kinds season-start winter-window new-customer win-back
+! Special offer discount 500 1500
+! Special offer validity weeks 4 8
+! Rotating product slots 0
+! Small club maximum reputation 6
+! Small club discount 400 900
+
+: Product "charterscope.one" 1
++ Name "CharterScope One"
++ Family "charterscope.one"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-competition
++ Sales relations global
++ Scope selections 1 1
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 9500 8800
++ Contribution 3400 2300 800
++ Freshness days 14
++ Monthly reference factor 2500
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "charterscope.three" 2
++ Name "CharterScope Three"
++ Family "charterscope.three"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-competition
++ Sales relations global
++ Scope selections 3 3
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 9000 7200
++ Contribution 3600 2100 700
++ Freshness days 14
++ Monthly reference factor 5500
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "charterscope.six" 1
++ Name "CharterScope Six"
++ Family "charterscope.three"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-competition
++ Sales relations global
++ Scope selections 6 6
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 8800 7000
++ Contribution 3600 2100 700
++ Freshness days 14
++ Monthly reference factor 9800
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "charterscope.pro" 2
++ Name "CharterScope Pro"
++ Family "charterscope.pro"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-region
++ Sales relations global
++ Scope selections 1 1
++ Allowed region "itavrnai"
++ Allowed region "vyktoria"
++ Allowed region "new-rythorn"
++ Allowed region "new-bradman"
++ Allowed region "ryukawa"
++ Allowed region "castolo"
++ Allowed region "layns-wyred"
++ Allowed region "determi"
++ Allowed region "nexxie"
++ Allowed region "jarokn"
++ Allowed region "mancunya"
++ Allowed region "centralya"
++ Allowed region "wyrmwoode"
++ Allowed region "esmeraldys"
++ Age 15 99
++ Professional professional-only
++ Market statuses any
++ Divisions 1 99
++ Coverage 8000 5000
++ Contribution 3800 2200 500
++ Freshness days 14
++ Monthly reference factor 8000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "charterscope.bloc" 1
++ Name "CharterScope Bloc"
++ Family "charterscope.pro"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-region
++ Sales relations global
++ Scope selections 3 3
++ Allowed region "itavrnai"
++ Allowed region "vyktoria"
++ Allowed region "new-rythorn"
++ Allowed region "new-bradman"
++ Allowed region "ryukawa"
++ Allowed region "castolo"
++ Allowed region "layns-wyred"
++ Allowed region "determi"
++ Allowed region "nexxie"
++ Allowed region "jarokn"
++ Allowed region "mancunya"
++ Allowed region "centralya"
++ Allowed region "wyrmwoode"
++ Allowed region "esmeraldys"
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 8400 6400
++ Contribution 3700 2200 600
++ Freshness days 14
++ Monthly reference factor 15000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Market "charterscope.commission" 1
++ Name "CharterScope"
++ Kind global
++ Sales reach worldwide
++ Products "charterscope.one" "charterscope.three" "charterscope.six" "charterscope.pro" "charterscope.bloc"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 10000
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 100
+

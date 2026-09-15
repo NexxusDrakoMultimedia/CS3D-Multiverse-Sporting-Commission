@@ -1,0 +1,96 @@
+# Scouting provider contract: scouting-provider-v1
+#  Created by Nexxus Drako, with Claude's assistance.
+# Contract and availability intelligence only - no sporting judgement.
+! Provider "ledgerpulse" 1
+! Name "LedgerPulse"
+! Archetype market-intelligence
+! Standing established
+! Coverage family "ledgerpulse.contract"
+! Annual price drift -100 600
+! Special offer chance 2200
+! Special offer kinds season-start winter-window new-customer win-back
+! Special offer discount 500 1600
+! Special offer validity weeks 4 8
+! Rotating product slots 0
+! Small club maximum reputation 7
+! Small club discount 500 1200
+
+: Product "ledgerpulse.free" 1
++ Name "LedgerPulse Free"
++ Family "ledgerpulse.free"
++ Presentation market-brief
++ Fields identity market-contract
++ Scope global
++ Sales relations global
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses free expiring
++ Divisions 1 99
++ Coverage 8800 8800
++ Contribution 3000 1200 200
++ Freshness days 3
++ Monthly reference factor 1800
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "ledgerpulse.window" 2
++ Name "LedgerPulse Window"
++ Family "ledgerpulse.window"
++ Presentation market-brief
++ Fields identity market-contract
++ Scope global
++ Sales relations global
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses free listed expiring
++ Divisions 1 99
++ Coverage 8500 8500
++ Contribution 3500 1500 200
++ Freshness days 3
++ Monthly reference factor 3500
++ Billing monthly
++ Seasonal access months 12
++ Seasonal charge months 12
++ Availability standard
++ Club reputation 0 20
+
+: Product "ledgerpulse.commission" 2
++ Name "LedgerPulse Commission"
++ Family "ledgerpulse.global"
++ Presentation market-brief
++ Fields identity market-contract
++ Scope global
++ Sales relations global
++ Scope selections 0 0
++ Age 15 99
++ Professional professional-only
++ Market statuses any
++ Divisions 1 99
++ Coverage 7200 4500
++ Contribution 4000 1800 200
++ Freshness days 5
++ Monthly reference factor 6000
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Market "ledgerpulse.commission-market" 1
++ Name "LedgerPulse"
++ Kind global
++ Sales reach worldwide
++ Products "ledgerpulse.free" "ledgerpulse.window" "ledgerpulse.commission"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 10000
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 100
+

@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Sindhara
+! Country "Sindhara"
+! Names "data/names/Sindhara_1st.txt" "data/names/Sindhara_2nd.txt"
+* Sindhara Federation Cup
++ Country "Sindhara"
++ reputation 9
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 7
++ add 64 from "Sindhara"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Sindhara Premier League
++ division 1
++ promotions 0
++ relegations 2
++ reputation 11
+Bhavnagiri Warriors
+Kaveryam FC
+Royal Panchmahal
+Nandigram Warriors
+Sporting Raghunath
+Sporting Indranagar
+Sporting Sindhara
+Amritsagar Lancers
+Indranagar FC
+Raghunath United
+Chandrapal FC
+Sindhara SC
+Kaveryam SC
+Sporting Bharatkund
+Tejpura Warriors
+Devikot XI
+: Sindhara First Division
++ division 2
++ promotions 2
++ relegations 3
++ reputation 9
+Udaygarh FC
+Sindhara Athletic
+Udaygarh XI
+Malabari XI
+Sporting Hariphal
+Naravati FC
+Gangavati Lancers
+Sporting Simhapuri
+Naravati Athletic
+Jaipuram SC
+Sporting Kaveryam
+Simhapuri SC
+Bharatkund Lancers
+Royal Mohanpur
+Royal Surathal
+Naravati Lancers
+: Sindhara Second Division
++ division 3
++ promotions 3
++ relegations 3
++ reputation 7
+Gangavati FC
+Kaveryam United
+Jaipuram Warriors
+Sporting Amritsagar
+Nandigram City FC
+Raghunath FC
+Royal Naravati
+Jaipuram United
+Kaveryam Athletic
+Bhavnagiri Athletic
+Shantipur City FC
+Shantipur SC
+Vidyanagar Mohunbagh
+Simhapuri XI
+Kesarganj Warriors
+Kesarganj United
+: Sindhara Third Division
++ division 4
++ promotions 3
++ relegations 0
++ reputation 5
+Bhavnagiri Lancers
+Devikot SC
+Nandigram Mohunbagh
+Devikot Warriors
+Simhapuri FC
+Indranagar United
+Sporting Jaipuram
+Devikot Athletic
+Bharatkund XI
+Royal Shantipur
+Amritsagar United
+Udaygarh Lancers
+Amritsagar XI
+Sporting Vidyanagar
+Mohanpur Lancers
+Royal Udaygarh

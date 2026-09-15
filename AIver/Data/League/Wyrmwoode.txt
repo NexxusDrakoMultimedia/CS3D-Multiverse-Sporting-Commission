@@ -1,0 +1,194 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Wyrmwoode
+! Country "Wyrmwoode"
+! Names "data/names/Wyrmwoode_1st.txt" "data/names/Wyrmwoode_2nd.txt"
+* Cwpan Wyrmwoode
++ Country "Wyrmwoode"
++ reputation 13
+# Staggered entry by rank; two-legged semi finals.
++ round 1 "First Round" 65-128 3
++ draw 3
+# seeded clubs enter later, as the Galatyan associations all insist
++ add 32 from "Wyrmwoode"
++ add 32 from "Wyrmwoode"
++ add 64 from "Wyrmwoode"
++ round 2 "Second Round" 33-96 5
++ round 3 "Third Round" 1-64 8
++ round 4 "Fourth Round" 1-32 12
++ round 5 "Round of 16" 1-16 17
++ round 6 "Quarter Finals" 1-8 24
++ round 7 "Semi Finals" 1-4
++ week 32 34
++ round 8 "Final" 1-2 41
+: Wyrmwoode Uwch Gynghrair
++ division 1
++ promotions 0
++ relegations 2
++ reputation 16
+Caergybion Wanderers
+Ebbwyth FC
+Conwydd Borough
+Dinas Blaenafwyn
+Dolgellan Wanderers
+Cydweliog Wanderers
+Clwb Maesyfelin
+Tremadwyn Athletic
+Aberdwyn Rovers
+Dinas Bethesdwy
+Merthwyr United
+Dinas Conwydd
+Glyncorwyn Wanderers
+Caergybion Athletic
+AFC Caergybion
+Clwb Cydweliog
+: Wyrmwoode Cynghrair Un
++ division 2
++ promotions 2
++ relegations 2
++ reputation 15
+CPD Machynwydd
+Conwydd Wanderers
+Dinas Carmarthwyn
+CPD Merthwyr
+Llanfaergwyn Borough
+Aberhonddwy Wanderers
+Dinas Maesyfelin
+Denbighwyn Rangers
+Penrhosgwyn Rovers
+Tonypandwy United
+Blaenafwyn Wanderers
+Conwydd FC
+Caergybion FC
+Dinas Cydweliog
+AFC Denbighwyn
+Tonypandwy Athletic
+: Wyrmwoode Cynghrair Dau
++ division 3
++ promotions 2
++ relegations 2
++ reputation 14
+Denbighwyn Rovers
+Clwb Blaenafwyn
+Ystradfawr United
+AFC Llanfaergwyn
+Ebbwyth Borough
+CPD Caerlynnyth
+Aberhonddwy FC
+Dinas Llanelwydd
+Rhoswydden Borough
+Cwmbrannog Rangers
+CPD Llanfaergwyn
+CPD Denbighwyn
+Dinas Penrhosgwyn
+Maesyfelin Borough
+Dinas Pontrhydfen
+Clwb Bethesdwy
+: Wyrmwoode Cynghrair Tri
++ division 4
++ promotions 2
++ relegations 3
++ reputation 13
+Cydweliog Borough
+AFC Penrhosgwyn
+Caerlynnyth Borough
+Rhondwydd Rangers
+Ystradfawr Rangers
+Caergybion United
+Ebbwyth Rovers
+Llanelwydd Wanderers
+AFC Cydweliog
+Nantyfyddin Rangers
+Aberhonddwy Rangers
+Carmarthwyn Town
+Ebbwyth United
+Clwb Tonypandwy
+CPD Bangorwen
+Nantyfyddin Town
+: Wyrmwoode Cynghrair Pedwar
++ division 5
++ promotions 3
++ relegations 3
++ reputation 12
+Llwynhelyg Town
+Conwydd Rangers
+AFC Blaenafwyn
+AFC Carmarthwyn
+Tremadwyn Borough
+CPD Llandeilwyn
+Pwllheliog Athletic
+Clwb Pontrhydfen
+Merthwyr Rangers
+AFC Llandeilwyn
+Bangorwen Rangers
+Cwmbrannog Wanderers
+Caerlynnyth United
+Pontrhydfen Town
+Tonypandwy Borough
+CPD Carmarthwyn
+: Wyrmwoode Cynghrair Pump
++ division 6
++ promotions 3
++ relegations 3
++ reputation 11
+AFC Tremadwyn
+Carmarthwyn Borough
+Maesyfelin Rangers
+CPD Pontrhydfen
+Llwynhelyg Wanderers
+AFC Ystradfawr
+AFC Nantyfyddin
+Pontrhydfen United
+Blaenafwyn Town
+Clwb Llanelwydd
+CPD Tremadwyn
+Clwb Penrhosgwyn
+Llandeilwyn Borough
+AFC Cwmbrannog
+Pontrhydfen Athletic
+CPD Conwydd
+: Wyrmwoode Cynghrair Chwech
++ division 7
++ promotions 3
++ relegations 4
++ reputation 10
+Bangorwen United
+Llanfaergwyn Athletic
+Clwb Rhondwydd
+Ystradfawr Wanderers
+Conwydd Rovers
+Blaenafwyn Rangers
+Penrhosgwyn FC
+Dinas Dolgellan
+Machynwydd Town
+Rhondwydd Athletic
+Trefeirwyn Borough
+Llanelwydd Borough
+Cydweliog Athletic
+Caerlynnyth Rovers
+Trefeirwyn Rangers
+Glyncorwyn United
+: Wyrmwoode Cynghrair Saith
++ division 8
++ promotions 4
++ relegations 0
++ reputation 9
+AFC Machynwydd
+Maesyfelin United
+Dinas Ystradfawr
+Caerlynnyth Wanderers
+Nantyfyddin Borough
+Dinas Caerlynnyth
+Glyncorwyn Rovers
+Llwynhelyg Athletic
+Cwmbrannog Borough
+Trefeirwyn FC
+Dinas Bangorwen
+Clwb Merthwyr
+Caergybion Town
+Cydweliog Rangers
+Rhondwydd Rovers
+CPD Pwllheliog

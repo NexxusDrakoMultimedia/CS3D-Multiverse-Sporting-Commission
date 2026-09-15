@@ -1,0 +1,194 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Centralya
+! Country "Centralya"
+! Names "data/names/Centralya_1st.txt" "data/names/Centralya_2nd.txt"
+* Centralya Cup
++ Country "Centralya"
++ reputation 11
+# Staggered entry by rank; two-legged semi finals.
++ round 1 "First Round" 65-128 3
++ draw 4
+# seeded clubs enter later, as the Galatyan associations all insist
++ add 32 from "Centralya"
++ add 32 from "Centralya"
++ add 64 from "Centralya"
++ round 2 "Second Round" 33-96 5
++ round 3 "Third Round" 1-64 8
++ round 4 "Fourth Round" 1-32 12
++ round 5 "Round of 16" 1-16 17
++ round 6 "Quarter Finals" 1-8 24
++ round 7 "Semi Finals" 1-4
++ week 32 34
++ round 8 "Final" 1-2 41
+: Centralya Premiership
++ division 1
++ promotions 0
++ relegations 2
++ reputation 14
+Queen of Carnoustrie
+Inverdarroch Thistle
+Fettercarn Rovers
+Ardnavaig United
+Kilbrannoch Rovers
+Invergowran Academical
+Queen of Fettercarn
+Tullochry County
+Lanrickmuir Athletic
+Ochilree Athletic
+Auchterloch Rangers
+Queen of Pitlochran
+Glenarvie Academical
+Gartmorran Thistle
+Selkirven Academical
+Kilbrannoch Caledonian
+: Centralya First Division
++ division 2
++ promotions 2
++ relegations 2
++ reputation 13
+Selkirven Albion
+Balmorrow Athletic
+Queen of Peniculm
+Pitlochran Academical
+Queen of Gartmorran
+Kilbrannoch Thistle
+Queen of Nethergask
+Drumlanark County
+Craigmuir Academical
+Queen of Kirkbraes
+Gartmorran Rovers
+Lochranmore FC
+Eaglesbrae Thistle
+Ochilree United
+Dunsleath Caledonian
+Muirhead Rangers
+: Centralya Second Division
++ division 3
++ promotions 2
++ relegations 3
++ reputation 12
+Fettercarn Rangers
+Jedburne Albion
+Kilbrannoch Albion
+Eaglesbrae County
+Monifeith Victoria
+Balmorrow Academical
+Hawickdale Rangers
+Bennachar Thistle
+Monifeith FC
+Balmorrow Rangers
+Strathkellan Academical
+Tullochry Athletic
+Hawickdale Victoria
+Drumlanark FC
+Muirhead Albion
+Lanrickmuir Thistle
+: Centralya Third Division
++ division 4
++ promotions 3
++ relegations 3
++ reputation 11
+Eaglesbrae Victoria
+Balmorrow Thistle
+Peniculm Academical
+Queen of Auchterloch
+Stranbrae Academical
+Nethergask Academical
+Queen of Ochilree
+Nethergask FC
+Dunsleath Thistle
+Stranbrae Thistle
+Inverdarroch County
+Ochilree Academical
+Invergowran Victoria
+Rannochmore Rovers
+Pitlochran Thistle
+Pitlochran County
+: Centralya Fourth Division
++ division 5
++ promotions 3
++ relegations 3
++ reputation 10
+Lochranmore County
+Craigmuir Rangers
+Kirkbraes Victoria
+Ardnavaig Albion
+Strathkellan Caledonian
+Craigmuir Albion
+Fettercarn Victoria
+Carnoustrie Victoria
+Queen of Muirhead
+Gartmorran United
+Queen of Rannochmore
+Gartmorran Albion
+Inverdarroch Athletic
+Bennachar United
+Ochilree Thistle
+Kelsoch Academical
+: Centralya Fifth Division
++ division 6
++ promotions 3
++ relegations 3
++ reputation 9
+Balmorrow FC
+Kelsoch Thistle
+Kelsoch Athletic
+Nethergask Caledonian
+Strathkellan Albion
+Craigmuir FC
+Rannochmore United
+Glenarvie Caledonian
+Lanrickmuir FC
+Bennachar Athletic
+Eaglesbrae United
+Invergowran Albion
+Lochranmore Victoria
+Pitlochran United
+Lochranmore Academical
+Kilbrannoch Academical
+: Centralya Sixth Division
++ division 7
++ promotions 3
++ relegations 4
++ reputation 8
+Muirhead FC
+Gartmorran FC
+Queen of Lanrickmuir
+Queen of Strathkellan
+Drumlanark Victoria
+Craigmuir Athletic
+Tullochry Rovers
+Muirhead Rovers
+Lochranmore Rovers
+Fettercarn FC
+Ardnavaig FC
+Monifeith Thistle
+Kilbrannoch Victoria
+Dunsleath County
+Inverdarroch Albion
+Inverdarroch United
+: Centralya Seventh Division
++ division 8
++ promotions 4
++ relegations 0
++ reputation 7
+Craigmuir Rovers
+Inverdarroch Caledonian
+Eaglesbrae Athletic
+Craigmuir Caledonian
+Kirkbraes Thistle
+Inverdarroch Rangers
+Queen of Craigmuir
+Selkirven Thistle
+Ochilree FC
+Muirhead Victoria
+Lochranmore Rangers
+Jedburne United
+Rannochmore County
+Inverdarroch FC
+Pitlochran Athletic
+Stranbrae Albion

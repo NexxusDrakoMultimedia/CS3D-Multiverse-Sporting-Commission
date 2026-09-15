@@ -1,0 +1,198 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# New Rythorn
+! Country "New Rythorn"
+! Names "data/names/New Rythorn_1st.txt" "data/names/New Rythorn_2nd.txt"
+* Rythornsmästerskapet
++ Country "New Rythorn"
++ reputation 11
+# Quarter finals and semi finals are both played over two legs.
+# The final closes the calendar in week 52.
++ round 1 "Första omgången" 65-128 3
++ draw 4
+# the 32 best clubs enter at the third round
++ add 32 from "New Rythorn"
+# the next 32 enter at the second round
++ add 32 from "New Rythorn"
+# the remaining 64 start in the first round
++ add 64 from "New Rythorn"
++ round 2 "Andra omgången" 33-96 5
++ round 3 "Tredje omgången" 1-64 8
++ round 4 "Fjärde omgången" 1-32 12
++ round 5 "Åttondelsfinal" 1-16 17
++ round 6 "Kvartsfinal" 1-8
++ week 24 26
++ round 7 "Semifinal" 1-4
++ week 32 34
++ round 8 "Final" 1-2 41
+: Rythorn Överliga
++ division 1
++ promotions 0
++ relegations 2
++ reputation 14
+Ålvik FK
+Snöberg FK
+Steinsnes GIF
+Tveitholm AIF
+Snöberg AIF
+Idrott Sagaberg
+Orrefjäll FK
+Eldvik IF
+Gullborg GIF
+IFK Granvik
+Vindheim IF
+Klippholm Ballklubb
+Thyrsvik Fotball
+Eldvik FF
+IFK Skarsvik
+Orrefjäll GIF
+: Rythorn Division Ett
++ division 2
++ promotions 2
++ relegations 2
++ reputation 12
+Kjellstad Fotball
+Klippholm SK
+Vindheim FK
+Löfstrand AIF
+Idrott Solvang
+Eldvik AIF
+Bjørnstad IF
+Granvik IK
+Klippholm IF
+Silverås SK
+Rythorn GIF
+Vinterholm BK
+Norrhavn FF
+Malmberga BK
+Tjørnhaug GIF
+Solvang IF
+: Rythorn Division Två
++ division 3
++ promotions 2
++ relegations 3
++ reputation 10
+Fjelland IF
+Tjørnhaug IK
+Snöberg IK
+Nordhem IK
+IFK Solvang
+Vindheim Ballklubb
+Thyrsvik SK
+Orrefjäll Fotball
+Tveitholm Fotball
+Ravnstad AIF
+Vindheim AIF
+Kjellstad FF
+Nyhamn BK
+Norrhavn Ballklubb
+Ravnstad Fotball
+Tveitholm IK
+: Rythorn Division Tre
++ division 4
++ promotions 3
++ relegations 3
++ reputation 9
+Thyrsvik Ballklubb
+Tveitholm FF
+Bjørnstad IK
+Espeland GIF
+Tjørnhaug IF
+Idrott Rythorn
+Åsgarden FK
+Rythorn Ballklubb
+IFK Snöberg
+Gullborg Ballklubb
+Sørvåg GIF
+Isgard BK
+Myrdal FK
+Åsgarden GIF
+Idrott Halvarn
+Hjaldur SK
+: Rythorn Division Fyra
++ division 5
++ promotions 3
++ relegations 3
++ reputation 7
+Idrott Runheim
+Gullborg FF
+Löfstrand BK
+Solvang AIF
+Orrefjäll FF
+Ormsby FF
+Hjaldur FF
+Runheim FK
+Hammerfjell FF
+Solvang IK
+Ravnstad Ballklubb
+IFK Kvitfjell
+Gullborg BK
+Fjelland BK
+Kvitfjell GIF
+Steinsnes BK
+: Rythorn Division Fem
++ division 6
++ promotions 3
++ relegations 4
++ reputation 5
+Malmberga SK
+Kjellstad BK
+Lindfors FF
+Idrott Vinterholm
+Ulvøy IF
+Halvarn SK
+Malmberga IF
+IFK Halvarn
+Idrott Lindfors
+Kjellstad FK
+Stormfjord AIF
+Vesterby Ballklubb
+Nordhem FK
+Hjaldur FK
+Rythorn IF
+Vindheim FF
+: Rythorn Division Sex
++ division 7
++ promotions 4
++ relegations 4
++ reputation 4
+IFK Hjaldur
+IFK Lindfors
+Silverås BK
+Eldvik IK
+Tveitholm Ballklubb
+Lindfors Ballklubb
+Idrott Tjørnhaug
+Snöberg SK
+Idrott Gullborg
+Stormfjord Fotball
+Stormfjord Ballklubb
+IFK Vindheim
+Kjellstad SK
+Kvitfjell AIF
+IFK Tjørnhaug
+Myrdal IF
+: Rythorn Division Sju
++ division 8
++ promotions 4
++ relegations 0
++ reputation 2
+Norrhavn GIF
+Steinsnes SK
+Sagaberg BK
+Idrott Kvitfjell
+Trondsby BK
+Eldvik SK
+Skarsvik FF
+Stormfjord IK
+Ravnstad GIF
+Idrott Ulvøy
+Tjørnhaug BK
+IFK Bjergdal
+Granvik FK
+Bjergdal Fotball
+IFK Hammerfjell
+Ormsby FK

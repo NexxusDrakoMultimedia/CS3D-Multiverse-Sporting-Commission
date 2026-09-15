@@ -1,0 +1,105 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Layn's Wyred
+! Country "Layn's Wyred"
+! Names "data/names/Layn's Wyred_1st.txt" "data/names/Layn's Wyred_2nd.txt"
+* Wyred Root Access Cup
++ Country "Layn's Wyred"
++ reputation 12
+# Top two layers only: eight groups, then straight down the stack.
++ round 1 "Handshake group stage" 1-32
++ groups 8
++ week 3 5 7 9 11 13
++ draw 3
++ add 32 from "Layn's Wyred"
++ round 2 "Round of 16" 1-16 15
++ round 3 "Quarter Finals" 1-8 17
++ round 4 "Semi Finals" 1-4 26
++ round 5 "Final" 1-2 41
+: Wyred Mainline
++ division 1
++ promotions 0
++ relegations 2
++ reputation 15
+Overdrive of Cryowake
+Overclock-88
+Sector 2 Ashline
+Highwire Volt
+Coolant//Daemons
+Synapse-88
+AC Darkfiber.exe
+Brightwire//Wardrivers
+Kessgrid//Bitrot
+Blacksite//Runners
+Chromehaven-9
+Highwire//Overdrive
+Sector 21 Static Bay
+Sector 13 Brightwire
+Cryowake//Circuit
+Bitrot of Overclock
+: Wyred Sublayer
++ division 2
++ promotions 2
++ relegations 2
++ reputation 13
+Highwire Daemons
+Sector 88 Uplink
+Ashline-13
+FC Lowvolt
+Sector 88 Lowvolt
+Static Bay Overdrive
+Ghosts of Synapse
+Sector 9 Cryowake
+Ashline Relays
+Circuit of Chromehaven
+Cryowake Nullstack
+Redshift Daemons
+Lowvolt FC
+AC Saltflux.exe
+Uplink Circuit
+Static Bay//Volt
+: Wyred Deepnet
++ division 3
++ promotions 2
++ relegations 2
++ reputation 11
+Proxies of Neon Sprawl
+Redshift Runners
+Saltflux Volt
+Redshift//Volt
+Overdrive of Uplink
+Sector 2 Saltflux
+Proxies of Static Bay
+Deadzone Nullstack
+Saltflux Athletic
+Coolant Circuit
+Proxies of Machinehall
+Saltflux//Wardrivers
+Hexline-88
+Lowvolt//Overdrive
+Chromehaven//Spikes
+Sector 88 Neon Sprawl
+: Wyred Darknet
++ division 4
++ promotions 2
++ relegations 0
++ reputation 9
+Sector 88 Saltflux
+Nullstack of Chromehaven
+Hexline Daemons
+Machinehall//Wardrivers
+Overdrive of Nullport
+Greyware//Volt
+Cryowake Spikes
+Runners of Nullport
+Neon Sprawl Circuit
+Cryowake Daemons
+Sector 21 Hexline
+Uplink//Volt
+Lowvolt//Nullstack
+Machinehall-21
+Sector 4 Uplink
+AC Chromehaven.exe

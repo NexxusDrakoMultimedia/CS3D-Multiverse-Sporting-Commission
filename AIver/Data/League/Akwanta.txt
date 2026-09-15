@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Akwanta
+! Country "Akwanta"
+! Names "data/names/Akwanta_1st.txt" "data/names/Akwanta_2nd.txt"
+* Akwanta Challenge Cup
++ Country "Akwanta"
++ reputation 9
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 6
++ add 64 from "Akwanta"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Akwanta Premier Division
++ division 1
++ promotions 0
++ relegations 3
++ reputation 11
+Real Sekondari
+Bamakou United
+Konakri FC
+Techimana Hearts
+Sporting Yendiwa
+Bamakou FC
+Abidjeni Elephants
+Makurdi FC
+Ouagadou Elephants
+Zariya Hearts
+Akwanta United
+Sporting Bamakou
+Makurdi Elephants
+Enuguwa FC
+Bissauri FC
+Yendiwa United
+: Akwanta First Division
++ division 2
++ promotions 3
++ relegations 3
++ reputation 9
+Real Cotonu
+Ibadanle Rangers
+Ilesoro United
+Konakri Hearts
+Invincible Lomeji
+Techimana FC
+Real Abidjeni
+Sekondari Eagles
+Sporting Enuguwa
+Real Niameyo
+Warridun United
+Real Zariya
+Ibadanle United
+Ouagadou Eagles
+Bissauri Hearts
+Ouagadou Hearts
+: Akwanta Second Division
++ division 3
++ promotions 3
++ relegations 4
++ reputation 7
+Real Lomeji
+Oyolabi Rangers
+Cotonu Elephants
+Sporting Bolgatan
+Real Oyolabi
+Invincible Oyolabi
+Tamalewu Hearts
+Invincible Warridun
+Zariya United
+Invincible Techimana
+Sokotan United
+Yendiwa Lions
+Real Warridun
+Real Kanoye
+Lomeji Stars
+Akwanta Elephants
+: Akwanta Third Division
++ division 4
++ promotions 4
++ relegations 0
++ reputation 5
+Invincible Ibadanle
+Makurdi Lions
+Lomeji Lions
+Zariya Stars
+Yendiwa Eagles
+Abidjeni Eagles
+Ouagadou FC
+Akwanta Hearts
+Sporting Zariya
+Enuguwa Lions
+Sporting Techimana
+Warridun Lions
+Yendiwa Stars
+Invincible Bamakou
+Cotonu Stars
+Bamakou Rangers

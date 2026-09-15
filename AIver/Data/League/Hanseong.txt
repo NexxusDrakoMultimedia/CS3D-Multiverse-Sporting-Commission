@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Hanseong
+! Country "Hanseong"
+! Names "data/names/Hanseong_1st.txt" "data/names/Hanseong_2nd.txt"
+* Hanseong National Cup
++ Country "Hanseong"
++ reputation 9
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 3
++ add 64 from "Hanseong"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Hanseong K-Prime
++ division 1
++ promotions 0
++ relegations 2
++ reputation 11
+Daeyang Steelers
+Hanseong FC
+Taebaek Tigers
+Andeok Tigers
+Seorabeol Dragons
+Yeongdo Greeners
+Namhae Skywings
+Andeok United
+Hwaryeong Athletic
+Cheongho Dragons
+Jeonhae Tigers
+Poryeong FC
+Daeyang Skywings
+Suyeon Athletic
+Incheol Tigers
+Yeongdo Steelers
+: Hanseong Ilbu
++ division 2
++ promotions 2
++ relegations 2
++ reputation 9
+Taebaek Steelers
+Sangwon Citizen
+Bukcheon Citizen
+Gwangmyeo Steelers
+Hanseong Citizen
+Yangju Citizen
+Jinyang FC
+Chuncheol Hanguk
+Yangju United
+Hanseong Athletic
+Cheongho Citizen
+Hanseong Dragons
+Gangneon Hanguk
+Poryeong Sportive
+Seorabeol Sportive
+Jinyang Hanguk
+: Hanseong Ibu
++ division 3
++ promotions 2
++ relegations 2
++ reputation 7
+Jeonhae Hanguk
+Poryeong Steelers
+Bukcheon Athletic
+Andeok Dragons
+Sangwon Steelers
+Andeok Athletic
+Gimhaeng Athletic
+Hwaryeong Skywings
+Seorabeol United
+Ulryeong Steelers
+Ulryeong FC
+Namhae Hanguk
+Yangju Greeners
+Yeongdo United
+Chuncheol Greeners
+Andeok FC
+: Hanseong Sambu
++ division 4
++ promotions 2
++ relegations 0
++ reputation 5
+Namhae Dragons
+Suyeon Steelers
+Gwangmyeo Citizen
+Suyeon Skywings
+Yeongdo Skywings
+Incheol Greeners
+Ulryeong Citizen
+Andeok Steelers
+Seorabeol Skywings
+Gangneon Citizen
+Cheongho Steelers
+Namhae Greeners
+Chuncheol FC
+Gimhaeng FC
+Poryeong Hanguk
+Hwaryeong Dragons

@@ -1,0 +1,146 @@
+# Scouting provider contract: scouting-provider-v1
+#  Created by Nexxus Drako, with Claude's assistance.
+# The Commission's own compulsory club register. Thin, cheap and
+# everywhere - every member association files into it.
+! Provider "registry" 1
+! Name "Commission Registry"
+! Archetype registry
+! Standing established
+! Coverage family "registry.records"
+! Annual price drift -200 400
+! Special offer chance 1800
+! Special offer kinds season-start new-customer win-back
+! Special offer discount 500 1400
+! Special offer validity weeks 4 8
+! Rotating product slots 0
+! Small club maximum reputation 7
+! Small club discount 500 1000
+
+: Product "registry.local" 1
++ Name "Registry Local"
++ Family "registry.local"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope club-home-competition
++ Sales relations core
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 9600 9200
++ Contribution 3300 2200 800
++ Freshness days 30
++ Monthly reference factor 1800
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Product "registry.national" 1
++ Name "Registry National"
++ Family "registry.national"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope provider-market-nation
++ Sales relations core regional export
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 9200 7000
++ Contribution 3500 2100 700
++ Freshness days 30
++ Monthly reference factor 4500
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+: Market "registry.itavrnai" 1
++ Name "Registry Itavrnai Union"
++ Kind local
++ Home nation "Itavrnai Union"
++ Sales reach worldwide
++ Products "registry.local" "registry.national"
++ Core price factor 9000
++ Regional price factor 11000
++ Export price factor 13000
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 400
+
+: Market "registry.bradman" 1
++ Name "Registry New Bradman"
++ Kind local
++ Home nation "New Bradman"
++ Sales reach worldwide
++ Products "registry.local" "registry.national"
++ Core price factor 8800
++ Regional price factor 10800
++ Export price factor 12800
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 300
+
+: Market "registry.vyktoria" 1
++ Name "Registry Vyktoria"
++ Kind local
++ Home nation "Vyktoria"
++ Sales reach worldwide
++ Products "registry.local" "registry.national"
++ Core price factor 8500
++ Regional price factor 10500
++ Export price factor 12500
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 250
+
+: Market "registry.mancunya" 1
++ Name "Registry Mancunya"
++ Kind local
++ Home nation "Mancunya"
++ Sales reach worldwide
++ Products "registry.local" "registry.national"
++ Core price factor 8600
++ Regional price factor 10600
++ Export price factor 12600
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 200
+
+: Market "registry.wyrmwoode" 1
++ Name "Registry Wyrmwoode"
++ Kind local
++ Home nation "Wyrmwoode"
++ Sales reach worldwide
++ Products "registry.local" "registry.national"
++ Core price factor 8400
++ Regional price factor 10400
++ Export price factor 12400
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 150
+
+: Market "registry.ryukawa" 1
++ Name "Registry Ryukawa"
++ Kind local
++ Home nation "Ryukawa"
++ Sales reach worldwide
++ Products "registry.local" "registry.national"
++ Core price factor 8200
++ Regional price factor 10200
++ Export price factor 12200
++ Global price factor 0
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 100
+

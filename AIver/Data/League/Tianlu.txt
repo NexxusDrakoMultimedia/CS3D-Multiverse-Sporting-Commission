@@ -1,0 +1,104 @@
+#
+#  Multiverse Sporting Commission - member association dataset
+#  Created by Nexxus Drako, with Claude's assistance.
+#  Built for the MSC forum roleplay. All clubs are fictional.
+#
+# Tianlu
+! Country "Tianlu"
+! Names "data/names/Tianlu_1st.txt" "data/names/Tianlu_2nd.txt"
+* Tianlu FA Cup
++ Country "Tianlu"
++ reputation 10
+# All four divisions enter at the first round.
++ round 1 "First Round" 1-64 3
++ draw 5
++ add 64 from "Tianlu"
++ round 2 "Second Round" 1-32 5
++ round 3 "Round of 16" 1-16 10
++ round 4 "Quarter Finals" 1-8 17
++ round 5 "Semi Finals" 1-4 27
++ round 6 "Final" 1-2 39
+: Tianlu Super League
++ division 1
++ promotions 0
++ relegations 2
++ reputation 12
+Guanghe FC
+Hanyang Zhongxing
+Xingyu Hongyun
+Jiangbei Lianhe
+Huadong Zhongxing
+Zhaolin Shenlong
+Baoshan United
+Hanyang Hongyun
+Jiangbei Star
+Nanhai Zhongxing
+Xilong Lianhe
+Zhaolin City
+Jinshan United
+Baoshan Athletic
+Beiyang Dragons
+Tianlu Hongyun
+: Tianlu League One
++ division 2
++ promotions 2
++ relegations 2
++ reputation 10
+Shunlin City
+Ruilin City
+Baoshan Star
+Nanhai Star
+Jinshan Tigers
+Ruilin Dragons
+Yunhe Zhongxing
+Chengkou City
+Dongfang Hongyun
+Shunlin Lianhe
+Liuzhen Tigers
+Meixi Tigers
+Hanyang FC
+Shunlin Dragons
+Jinshan FC
+Dongfang United
+: Tianlu League Two
++ division 3
++ promotions 2
++ relegations 3
++ reputation 8
+Guanghe Tigers
+Jinshan Star
+Beiyang FC
+Dongfang FC
+Kunlai Lianhe
+Yunhe Star
+Dongfang Lianhe
+Kunlai Hongyun
+Huadong City
+Xilong Tigers
+Meixi Athletic
+Zhaolin United
+Chengkou Shenlong
+Chengkou Star
+Qingfeng FC
+Kunlai Zhongxing
+: Tianlu League Three
++ division 4
++ promotions 3
++ relegations 0
++ reputation 6
+Nanhai Shenlong
+Meixi Hongyun
+Fuyuan Dragons
+Jiangbei Shenlong
+Huadong Star
+Beiyang Hongyun
+Meixi Star
+Liuzhen FC
+Wanling Tigers
+Huadong Hongyun
+Chengkou Athletic
+Zhaolin Star
+Liuzhen Dragons
+Kunlai Tigers
+Xingyu City
+Qingfeng Star
