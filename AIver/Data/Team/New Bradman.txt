@@ -1,7 +1,0 @@
-! name "New Bradman"
-! 1 shirt claret
-! 1 shorts darkblue
-! 1 socks claret
-! 2 shirt darkblue
-! 2 shorts claret
-! 2 socks darkblue

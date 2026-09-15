@@ -6,6 +6,13 @@
 # Castolo and Minanda
 ! Country "Castolo and Minanda"
 ! Names "data/names/Castolo and Minanda_1st.txt" "data/names/Castolo and Minanda_2nd.txt"
+# national colours
+! 1 shirt #00007f
+! 1 shorts #ffffff
+! 1 socks #00007f
+! 2 shirt #ffffff
+! 2 shorts #00007f
+! 2 socks #ffffff
 * Copa Unida
 #! lane all
 + Country "Castolo and Minanda"

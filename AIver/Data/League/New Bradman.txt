@@ -6,6 +6,13 @@
 # New Bradman
 ! Country "New Bradman"
 ! Names "data/names/New Bradman_1st.txt" "data/names/New Bradman_2nd.txt"
+# national colours
+! 1 shirt #7f0000
+! 1 shorts #00007f
+! 1 socks #7f0000
+! 2 shirt #00007f
+! 2 shorts #7f0000
+! 2 socks #00007f
 * New Bradman FA Cup
 #! lane all
 + Country "New Bradman"

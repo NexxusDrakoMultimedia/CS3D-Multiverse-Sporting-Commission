@@ -1,7 +1,0 @@
-! name "Ryukawa"
-! 1 shirt red
-! 1 shorts yellow
-! 1 socks red
-! 2 shirt yellow
-! 2 shorts red
-! 2 socks yellow

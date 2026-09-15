@@ -6,13 +6,13 @@ A standalone football world for **Championship Soccer**.
 that runs from a 2,144-club Coronation down to a single match for everything in week 52.
 
 **Created by Nexxus Drako, with Claude's assistance.**
-Version 1.0.1 · Every club, nation and competition is fictional.
+Version 1.0.2 · Every club, nation and competition is fictional.
 
 ---
 
 ## Install
 
-**Step 1 — the world.** Put the `Multiverse Sporting Commission v1.0.1` folder (or its zip)
+**Step 1 — the world.** Put the `Multiverse Sporting Commission v1.0.2` folder (or its zip)
 into:
 
 ```
@@ -48,13 +48,11 @@ Data\
   Nationalities.txt            country identities, aliases, region taxonomy
   League\                      24 nation files + International teams and tournaments.txt
   ScoutingProvider\            eight scouting providers, 23 packages
-  Team\                        AFC Nexxus Drako + five national kits
   Names\                       48 name lists - copy these out, see step 2
 ```
 
-Every club but one is generated from its nation's name lists, with no `Player\` folder at
-all, which is what keeps a 2,144-club world under 600 KB. `Data\Team` holds one club, AFC
-Nexxus Drako, and the kits of the five national teams that have declared colours.
+Every club is generated from its nation's name lists, with no `Team\` or `Player\`
+folder at all, which is what keeps a 2,144-club world under 550 KB.
 
 ---
 
@@ -110,25 +108,24 @@ promotion count of the tier below, so division sizes never drift.
 tier four, club for club and in thread order. Vyktoria's ten original amateur clubs stay
 together at the foot of the pyramid in V-League Eight.
 
-**AFC Nexxus Drako** plays in the Itavrnai twelfth flight: reputation nil, twenty-five
-players none over 20, ability in the fifties and sixties against potential in the two-tens
-and twenties. Claret and gold. It is the world's only club with a `Data\Team` file.
+**AFC Nexxus Drako** plays in the Itavrnai twelfth flight, the bottom tier of the deepest
+pyramid in the world. Like every other club it has no file of its own — its squad, kit and
+reputation are generated at career start.
 
 ### Colours
 
-Five associations have declared national colours:
+Five associations carry declared colours, written into their `Data\League` file beneath
+`! Names`:
 
 | Nation | Home | Change |
 |---|---|---|
-| Itavrnai Union | yellow | blue |
-| Vyktoria | claret | gold |
-| New Bradman | claret | darkblue |
-| Ryukawa | red | yellow |
-| Castolo and Minanda | darkblue | white |
+| Itavrnai Union | `#ffff00` | `#0000ff` |
+| Vyktoria | `#7f0000` | `#ffd900` |
+| New Bradman | `#7f0000` | `#00007f` |
+| Ryukawa | `#ff0000` | `#ffff00` |
+| Castolo and Minanda | `#00007f` | `#ffffff` |
 
-These live in `Data\Team\<Nation>.txt`, one file per national team, the same shape a club
-file takes. Stock league files carry no kit lines at all — see the game's own `Zimbabwe.txt`
-and `Moldova.txt` — so this is where the game reads them from.
+Whether the engine reads them there is unconfirmed — see the note at the end.
 
 ---
 
@@ -366,19 +363,20 @@ unregioned ten stay pure.
 ## Notes and known limits
 
 **Encoding.** Every data file is ANSI (Windows-1252), matching the stock data, so accented
-names load correctly rather than as mojibake. League, Team, Nationalities and provider files
-use CRLF; the name lists use bare LF with no trailing newline. Don't re-save any of them as
+names load correctly rather than as mojibake. League, Nationalities and provider files use CRLF; the name lists use bare LF with no trailing newline. Don't re-save any of them as
 UTF-8. This README is the exception — it is UTF-8, being documentation rather than game data.
 
-**Kit colours** are the game's own colour names rather than hex codes. The 21 names the stock
-data uses are `amber`, `black`, `blue`, `brown`, `claret`, `darkblue`, `darkgray`,
-`darkgreen`, `darkred`, `gold`, `green`, `lightblue`, `lightgreen`, `lightyellow`, `midblue`,
-`orange`, `red`, `redwine`, `violet`, `white` and `yellow`, applied to `shirt`, `sleeves`,
-`stripes`, `shorts` and `socks`. Hex codes are not used anywhere in the stock data.
-
-**`! appear`.** The stock national-team files carry a line the ones here do not — `! appear
-1 9 9` for Moldova, `! appear 0 0 0 1` for Zimbabwe — three or four integers that appear to
-shape the look of generated players. It is left off here because the values are undocumented.
+**Kit colours are unresolved.** The lines above are the only colour data in the world, and
+they may well do nothing. Two things have been tried and neither worked in game: hex codes
+in the League files, which is what is there now, and the stock spelling — the game's own
+colour names in a `Data\Team\<Nation>.txt` file per national team, on the pattern of the
+stock `Zimbabwe.txt` and `Moldova.txt`. For the record, the stock data never uses hex, and
+the 21 colour names it does use are `amber`, `black`, `blue`, `brown`, `claret`, `darkblue`,
+`darkgray`, `darkgreen`, `darkred`, `gold`, `green`, `lightblue`, `lightgreen`,
+`lightyellow`, `midblue`, `orange`, `red`, `redwine`, `violet`, `white` and `yellow`, on
+`shirt`, `sleeves`, `stripes`, `shorts` and `socks`. The stock national-team files also
+carry an `! appear` line — `1 9 9` for Moldova, `0 0 0 1` for Zimbabwe — whose meaning is
+undocumented.
 
 **Two undocumented engine limits** shaped this world. A pyramid cannot exceed **12 tiers**,
 which is why the Itavrnai Union runs 12 flights of 18, 22 and 24 clubs rather than 16 of 16.
@@ -394,9 +392,9 @@ either, and it is worth knowing before you edit any of the international competi
 specifies `;`. Every comment sits on its own line and never trails a value, so if a future
 build enforces the manual it is a find-and-replace.
 
-**Squads.** Every club but AFC Nexxus Drako has its players generated from its nation's name
-lists at career start. Add more `Data\Team\<Club>.txt` files if you want fixed kits,
-reputations or squads for particular clubs.
+**Squads.** Every club has its players generated from its nation's name lists at career
+start. Add `Data\Team\<Club>.txt` files if you want fixed kits, reputations or squads for
+particular clubs.
 
 **Create a Club.** Some cups have been reported failing with *"Cup could not be played
 because only 0 of at least 2 valid teams were available"* in a Create a Club career, in

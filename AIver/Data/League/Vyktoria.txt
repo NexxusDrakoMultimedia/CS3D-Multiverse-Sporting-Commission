@@ -6,6 +6,13 @@
 # Vyktoria
 ! Country "Vyktoria"
 ! Names "data/names/Vyktoria_1st.txt" "data/names/Vyktoria_2nd.txt"
+# national colours
+! 1 shirt #7f0000
+! 1 shorts #ffd900
+! 1 socks #7f0000
+! 2 shirt #ffd900
+! 2 shorts #7f0000
+! 2 socks #ffd900
 * VFF Cup
 #! lane all
 + Country "Vyktoria"

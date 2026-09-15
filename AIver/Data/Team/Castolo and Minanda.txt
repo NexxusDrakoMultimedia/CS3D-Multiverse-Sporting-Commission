@@ -1,7 +1,0 @@
-! name "Castolo and Minanda"
-! 1 shirt darkblue
-! 1 shorts white
-! 1 socks darkblue
-! 2 shirt white
-! 2 shorts darkblue
-! 2 socks white

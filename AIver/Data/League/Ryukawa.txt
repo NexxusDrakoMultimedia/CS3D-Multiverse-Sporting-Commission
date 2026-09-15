@@ -6,6 +6,13 @@
 # Ryukawa
 ! Country "Ryukawa"
 ! Names "data/names/Ryukawa_1st.txt" "data/names/Ryukawa_2nd.txt"
+# national colours
+! 1 shirt #ff0000
+! 1 shorts #ffff00
+! 1 socks #ff0000
+! 2 shirt #ffff00
+! 2 shorts #ff0000
+! 2 socks #ffff00
 * Ryukawa Emperor's Cup
 #! lane all
 + Country "Ryukawa"

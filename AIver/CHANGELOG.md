@@ -1,8 +1,27 @@
 # Changelog
 
+## 1.0.2 — colours reverted, Team folder removed
+
+The named colours and national-team files from 1.0.1 did not work in game, so both are
+withdrawn. No competition, calendar, club or name data changed.
+
+**`Data\Team` removed entirely.** The five national-team files added in 1.0.1 are gone, and
+so is AFC Nexxus Drako's — the folder no longer exists. Every club in the world, AFC Nexxus
+Drako included, now has its kit, reputation and squad generated at career start from its
+division and its nation's name lists. The twenty-five youth players written for AFC Nexxus
+Drako go with the file; the club itself still plays in the Itavrnai twelfth flight.
+
+**Colours back where 1.0 had them.** The five associations with declared colours carry their
+kit lines in their `Data\League` file again, as hex, exactly as in 1.0 — `#7f0000`/`#ffd900`
+for Vyktoria, `#7f0000`/`#00007f` for New Bradman, `#ffff00`/`#0000ff` for the Itavrnai
+Union, `#ff0000`/`#ffff00` for Ryukawa, `#00007f`/`#ffffff` for Castolo and Minanda.
+
+---
+
 ## 1.0.1 — colours
 
 A colour-only release. No competition, calendar, club or name data changed.
+**Withdrawn in 1.0.2 — the changes below did not work in game.**
 
 **Hex codes replaced with the game's colour names.** Every kit in 1.0 was written as a hex
 code — `#7f0000`, `#ffd900` and so on — which the stock data never does. All of them are now
@@ -26,9 +45,7 @@ League files are back to plain `! Country` and `! Names`.
 **Documented the colour vocabulary.** The stock data uses 21 colour names: `amber`, `black`,
 `blue`, `brown`, `claret`, `darkblue`, `darkgray`, `darkgreen`, `darkred`, `gold`, `green`,
 `lightblue`, `lightgreen`, `lightyellow`, `midblue`, `orange`, `red`, `redwine`, `violet`,
-`white` and `yellow`, on `shirt`, `sleeves`, `stripes`, `shorts` and `socks`. The README
-carries the list, along with a note on the `! appear` line the stock national-team files
-have and these do not.
+`white` and `yellow`, on `shirt`, `sleeves`, `stripes`, `shorts` and `socks`.
 
 ---
 

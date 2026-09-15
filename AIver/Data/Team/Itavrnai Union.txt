@@ -1,7 +1,0 @@
-! name "Itavrnai Union"
-! 1 shirt yellow
-! 1 shorts blue
-! 1 socks yellow
-! 2 shirt blue
-! 2 shorts yellow
-! 2 socks blue
