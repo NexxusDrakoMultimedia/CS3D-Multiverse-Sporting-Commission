@@ -6,7 +6,38 @@ Created by Nexxus Drako, with Claude's assistance.
 
 ---
 
-## 1.2 — current
+## 1.3 — current
+
+### The World Cup
+
+Four groups of six rather than eight groups of three, five match days each, and the top
+**four** of every group go through to a round of 16. How many advance is set by the next
+round's span — eight groups into a round of 16 is two each, four groups into the same
+round is four each — which is how the rest of this world's group stages already read;
+the manual does not document a directive for it.
+
+The knockout rounds are renamed: **Semi Final** and **Third Place Playoff**, in place of
+"Half finals" and "Match for third place".
+
+Weeks move from 48–52 to 47–51: group stage 47, 47, 48, 48, 49, round of 16 and quarter
+finals in 50, and the semi final, third place playoff and final in 51.
+
+### Cycles
+
+**Three interlocking cycles, and no two ever share a year.** The World Cup counts from
+2002 on a four-year offset, the Nations League from 2003 on a two-year one, and the four
+bloc championships move to 2004 on a four-year one, which puts them midway between World
+Cups the way real continental championships sit. 2030 — the suggested start year — is a
+World Cup season; 2031 a Nations League one; 2032 the blocs. Previously the bloc
+championships ran on the World Cup's own year and fired alongside it.
+
+The validator was checking that a group stage always advances two per group. It now reads
+the advancing count from the next knockout round and checks that it divides evenly by the
+number of groups and leaves at least one team behind.
+
+---
+
+## 1.2
 
 ### Scouting providers rebuilt on the stock eight
 

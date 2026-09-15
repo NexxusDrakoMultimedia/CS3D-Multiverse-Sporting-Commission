@@ -395,10 +395,14 @@
 + international
 + nations
 + round 1 "Group stage" 1-24
+# 2002 on a four-year offset, so 2030 - the suggested start year - is a
+# World Cup season, and the Nations League and the bloc championships
+# never share a year with it.
 + year 2002
 + offset 4
-+ groups 8
-+ week 48 49 49
+# four groups of six, five match days, and the top four of each go through
++ groups 4
++ week 47 47 48 48 49
 + add 1 venue
 + venue "Itavrnai Union"
 + venue "New Bradman"
@@ -451,8 +455,8 @@
 + <24 add 1 team "Norvalia"
 + round 2 "Round of 16" 1-16 50
 + round 3 "Quarter finals" 1-8 50
-+ round 4 "Half finals" 1-4 51
-+ round 5 "Match for third place" 3-4 51
++ round 4 "Semi Final" 1-4 51
++ round 5 "Third Place Playoff" 3-4 51
 + round 5 "Final" 1-2 51
 * MSC Nations League
 + reputation 18
@@ -498,7 +502,7 @@
 + round 1 "Group stage" 1-4
 + groups 1
 + week 6 9 12
-+ year 2002
++ year 2004
 + offset 4
 + add 1 team "Layn's Wyred"
 + add 1 team "Determi"
@@ -513,7 +517,7 @@
 + round 1 "Group stage" 1-4
 + groups 1
 + week 6 9 12
-+ year 2002
++ year 2004
 + offset 4
 + add 1 team "Mancunya"
 + add 1 team "Wyrmwoode"
@@ -528,7 +532,7 @@
 + round 1 "Group stage" 1-10
 + groups 2
 + week 6 9 12 16 20
-+ year 2002
++ year 2004
 + offset 4
 + add 1 team "Veslavia"
 + add 1 team "Valcarena"
@@ -550,7 +554,7 @@
 + round 1 "Group stage" 1-6
 + groups 2
 + week 6 9 12
-+ year 2002
++ year 2004
 + offset 4
 + add 1 team "Itavrnai Union"
 + add 1 team "New Bradman"

@@ -7,7 +7,7 @@ calendar that runs from a 2,144-club Coronation down to a single match for every
 week 52.
 
 **Created by Nexxus Drako, with Claude's assistance.**
-Version 1.2 · Every club, nation and competition is fictional.
+Version 1.3 · Every club, nation and competition is fictional.
 
 ---
 
@@ -171,13 +171,24 @@ club football at all in week 51, and the Ultimate Championship alone in week 52.
 
 | Competition | Field | Cycle | Weeks |
 |---|---|---|---|
-| MSC World Cup | all 24, eight groups of three | every 4 years | 48–52 |
-| MSC Nations League | all 24, four groups of six | odd years | 10–51 |
-| **Nexxus Drako Shield** | Itavrnai Union and Commonwealth together, six nations | every 4 years | 6–20 |
-| Cyberya Championship | its four | every 4 years | 6–16 |
-| Galatyan Championship | its four | every 4 years | 6–16 |
-| MSC Associates Trophy | the unregioned ten | every 4 years | 6–32 |
+| MSC World Cup | all 24, four groups of six, top four through | every 4 years from 2002 | 47–51 |
+| MSC Nations League | all 24, four groups of six | odd years from 2003 | 10–51 |
+| **Nexxus Drako Shield** | Itavrnai Union and Commonwealth together, six nations | every 4 years from 2004 | 6–20 |
+| Cyberya Championship | its four | every 4 years from 2004 | 6–16 |
+| Galatyan Championship | its four | every 4 years from 2004 | 6–16 |
+| MSC Associates Trophy | the unregioned ten | every 4 years from 2004 | 6–32 |
 | Friendly windows × 3 | everyone | yearly | 8, 24, 44 |
+
+The three cycles interlock, so no two of them ever share a year — the World Cup from
+2002 on a four-year offset, the Nations League from 2003 on a two-year one, and the
+bloc championships from 2004 on a four-year one, midway between World Cups:
+
+| 2030 | 2031 | 2032 | 2033 | 2034 |
+|---|---|---|---|---|
+| World Cup | Nations League | bloc championships | Nations League | World Cup |
+
+The suggested start year of 2030 is therefore a World Cup season. Friendly windows run
+every year regardless.
 
 Every nation has exactly one bloc-level championship, and the four cover all 24 with no
 overlap. The **Nexxus Drako Shield** is the bloc championship for the Itavrnai Union
