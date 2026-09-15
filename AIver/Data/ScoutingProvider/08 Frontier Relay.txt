@@ -15,84 +15,16 @@
 ! Small club maximum reputation 8
 ! Small club discount 600 1500
 
-# One association, all the way down, filed when it arrives.
-: Product "frontier.nation" 1
-+ Name "Relay Nation"
-+ Family "frontier.relay"
-+ Presentation network-lead
-+ Fields identity sporting
-+ Scope selected-nation
-+ Sales relations global
-+ Scope selections 1 1
-+ Age 15 99
-+ Professional any
-+ Market statuses any
-+ Divisions 1 99
-+ Coverage 6000 4500
-+ Contribution 2100 600 500
-+ Freshness days 45
-+ Monthly reference factor 1500
-+ Billing monthly
-+ Seasonal access months 12
-+ Seasonal charge months 12
-+ Availability rotating
-+ Club reputation 0 20
-
-# Four associations at once, slower still.
-: Product "frontier.bloc" 1
-+ Name "Relay Bloc"
-+ Family "frontier.relay"
-+ Presentation network-lead
-+ Fields identity sporting
-+ Scope selected-nation
-+ Sales relations global
-+ Scope selections 4 4
-+ Age 15 99
-+ Professional any
-+ Market statuses any
-+ Divisions 1 99
-+ Coverage 5800 4200
-+ Contribution 2000 600 500
-+ Freshness days 50
-+ Monthly reference factor 3000
-+ Billing monthly
-+ Seasonal access months 12
-+ Seasonal charge months 12
-+ Availability rotating
-+ Club reputation 0 20
-
-# A bloc below the top flight, where the relay is strongest.
-: Product "frontier.depth" 1
-+ Name "Relay Depth"
-+ Family "frontier.relay"
-+ Presentation network-lead
-+ Fields identity sporting
-+ Scope selected-nation
-+ Sales relations global
-+ Scope selections 4 4
-+ Age 15 99
-+ Professional any
-+ Market statuses any
-+ Divisions 2 99
-+ Coverage 4500 6200
-+ Contribution 2300 700 500
-+ Freshness days 40
-+ Monthly reference factor 2800
-+ Billing monthly
-+ Seasonal access months 12
-+ Seasonal charge months 12
-+ Availability rotating
-+ Club reputation 0 20
-
-# A bloc's youth sides, patchy but nobody else files them.
+# Youth sides, skills and potential.
 : Product "frontier.academy" 1
-+ Name "Relay Academy"
-+ Family "frontier.relay"
++ Name "Relay Academy Watch"
++ Family "frontier.academy"
 + Presentation network-lead
 + Fields identity sporting development
 + Scope selected-nation
 + Sales relations global
-+ Scope selections 4 4
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 14 23
 + Professional any
 + Market statuses any
@@ -100,7 +32,79 @@
 + Coverage 7000 5500
 + Contribution 2300 700 1300
 + Freshness days 35
-+ Monthly reference factor 3200
++ Monthly reference factor 2200
++ Billing monthly
++ Seasonal access months 12
++ Seasonal charge months 12
++ Availability rotating
++ Club reputation 0 20
+
+# Top flights only, filed when it arrives.
+: Product "frontier.topflight" 1
++ Name "Relay Top Flight"
++ Family "frontier.topflight"
++ Presentation network-lead
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 all
++ Scope bundle discount 500 2000
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 1
++ Coverage 6000 4500
++ Contribution 2100 600 500
++ Freshness days 45
++ Monthly reference factor 1800
++ Billing monthly
++ Seasonal access months 12
++ Seasonal charge months 12
++ Availability rotating
++ Club reputation 0 20
+
+# All the way down, slower still.
+: Product "frontier.national" 1
++ Name "Relay National"
++ Family "frontier.national"
++ Presentation network-lead
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 all
++ Scope bundle discount 500 2000
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 5800 4200
++ Contribution 2000 600 500
++ Freshness days 50
++ Monthly reference factor 1800
++ Billing monthly
++ Seasonal access months 12
++ Seasonal charge months 12
++ Availability rotating
++ Club reputation 0 20
+
+# Below the top flight, where the relay is strongest.
+: Product "frontier.depth" 1
++ Name "Relay Depth"
++ Family "frontier.depth"
++ Presentation network-lead
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 all
++ Scope bundle discount 500 2000
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 2 99
++ Coverage 4500 6200
++ Contribution 2300 700 500
++ Freshness days 40
++ Monthly reference factor 3000
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
@@ -112,7 +116,7 @@
 + Name "Frontier Relay"
 + Kind global
 + Sales reach worldwide
-+ Products "frontier.nation" "frontier.bloc" "frontier.depth" "frontier.academy"
++ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
@@ -120,4 +124,18 @@
 + Visibility standard
 + Club reputation 0 20
 + Selection priority 400
+
+# Standing orders, by approach only.
+: Market "frontier.invitation" 1
++ Name "Frontier Relay Invitation"
++ Kind global
++ Sales reach worldwide
++ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 12000
++ Visibility invitation
++ Club reputation 0 20
++ Selection priority 100
 

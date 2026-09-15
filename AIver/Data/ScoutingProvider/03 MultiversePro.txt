@@ -15,33 +15,10 @@
 ! Small club maximum reputation 5
 ! Small club discount 800 1600
 
-# Four associations, professional tiers, at full depth.
-: Product "multiversepro.bloc" 1
-+ Name "MultiversePro Bloc"
-+ Family "multiversepro.professional"
-+ Presentation data-dossier
-+ Fields identity sporting
-+ Scope selected-nation
-+ Sales relations global
-+ Scope selections 4 4
-+ Age 15 99
-+ Professional professional-only
-+ Market statuses any
-+ Divisions 1 99
-+ Coverage 7600 3200
-+ Contribution 4000 2350 500
-+ Freshness days 18
-+ Monthly reference factor 12200
-+ Billing seasonal
-+ Seasonal access months 12
-+ Seasonal charge months 11
-+ Availability standard
-+ Club reputation 0 20
-
-# Every top flight in the Commission, nothing below.
-: Product "multiversepro.pro" 2
-+ Name "MultiversePro"
-+ Family "multiversepro.professional"
+# Top flights only, skill profile.
+: Product "multiversepro.elite" 3
++ Name "MultiversePro Elite"
++ Family "multiversepro.elite"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope global
@@ -54,17 +31,17 @@
 + Coverage 8200 0
 + Contribution 3900 2300 500
 + Freshness days 18
-+ Monthly reference factor 6800
++ Monthly reference factor 12000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# The same reach, carried down through the professional tiers.
-: Product "multiversepro.elite" 3
-+ Name "MultiversePro Elite"
-+ Family "multiversepro.professional"
+# The same, carried down through every professional tier.
+: Product "multiversepro.global" 3
++ Name "MultiversePro Global"
++ Family "multiversepro.global"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope global
@@ -77,18 +54,18 @@
 + Coverage 7000 2000
 + Contribution 4200 2400 500
 + Freshness days 21
-+ Monthly reference factor 14700
++ Monthly reference factor 26000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Everything they hold, refreshed weekly, priced accordingly.
-#  Priced above the line on purpose: this is the ceiling package.
-: Product "multiversepro.enterprise" 1
-+ Name "MultiversePro Enterprise"
-+ Family "multiversepro.professional"
+# Skills, potential and market, refreshed weekly.
+#  The stock ceiling package, at the stock price.
+: Product "multiversepro.premier" 1
++ Name "MultiversePro Premier"
++ Family "multiversepro.premier"
 + Presentation data-dossier
 + Fields identity sporting development market-contract
 + Scope global
@@ -101,7 +78,7 @@
 + Coverage 8500 5500
 + Contribution 5600 3600 3400
 + Freshness days 7
-+ Monthly reference factor 74200
++ Monthly reference factor 100000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -113,7 +90,7 @@
 + Name "MultiversePro"
 + Kind global
 + Sales reach worldwide
-+ Products "multiversepro.bloc" "multiversepro.pro" "multiversepro.elite" "multiversepro.enterprise"
++ Products "multiversepro.elite" "multiversepro.global" "multiversepro.premier"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
@@ -122,12 +99,12 @@
 + Club reputation 0 20
 + Selection priority 400
 
-# Enterprise terms, by approach only.
-: Market "multiversepro.partners" 2
-+ Name "MultiversePro Partners"
+# By approach only.
+: Market "multiversepro.invitation" 2
++ Name "MultiversePro Invitation"
 + Kind global
 + Sales reach worldwide
-+ Products "multiversepro.enterprise"
++ Products "multiversepro.elite"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0

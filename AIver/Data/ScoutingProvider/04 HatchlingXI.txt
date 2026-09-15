@@ -15,15 +15,16 @@
 ! Small club maximum reputation 7
 ! Small club discount 500 1100
 
-# One association's age groups, cradle to first team.
-: Product "hatchlingxi.nation" 1
-+ Name "Academy Nation"
-+ Family "hatchlingxi.youth"
+# Fourteen to twenty-one, skills and potential.
+: Product "hatchlingxi.home" 1
++ Name "HatchlingXI Home"
++ Family "hatchlingxi.home"
 + Presentation data-dossier
 + Fields identity sporting development
 + Scope selected-nation
 + Sales relations global
-+ Scope selections 1 1
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 14 21
 + Professional any
 + Market statuses any
@@ -31,22 +32,23 @@
 + Coverage 8200 7000
 + Contribution 3000 1700 2500
 + Freshness days 10
-+ Monthly reference factor 5200
++ Monthly reference factor 2400
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Four youth systems - a bloc's intake.
-: Product "hatchlingxi.bloc" 2
-+ Name "Academy Bloc"
-+ Family "hatchlingxi.youth"
+# Up to twenty-three - the whole pathway.
+: Product "hatchlingxi.corridor" 2
++ Name "HatchlingXI Corridor"
++ Family "hatchlingxi.corridor"
 + Presentation data-dossier
 + Fields identity sporting development
 + Scope selected-nation
 + Sales relations global
-+ Scope selections 4 4
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 14 23
 + Professional any
 + Market statuses any
@@ -54,22 +56,23 @@
 + Coverage 7200 6200
 + Contribution 3300 1800 2700
 + Freshness days 10
-+ Monthly reference factor 11200
++ Monthly reference factor 4200
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Every academy in the Commission.
-: Product "hatchlingxi.commission" 1
-+ Name "Academy Commission"
-+ Family "hatchlingxi.youth"
+# Adds what the youngster is already worth.
+: Product "hatchlingxi.regional" 2
++ Name "HatchlingXI Elite"
++ Family "hatchlingxi.regional"
 + Presentation data-dossier
-+ Fields identity sporting development
-+ Scope global
++ Fields identity sporting development market-contract
++ Scope selected-nation
 + Sales relations global
-+ Scope selections 0 0
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 14 23
 + Professional any
 + Market statuses any
@@ -77,7 +80,7 @@
 + Coverage 6500 5500
 + Contribution 3600 1900 2900
 + Freshness days 10
-+ Monthly reference factor 15400
++ Monthly reference factor 6000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -89,7 +92,7 @@
 + Name "HatchlingXI"
 + Kind global
 + Sales reach worldwide
-+ Products "hatchlingxi.nation" "hatchlingxi.bloc" "hatchlingxi.commission"
++ Products "hatchlingxi.home" "hatchlingxi.corridor" "hatchlingxi.regional"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0

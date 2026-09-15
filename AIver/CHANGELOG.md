@@ -8,78 +8,33 @@ Created by Nexxus Drako, with Claude's assistance.
 
 ## 1.2 — current
 
-### Scouting providers rebuilt
+### Scouting providers rebuilt on the stock eight
 
-**No nation or region names anywhere.** Every market is now a global desk. Previously
-six associations had a Registry storefront, six a HatchlingXI one, six a DeepFlight one
-and three regions a Crestwire one, which meant most of the Commission was shopping in
-somebody else's home market — and every one of those markets carried a nation's name in
-its label. Packages that cover less than the whole Commission now let the buyer choose
-the competitions, associations or regions.
+The providers are now modelled one-for-one on the game's own eight. Every header value,
+every coverage and freshness figure, and every monthly reference factor is carried over
+from the stock provider each one stands in for, so the developer's own balance across
+the eight is preserved rather than replaced with a formula.
 
-**One price for one value.** Every package's monthly reference factor is derived from a
-single formula — coverage, payload, freshness, breadth, pyramid depth, age restriction,
-market-status restriction and the form the report takes — rather than being hand-picked.
-All 26 packages sit within 5% of the same value line. MultiversePro Enterprise carries
-an explicit 2.4× premium and says so in the file, because it is the ceiling package.
+**Markets.** One `Kind global` desk per provider, named for the provider, in the stock
+global-market shape: Global factor set, Core/Regional/Export zeroed, no home nation or
+home region. Stock local and regional markets hand their home association a cheaper rate
+and put its name on the shop front; with 24 associations that is 24 storefronts per
+provider, so every desk sells to every club on the same terms.
 
-Two packages were badly mispriced under the old numbers and the new model catches both:
-a contracts-only market brief was outpricing full scouting data, and "LedgerPulse Free"
-read as free of charge while costing more than a top-flight data feed. It is now
-**LedgerPulse Releases**, and market briefs and correspondent tips are priced below
-written dossiers.
+**Tiers.** Several stock providers ladder by selection count — RegionScope One / Three,
+FutureXI Corridor 3 / 6 / 8, LowerLine Select 3 / 6 / 8. The game does not enforce
+`Scope selections`: a buyer ticks as many competitions or associations as they like
+whatever the file says, so those tiers were the same package at three prices. Each
+ladder is rebuilt on `Fields` — which is what the game turns into its *Benefit* column —
+plus age band, division range, market statuses and professional-only. Only the four
+field combinations that appear in the stock files are used. Selective packages take the
+stock `1 all` form with a bundle discount, as ClubWire does.
 
-Provider and package descriptions are down to one line each, and the packages are named
-the way real subscriptions are — Basic, Plus, Full, Solo, Trio, Six, Enterprise, Academy
-Intake, The Basement — rather than by invented geography.
-
-### Scouting providers, second pass
-
-Checked against what the game actually renders, which turned up three faults the
-files alone could not show.
-
-**Three providers were invisible.** A package can only be sold if one of its
-`Sales relations` names a price factor its market actually sets. Every market here
-is a global desk — it sets the Global factor and zeroes Core, Regional and Export —
-but HatchlingXI, DeepFlight and Crestwire sold on `core regional export`, so every
-one of their packages was unpriceable and the providers never appeared at all.
-Commission Registry lost two of its three the same way, leaving only Registry Full
-and making the cheap universal register look like the dearest thing on the list.
-Every package now sells on `global`.
-
-**Region packages silently vanished.** `selected-region` needs `+ Allowed region`
-lines, which the nation-neutral rewrite had removed. Since every region slug in this
-world is a nation's name, regions are gone entirely: coverage is now chosen as
-competitions or associations, both of which the *Choose coverage* screen drives
-properly.
-
-**Desks were shadowing each other.** The game lists one market per provider — the
-highest-priority visible one — so the second desk was winning and carrying only part
-of its own catalogue. That is why the list read "CharterScope Trade" and "LedgerPulse
-Window Desk" with two packages instead of three. Each provider now has one standard
-desk, named for the provider, carrying everything, with invitation desks ranked below
-it.
-
-**A three-tier ladder.** Nearly every provider now sells the same shape: **Nation** (one
-association), **Bloc** (four — a Cyberya or Galatyan bloc exactly, or any four), and
-**Commission** (everything). Selection counts are exact pairs as in the stock files,
-where RegionScope One is `1 1` and FutureXI Corridor 8 is `8 8`. An earlier build wrote
-them as ranges like `1 4`; that is not a form the originals use and the game did not cap
-it, so a bloc package could be pointed at the whole Commission. Blocs are a
-four-association selection rather than a region, because a custom world does not define
-the engine's region taxonomy and region packages never reach the shop at all.
-
-**Market format taken straight from the stock files.** Every market is a `Kind global`
-desk with the Global price factor set, Core/Regional/Export zeroed, and no home nation
-or home region, and every package sells on `Sales relations global` — the shape
-RegionScope, WorldPro and MarketPulse use. An attempt to blend the two stock shapes,
-setting all four price factors on a global desk and carrying all four relations, left
-the game offering no provider at all and was reverted.
-
-Bundles were also re-cut so they get cheaper per unit as they grow, since the
-buyer chooses the size of the coverage. Registry's payload figures were lowered to
-match what it is — a thin register — which drops it to the cheap end where it belongs,
-and the MultiversePro Enterprise premium came down from 2.4x to 1.5x.
+Earlier attempts in this version, all corrected: packages sold on `core regional export`
+against desks that zeroed those three, which made HatchlingXI, DeepFlight and Crestwire
+vanish entirely; then all four factors set on a global desk with all four relations,
+which is not a stock shape and left no provider available at all; then selection ranges
+like `1 4`, which the game does not cap.
 
 ### Name lists
 

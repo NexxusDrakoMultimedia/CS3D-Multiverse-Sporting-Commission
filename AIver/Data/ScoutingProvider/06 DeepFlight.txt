@@ -15,15 +15,16 @@
 ! Small club maximum reputation 8
 ! Small club discount 600 1400
 
-# One association, every tier but the first.
-: Product "deepflight.nation" 1
-+ Name "Depth Nation"
-+ Family "deepflight.depth"
+# Second tier down, skill profile.
+: Product "deepflight.home" 1
++ Name "DeepFlight Home"
++ Family "deepflight.home"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope selected-nation
 + Sales relations global
-+ Scope selections 1 1
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -31,30 +32,31 @@
 + Coverage 6000 8800
 + Contribution 2900 1900 600
 + Freshness days 21
-+ Monthly reference factor 4200
++ Monthly reference factor 2500
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Four associations, still nothing at the top.
-: Product "deepflight.bloc" 2
-+ Name "Depth Bloc"
-+ Family "deepflight.depth"
+# The same ground, with potential attached.
+: Product "deepflight.select" 2
++ Name "DeepFlight Select"
++ Family "deepflight.select"
 + Presentation data-dossier
-+ Fields identity sporting
++ Fields identity sporting development
 + Scope selected-nation
 + Sales relations global
-+ Scope selections 4 4
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 15 99
 + Professional any
 + Market statuses any
 + Divisions 2 99
 + Coverage 5000 7500
-+ Contribution 3200 1800 500
++ Contribution 3200 1800 2200
 + Freshness days 24
-+ Monthly reference factor 8000
++ Monthly reference factor 7600
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -62,14 +64,15 @@
 + Club reputation 0 20
 
 # Ninth tier and below, where nobody else is looking.
-: Product "deepflight.basement" 1
-+ Name "The Basement"
-+ Family "deepflight.depth"
+: Product "deepflight.abyssal" 1
++ Name "DeepFlight Abyssal"
++ Family "deepflight.abyssal"
 + Presentation data-dossier
 + Fields identity sporting development
 + Scope selected-nation
 + Sales relations global
-+ Scope selections 4 4
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -77,7 +80,7 @@
 + Coverage 3200 9400
 + Contribution 2600 1600 1400
 + Freshness days 28
-+ Monthly reference factor 4300
++ Monthly reference factor 4000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -89,7 +92,7 @@
 + Name "DeepFlight"
 + Kind global
 + Sales reach worldwide
-+ Products "deepflight.nation" "deepflight.bloc" "deepflight.basement"
++ Products "deepflight.home" "deepflight.select" "deepflight.abyssal"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0

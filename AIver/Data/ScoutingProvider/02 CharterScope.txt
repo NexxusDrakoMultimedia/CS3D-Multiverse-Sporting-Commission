@@ -1,6 +1,6 @@
 # Scouting provider contract: scouting-provider-v1
 #  Created by Nexxus Drako, with Claude's assistance.
-# Pay for the competitions you actually scout, and nothing else.
+# A catalogue you point at the competitions you actually scout.
 ! Provider "charterscope" 1
 ! Name "CharterScope"
 ! Archetype regional-catalog
@@ -15,15 +15,16 @@
 ! Small club maximum reputation 6
 ! Small club discount 400 900
 
-# One competition, watched properly.
-: Product "charterscope.solo" 1
-+ Name "CharterScope Solo"
-+ Family "charterscope.catalog"
+# Player search and a skill profile.
+: Product "charterscope.one" 1
++ Name "CharterScope One"
++ Family "charterscope.one"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope selected-competition
 + Sales relations global
-+ Scope selections 1 1
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -31,76 +32,55 @@
 + Coverage 9500 8800
 + Contribution 3400 2300 800
 + Freshness days 14
-+ Monthly reference factor 6800
++ Monthly reference factor 2500
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Six competitions - a scouting department's worth.
-: Product "charterscope.six" 2
-+ Name "CharterScope Six"
-+ Family "charterscope.catalog"
+# Adds potential to the profile.
+: Product "charterscope.three" 2
++ Name "CharterScope Three"
++ Family "charterscope.three"
 + Presentation data-dossier
-+ Fields identity sporting
++ Fields identity sporting development
 + Scope selected-competition
 + Sales relations global
-+ Scope selections 6 6
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 15 99
 + Professional any
 + Market statuses any
 + Divisions 1 99
 + Coverage 9000 7200
-+ Contribution 3600 2100 700
++ Contribution 3600 2100 2000
 + Freshness days 14
-+ Monthly reference factor 20000
++ Monthly reference factor 5500
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Whole associations instead - a bloc of four.
-: Product "charterscope.bloc" 2
-+ Name "CharterScope Bloc"
-+ Family "charterscope.catalog"
+# Professionals only, with valuations and contracts.
+: Product "charterscope.pro" 2
++ Name "CharterScope Pro"
++ Family "charterscope.pro"
 + Presentation data-dossier
-+ Fields identity sporting
-+ Scope selected-nation
++ Fields identity sporting development market-contract
++ Scope selected-competition
 + Sales relations global
-+ Scope selections 4 4
++ Scope selections 1 all
++ Scope bundle discount 500 2000
 + Age 15 99
-+ Professional any
++ Professional professional-only
 + Market statuses any
 + Divisions 1 99
-+ Coverage 8800 7000
-+ Contribution 3600 2100 700
++ Coverage 8000 5000
++ Contribution 3800 2200 2400
 + Freshness days 14
-+ Monthly reference factor 17500
-+ Billing seasonal
-+ Seasonal access months 12
-+ Seasonal charge months 11
-+ Availability standard
-+ Club reputation 0 20
-
-# The entire catalogue.
-: Product "charterscope.commission" 1
-+ Name "CharterScope Commission"
-+ Family "charterscope.catalog"
-+ Presentation data-dossier
-+ Fields identity sporting
-+ Scope global
-+ Sales relations global
-+ Scope selections 0 0
-+ Age 15 99
-+ Professional any
-+ Market statuses any
-+ Divisions 1 99
-+ Coverage 8400 6400
-+ Contribution 3700 2200 600
-+ Freshness days 14
-+ Monthly reference factor 23800
++ Monthly reference factor 8000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -112,7 +92,7 @@
 + Name "CharterScope"
 + Kind global
 + Sales reach worldwide
-+ Products "charterscope.solo" "charterscope.six" "charterscope.bloc" "charterscope.commission"
++ Products "charterscope.one" "charterscope.three" "charterscope.pro"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0

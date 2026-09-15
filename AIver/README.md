@@ -47,7 +47,7 @@ Data\
   StartYear.txt                2030
   Nationalities.txt            country identities, aliases, region taxonomy
   League\                      24 nation files + International teams and tournaments.txt
-  ScoutingProvider\            eight scouting providers, 27 packages
+  ScoutingProvider\            eight scouting providers, 23 packages
   Names\                       48 name lists - copy these out, see step 2
 ```
 
@@ -187,52 +187,49 @@ overlap. The **Nexxus Drako Shield** is the bloc championship for the Itavrnai U
 
 ## Scouting
 
-Eight providers, 27 packages, and not a single one of them tied to an association.
-Every market is a global desk selling to every member club, so no association has a
-home advantage and none is shut out.
+Eight providers and 23 packages, modelled one-for-one on the game's own eight
+scouting providers. Every header value — price drift, offer chance and kinds,
+discounts, rotating slots, small-club terms — and every coverage and freshness figure
+is carried over from the stock provider each one stands in for, and so is every price.
 
-**Three tiers of coverage, everywhere.** Almost every provider sells the same ladder,
-and you pick the coverage yourself on the *Choose coverage* screen:
+Three things are changed, and only three:
 
-| Tier | What you buy |
+**The markets.** One `Kind global` desk per provider, named for the provider, in the
+stock global-market shape — Global price factor set, Core/Regional/Export zeroed, no
+home nation and no home region. The stock local and regional markets give their home
+association a cheaper rate than everyone else and put its name on the shop front; with
+24 member associations that would mean 24 storefronts per provider, so every desk here
+sells to every member club on the same terms.
+
+**The tiers.** Several stock providers build their ladder out of selection counts —
+RegionScope One / Three, FutureXI Corridor 3 / 6 / 8, LowerLine Select 3 / 6 / 8. The
+game does not enforce `Scope selections`, so those tiers are all the same package at
+different prices. Each ladder is rebuilt out of what a package actually tells you,
+which is what the game shows in its *Benefit* column:
+
+| Fields | Reads in game as |
 |---|---|
-| **Nation** | one association, whole pyramid |
-| **Bloc** | four associations — a Cyberya or Galatyan bloc exactly, or any four you like |
-| **Commission** | everything, no picking |
+| `identity sporting` | Player search + skill profile |
+| `identity sporting development` | + potential |
+| `identity market-contract` | Player search + market and contract |
+| `identity sporting development market-contract` | + skills + potential + market |
 
-Blocs are sold as a four-association selection rather than as a region, because the
-engine's region taxonomy is not something a custom world defines — a `selected-region`
-package simply never appears in the shop. Four is the size of the largest bloc, so the
-tier does the job without the machinery.
+Age band, division range, market statuses and professional-only carry the rest —
+HatchlingXI steps u21 → u23, DeepFlight steps second-tier-down → ninth-tier-down,
+LedgerPulse steps free agents → listed → everyone.
 
-Each package takes an exact count, the way the stock ones do — RegionScope One is one
-competition, FutureXI Corridor 8 is eight nations. A nation package is one association,
-a bloc package is four, and a Commission package takes no selection at all.
+**The names.** MSC ones, with no association named anywhere.
 
-**One shape, taken from the stock files.** Every market is a `Kind global` desk: Global
-price factor set, Core/Regional/Export zeroed, no home nation and no home region — the
-same shape RegionScope, WorldPro and MarketPulse use. The stock data's core / regional /
-export rates only ever apply to a market that declares a home, and a home would put one
-association's name on the shop front and give it a cheaper rate than the other
-twenty-three, so they are not used here.
-
-| Provider | What it sells |
-|---|---|
-| Commission Registry | The Commission's own club register. Universal, cheap, thin. |
-| CharterScope | Pay per competition — one or six — or step up to a bloc, or the lot. |
-| MultiversePro | The expensive one. Full reach, fast turnaround, top flights first. |
-| HatchlingXI | Academies and reserve sides. Nobody over 23 on the books. |
-| LedgerPulse | Contracts, wages and expiries. No opinion on whether they can play. |
-| DeepFlight | Everything below the top flight and nothing in it, down to the ninth tier. |
-| Crestwire | Stringers filing from press boxes. Tips, not a database. |
-| Frontier Relay | Slow, cheap and everywhere. Two of its four rotate in each season. |
-
-Every package's price is derived from one formula — how much it covers, how much it
-tells you, how fresh it is, how much of the Commission and of a pyramid it reaches, and
-whether it is restricted by age or market status. Bundles get cheaper per unit as they
-grow. All 27 sit within 5% of the same value line, so no provider is quietly the
-obvious buy. The one deliberate exception is MultiversePro Enterprise, which carries a
-stated 1.5× premium because it is the ceiling.
+| Provider | Stands in for | What it sells |
+|---|---|---|
+| Commission Registry | LeagueBase | The Commission's own club register. |
+| CharterScope | RegionScope | A catalogue pointed at the competitions you scout. |
+| MultiversePro | WorldPro | The expensive one. Top flights first. |
+| HatchlingXI | FutureXI | Academies and reserve sides, nobody over 23. |
+| LedgerPulse | MarketPulse | Contracts, wages and expiries. |
+| DeepFlight | LowerLine | Below the top flight, down to the ninth tier. |
+| Crestwire | ClubWire | Stringers filing from press boxes. |
+| Frontier Relay | Touchline Relay | Slow, cheap, and two of four rotate each season. |
 
 ---
 
