@@ -11,18 +11,18 @@
 + reputation 11
 # Quarter finals and semi finals are both played over two legs.
 # The final closes the calendar in week 52.
-+ round 1 "Första omgången" 65-128 3
-+ draw 4
++ round 1 "Första omgången" 65-128 4
++ draw 3
 # the 32 best clubs enter at the third round
 + add 32 from "New Rythorn"
 # the next 32 enter at the second round
 + add 32 from "New Rythorn"
 # the remaining 64 start in the first round
 + add 64 from "New Rythorn"
-+ round 2 "Andra omgången" 33-96 5
-+ round 3 "Tredje omgången" 1-64 8
-+ round 4 "Fjärde omgången" 1-32 12
-+ round 5 "Åttondelsfinal" 1-16 17
++ round 2 "Andra omgången" 33-96 6
++ round 3 "Tredje omgången" 1-64 9
++ round 4 "Fjärde omgången" 1-32 13
++ round 5 "Åttondelsfinal" 1-16 18
 + round 6 "Kvartsfinal" 1-8
 + week 24 26
 + round 7 "Semifinal" 1-4

@@ -11,18 +11,18 @@
 + reputation 12
 # Every round is mourned twice. Only the final rite is settled in one night.
 + round 1 "First Wake" 1-64
-+ week 3 5
-+ draw 2
++ week 4 6
++ draw 3
 + add 64 from "Determi"
 + round 2 "Second Wake" 1-32
-+ week 7 9
++ week 8 10
 + round 3 "Third Wake" 1-16
-+ week 11 13
++ week 12 14
 + round 4 "Quarter Requiem" 1-8
-+ week 17 19
++ week 18 20
 + round 5 "Semi Requiem" 1-4
-+ week 27 29
-+ round 6 "Final Rite" 1-2 39
++ week 28 30
++ round 6 "Final Rite" 1-2 40
 : Determi High Requiem
 + division 1
 + promotions 0

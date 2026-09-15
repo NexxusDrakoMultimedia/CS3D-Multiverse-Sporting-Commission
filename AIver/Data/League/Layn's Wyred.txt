@@ -12,11 +12,11 @@
 # Top two layers only: eight groups, then straight down the stack.
 + round 1 "Handshake group stage" 1-32
 + groups 8
-+ week 3 5 7 9 11 13
++ week 4 6 8 10 12 14
 + draw 3
 + add 32 from "Layn's Wyred"
-+ round 2 "Round of 16" 1-16 15
-+ round 3 "Quarter Finals" 1-8 17
++ round 2 "Round of 16" 1-16 16
++ round 3 "Quarter Finals" 1-8 18
 + round 4 "Semi Finals" 1-4 26
 + round 5 "Final" 1-2 41
 : Wyred Mainline

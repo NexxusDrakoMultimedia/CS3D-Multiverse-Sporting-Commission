@@ -48,10 +48,21 @@ and its final in week 50.
 Every domestic cup of four rounds or more was re-timed so the early rounds come thick
 and fast and the later ones breathe. Gaps now grow across the competition — two or
 three weeks between opening rounds, eight or ten by the semi finals — instead of being
-spread evenly. Two-legged rounds keep both legs a fortnight apart, and nothing runs
-past week 41, which keeps every domestic final clear of the MSC finals in weeks 42 to
+spread evenly. Each cup's draw was pulled back to the week before its new opening night.
+Two-legged rounds keep both legs a fortnight apart, and nothing runs past week 41, which keeps every domestic final clear of the MSC finals in weeks 42 to
 45 and of the finale window in 50 to 52. Deliberately short competitions such as the
 Castolo Supercopa keep their own tight dates.
+
+### Season-one hardening
+
+Both curtain-raisers — the **Vyktoria Charity Shield** and the **Supercopa Unida** —
+opened in week 2 against a cup holder whose final is not played until week 41, so in
+the first season of a career there was nothing to put in the slot. They now draw in
+week 3 and play from week 4, and conditional entries back up every cup-winner place,
+so the field fills from the league when no holder exists yet.
+
+Domestic cups now open in week 4 rather than week 3, which puts every cup draw in week
+3 instead of week 2.
 
 ### Fixes
 

@@ -11,13 +11,13 @@
 + reputation 15
 # Every club in the Union enters at the first round.
 # Semi finals are settled over two legs; the final is one match at the Wyrmspire.
-+ round 1 "First Flight Round" 1-256 3
-+ draw 1
++ round 1 "First Flight Round" 1-256 4
++ draw 3
 + add 256 from "Itavrnai Union"
-+ round 2 "Second Flight Round" 1-128 5
-+ round 3 "Third Flight Round" 1-64 8
-+ round 4 "Fourth Flight Round" 1-32 12
-+ round 5 "Round of 16" 1-16 17
++ round 2 "Second Flight Round" 1-128 6
++ round 3 "Third Flight Round" 1-64 9
++ round 4 "Fourth Flight Round" 1-32 13
++ round 5 "Round of 16" 1-16 18
 + round 6 "Quarter Finals" 1-8 24
 + round 7 "Semi Finals" 1-4
 + week 32 34
@@ -28,11 +28,11 @@
 # The top two flights only: eight groups of four, two advance from each.
 + round 1 "Conclave group stage" 1-32
 + groups 8
-+ week 3 5 7 9 11 13
-+ draw 4
++ week 4 6 8 10 12 14
++ draw 3
 + add 32 from "Itavrnai Union"
-+ round 2 "Round of 16" 1-16 15
-+ round 3 "Quarter Finals" 1-8 17
++ round 2 "Round of 16" 1-16 16
++ round 3 "Quarter Finals" 1-8 18
 + round 4 "Semi Finals" 1-4
 + week 26 28
 + round 5 "Final" 1-2 41

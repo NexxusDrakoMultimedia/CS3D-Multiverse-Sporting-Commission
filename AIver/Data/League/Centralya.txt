@@ -10,16 +10,16 @@
 + Country "Centralya"
 + reputation 11
 # Staggered entry by rank; two-legged semi finals.
-+ round 1 "First Round" 65-128 3
-+ draw 4
++ round 1 "First Round" 65-128 4
++ draw 3
 # seeded clubs enter later, as the Galatyan associations all insist
 + add 32 from "Centralya"
 + add 32 from "Centralya"
 + add 64 from "Centralya"
-+ round 2 "Second Round" 33-96 5
-+ round 3 "Third Round" 1-64 8
-+ round 4 "Fourth Round" 1-32 12
-+ round 5 "Round of 16" 1-16 17
++ round 2 "Second Round" 33-96 6
++ round 3 "Third Round" 1-64 9
++ round 4 "Fourth Round" 1-32 13
++ round 5 "Round of 16" 1-16 18
 + round 6 "Quarter Finals" 1-8 24
 + round 7 "Semi Finals" 1-4
 + week 32 34

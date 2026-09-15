@@ -10,14 +10,14 @@
 + Country "Qamaria"
 + reputation 8
 # All four divisions enter at the first round.
-+ round 1 "First Round" 1-64 3
-+ draw 5
++ round 1 "First Round" 1-64 4
++ draw 3
 + add 64 from "Qamaria"
-+ round 2 "Second Round" 1-32 5
-+ round 3 "Round of 16" 1-16 10
-+ round 4 "Quarter Finals" 1-8 17
-+ round 5 "Semi Finals" 1-4 27
-+ round 6 "Final" 1-2 39
++ round 2 "Second Round" 1-32 6
++ round 3 "Round of 16" 1-16 11
++ round 4 "Quarter Finals" 1-8 18
++ round 5 "Semi Finals" 1-4 28
++ round 6 "Final" 1-2 40
 : Ad-Dawri al-Mumtaz
 + division 1
 + promotions 0
