@@ -22,6 +22,32 @@ The knockout rounds are renamed: **Semi Final** and **Third Place Playoff**, in 
 Weeks move from 48–52 to 47–51: group stage 47, 47, 48, 48, 49, round of 16 and quarter
 finals in 50, and the semi final, third place playoff and final in 51.
 
+### The Cup Winners Cup
+
+Main cups only. It previously took all 27 domestic knockout trophies, so the Itavrnai
+Union, New Bradman and Ryukawa each had two entrants while everyone else had one. The
+Grand Conclave, the New Bradman League Cup and the Ryukawa Sakura Shield are still
+played at home but no longer qualify, which leaves exactly 24 — one per association.
+
+The bracket is rebuilt to match: a **Preliminary Round** of the sixteen lowest-ranked
+holders, with the top eight seeded straight through, so eight winners join eight byes
+in the round of 16. Weeks are unchanged, still in the off-weeks between the three
+league competitions.
+
+### One club, two trophies
+
+Two competitions could be left short because a single club filled two of their seats,
+which is the same fault that stops a cup being played at all.
+
+The **Ultimate Championship** seats the Coronation winner against whoever topped the
+Super Cup group. One club can be both, and cannot play itself — that left a one-club
+final. The Super Cup runner-up now steps up, with third place behind them.
+
+The **MSC Super Cup** seats all four continental holders. The three league competitions
+exclude one another, but the Cup Winners Cup does not, so a club can win its domestic
+trophy and a continental one in the same season and leave a group of three. Beaten
+finalists now fill any empty seat, in the same order.
+
 ### Cycles
 
 **Three interlocking cycles, and no two ever share a year.** The World Cup counts from

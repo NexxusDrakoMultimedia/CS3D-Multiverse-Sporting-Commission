@@ -126,7 +126,7 @@ Shield.
 
 | Competition | Field | Decided |
 |---|---|---|
-| MSC Cup Winners Cup | 32 — all 27 domestic trophies | wk 42 |
+| MSC Cup Winners Cup | 24 — one main trophy per association | wk 42 |
 | MSC Conference Trophy | 48 — 16 dropping from the Challengers, 32 smaller associations | wk 43 |
 | MSC Challengers League | 48 — 16 dropping from the Champions Cup, 32 from the leagues | wk 43 |
 | MSC Champions Cup | 48 — 16 seeded, 32 through qualifying | wk 43 |
@@ -163,6 +163,18 @@ The Cup Winners Cup takes weeks 16, 22, 27, 29, 31, 33, 36 and 38, with its fina
 larger than 256, between them enter all 2,144; each halves down to its last sixteen, and
 the 142 survivors contest the Coronation itself — a preliminary trims the field to 128,
 then seven rounds to the final. Nothing is seeded past the preliminary.
+
+**The Cup Winners Cup** takes the main domestic trophy of each of the 24 associations
+and nothing else — the Itavrnai Grand Conclave, the New Bradman League Cup and the
+Ryukawa Sakura Shield are still played but no longer qualify, and nor do the two
+curtain-raisers. The eight best-ranked holders go straight to the round of 16 and the
+other sixteen contest a preliminary, so eight winners join eight byes.
+
+**When one club wins two things.** The Super Cup seats the four continental holders,
+but the Cup Winners Cup does not exclude the other three, so a club can arrive with two
+trophies and leave a seat empty; beaten finalists fill any gap. The same goes one round
+later — the Coronation winner may also have topped the Super Cup group, and cannot play
+itself, so the Super Cup runner-up steps up to contest the Ultimate Championship.
 
 Weeks 50 to 52 are reserved for the finale: the Coronation Final alone in week 50, no
 club football at all in week 51, and the Ultimate Championship alone in week 52.
