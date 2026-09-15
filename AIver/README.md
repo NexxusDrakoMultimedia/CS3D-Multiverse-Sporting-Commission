@@ -34,8 +34,8 @@ Documents\My Games\Championship Soccer\Data\Names\
 
 **Step 3.** Start a new career, pick **Multiverse Sporting Commission** on the *Career
 football world* screen, then choose countries and divisions on *Select Database*. The
-start year suggests 2029 — that season runs into the 2030 World Cup — and can
-be changed there.
+start year suggests 2029 — that season runs into the 2030 World Cup — and can be changed
+there.
 
 ---
 
@@ -44,6 +44,7 @@ be changed there.
 ```
 Package.ini                    world name, author, version
 README.md                      this file
+CHANGELOG.md                   release notes
 Data\
   StartYear.txt                2029
   Nationalities.txt            country identities, aliases, region taxonomy
@@ -53,8 +54,9 @@ Data\
   Names\                       48 name lists - copy these out, see step 2
 ```
 
-No `Team\` or `Player\` folders: clubs and squads are generated from each nation's name
-lists, which is what keeps a 2,144-club world under 400 KB.
+Every club but one is generated from its nation's name lists, with no `Player\` folder at
+all, which is what keeps a 2,144-club world under 400 KB. The single `Data\Team` file is
+AFC Nexxus Drako, described below.
 
 ---
 
@@ -110,21 +112,27 @@ the promotion count of the tier below, so division sizes never drift.
 tier four, club for club and in thread order. Vyktoria's ten original amateur clubs stay
 together at the foot of the pyramid in V-League Eight.
 
+**AFC Nexxus Drako** plays in the Itavrnai twelfth flight: reputation nil, twenty-five
+players none over 20, ability in the fifties and sixties against potential in the
+two-tens and twenties. Claret and gold. It is the world's only `Data\Team` file.
+
 ---
 
 ## Competitions
+
+96 domestic competitions across the 24 associations, and 25 run by the Commission itself.
 
 ### Domestic
 
 Every association runs the same five competitions, named in its own register:
 
-| | Field |
-|---|---|
-| **National Cup** | every club in the pyramid — the association's entry to the MSC Cup Winners Cup |
-| **League Cup** | the top band of tiers |
-| **Semi-Pro Cup** | the middle band — eight- and twelve-tier pyramids only |
-| **Amateur Cup** | the bottom band — four- and twelve-tier pyramids only |
-| **Super Cup** | National Cup holders against the champions, one match, week two |
+| | Field | Final |
+|---|---|---|
+| **National Cup** | every club in the pyramid — the association's entry to the MSC Cup Winners Cup | wk 45 |
+| **League Cup** | the top band of tiers | wk 46 |
+| **Semi-Pro Cup** | the middle band — eight- and twelve-tier pyramids only | wk 44 |
+| **Amateur Cup** | the bottom band — four- and twelve-tier pyramids only | wk 44 |
+| **Super Cup** | National Cup holders against the champions, one match | wk 2 |
 
 Which band cups an association gets depends on how deep its pyramid runs. Four tiers is
 a professional half and an amateur half with no middle, so those associations have no
@@ -159,12 +167,12 @@ is in both.
 | Competition | Field | Decided |
 |---|---|---|
 | MSC Cup Winners Cup | 24 — every association's National Cup winner | wk 43 |
-| MSC Conference Trophy | 48 — 16 dropping from the Challengers, 32 smaller associations | wk 43 |
-| MSC Challengers League | 48 — 16 dropping from the Champions Cup, 32 from the leagues | wk 43 |
-| MSC Champions Cup | 48 — 16 seeded, 32 through qualifying | wk 43 |
+| MSC Conference Trophy | 48 — 16 dropping from the Challengers, 32 smaller associations | wk 44 |
+| MSC Challengers League | 48 — 16 dropping from the Champions Cup, 32 from the leagues | wk 44 |
+| MSC Champions Cup | 48 — 16 seeded, 32 through qualifying | wk 44 |
+| MSC Coronation Qualifiers | nine, entering all 2,144 clubs | wks 2–8 |
+| **MSC Coronation Tournament** | the 256 who came through | wk 45 |
 | MSC Super Cup | the four holders in a group, then a final | wks 47–50 |
-| MSC Coronation Qualifiers | nine, entering all 2,144 clubs, one in sixteen | wks 2–8 |
-| **MSC Coronation Tournament** | the 134 who came through | wk 45 |
 | **MSC Ultimate Championship** | Coronation winner v Super Cup winner | **wk 52** |
 
 **The cascade.** The three league competitions run as a chain, UEFA-style, and the
@@ -181,62 +189,73 @@ clubs dropping down are already known. They enter seeded, straight into the grou
 stage. The Conference's own 32 qualifiers come entirely from the smaller associations,
 so the third tier is theirs plus whoever falls out of the second.
 
-Only qualifying is staggered. Once the groups begin no club is in more than one of
-the three, so they share a calendar from there: group stage in weeks 15 to 25, round
-of 16 in 28 and 30, quarter finals 32 and 34, semi finals 37 and 39, and all three
-finals on the same night in week 43.
+Only qualifying is staggered. Once the groups begin no club is in more than one of the
+three, so they share a calendar from there: group stage in weeks 16, 19, 22, 25, 28 and
+30, round of 16 in 32 and 34, quarter finals in 36 and 38, semi finals in 40 and 42, and
+all three finals on the same night in week 44.
 
 **The off-weeks.** The Cup Winners Cup and the Coronation both draw on clubs already
-committed elsewhere, so neither is ever played on a night the big three are using.
-The Cup Winners Cup takes weeks 16, 22, 27, 29, 31, 33, 36 and 38, with its final in
-42; the Coronation takes 10, 12, 14, 20, 26, 35 and 40 before its own final in 50.
+committed elsewhere, so neither is ever played on a night the big three are using. The
+Cup Winners Cup takes weeks 17 and 23 for its preliminary, 29 and 31, 33 and 35, 37 and
+39, with its final in 43; the Coronation takes 12, 14, 18, 21, 24 and 27, then 41, before
+its own final in 45.
 
-**The Coronation** gives every club in the Commission a road in. Nine qualifiers, none
-larger than 256, between them enter all 2,144 at the same rate — one club in sixteen,
-over four rounds — which brings 134 through. The Coronation trims the odd twelve in a
-Preliminary Round and then counts from scratch: First Round of 128, Second, Third,
-Fourth, Quarter Finals, Semi Finals, Coronation Final. Nothing is seeded past the
-Preliminary.
+**The Cup Winners Cup** takes the main domestic trophy of each of the 24 associations and
+nothing else — League, Semi-Pro, Amateur and Super Cups are all still played, but none of
+them qualifies. The eight best-ranked holders go straight to the round of 16 and the other
+sixteen contest a preliminary, so eight winners join eight byes.
 
-**Domestic cups.** Every association has a Super Cup — champions against cup holders in
-week two. Any pyramid of eight tiers or more also has a League Cup for its top four
-divisions and a Semi-Pro Trophy for tiers five to eight, and the twelve-tier Itavrnai
-pyramid adds an Amateur Vase below that. Tier cups enter by division, so each takes
-exactly the band it is named for. Within a nation every cup runs on its own lane of
-weeks, so two cups a club could be in never share a night.
+**The Coronation** gives every club in the Commission a road in. Nine qualifiers drawn on
+the Commission's own lines — blocmates together, the unregioned associations pooled with
+their nearest affiliates — between them enter all 2,144 and send exactly **256** through,
+the engine's ceiling for a single competition. The tournament opens straight at a Round of
+256: no preliminary, no byes, nothing seeded.
 
-**AFC Nexxus Drako** plays in the Itavrnai twelfth flight: reputation nil, twenty-five
-players none over 20, ability in the fifties and sixties against potential in the
-two-tens and twenties. Claret and gold. It has its own `Data\Team` file.
+| Qualifier | Clubs | Berths | Rate |
+|---|---|---|---|
+| Itavrnai | 256 | 32 | 1 in 8 |
+| Union South — Vyktoria, New Rythorn | 256 | 32 | 1 in 8 |
+| Commonwealth — New Bradman, Ryukawa, Castolo and Minanda | 224 | 56 | 1 in 4 |
+| Galatyan North — Mancunya, Wyrmwoode | 256 | 32 | 1 in 8 |
+| Galatyan West — Centralya, Esmeraldys | 256 | 32 | 1 in 8 |
+| Cyberya — Layn's Wyred, Determi, Nexxie, Jarokn | 256 | 32 | 1 in 8 |
+| Open North — Veslavia, Valcarena, Tianlu, Akwanta | 256 | 16 | 1 in 16 |
+| Open South — Sindhara, Hanseong, Mazamba | 192 | 12 | 1 in 16 |
+| Open Reach — Qamaria, Selanting, Norvalia | 192 | 12 | 1 in 16 |
 
-**One naming rule everywhere.** Every knockout round in the world is a **Round of N**,
-a **Quarter Final**, a **Semi Final** or a **Final**. Where a field is not a power of
-two, the opening round is a **Preliminary Round** that seeds the surplus out and lands
-exactly on one — the Coronation's 134 down to 128, the Itavrnai Hatchling Vase's 96 down
-to 64. Quarter Final, Semi Final and Final are only used where a competition plays to a
-single winner, so the Coronation qualifiers — which stop early and send several through
-— name their rounds for the field they start with throughout.
+The three Open groups are the affiliates, and they qualify at half a bloc's rate — one
+club in sixteen against one in eight. Forty berths between them, rather than the
+sixty-eight a flat rate would hand them.
 
-**Every seat belongs to someone.** Where a competition inherits named clubs, each seat
-is written on its own incrementing threshold with its own fallback behind it, the way
-the stock European Cup does — an association's cup winner, and that same association's
-league if the cup went uncontested. A gap is never filled by whichever entry happens to
-sit first in the list.
+Rates only halve and the field is fixed at 256, so those berths have to go somewhere.
+They go to the Commonwealth, at one in four: the smallest bloc by clubs, and the one
+carrying New Bradman.
 
-**The Cup Winners Cup** takes the main domestic trophy of each of the 24 associations
-and nothing else — the Itavrnai Grand Conclave, the New Bradman League Cup and the
-Ryukawa Sakura Shield are still played but no longer qualify, and nor do the two
-curtain-raisers. The eight best-ranked holders go straight to the round of 16 and the
-other sixteen contest a preliminary, so eight winners join eight byes.
+**One naming rule everywhere.** Every knockout round in the world is a **Round of N**, a
+**Quarter Final**, a **Semi Final** or a **Final**. Where a field is not a power of two,
+the opening round is a **Preliminary Round** that seeds the surplus out and lands exactly
+on one — the Cup Winners Cup's 24 down to 16, the Itavrnai Hatchling Vase's 96 down to 64.
+Quarter Final, Semi Final and Final are only used where a competition plays to a single
+winner, so the Coronation qualifiers — which stop early and send several through — name
+their rounds for the field they start with throughout.
 
-**When one club wins two things.** The Super Cup seats the four continental holders,
-but the Cup Winners Cup does not exclude the other three, so a club can arrive with two
+**Every seat belongs to someone.** Where a competition inherits named clubs, each seat is
+written on its own incrementing threshold with its own fallback behind it, the way the
+stock European Cup does — an association's cup winner, and that same association's league
+if the cup went uncontested. A gap is never filled by whichever entry happens to sit first
+in the list.
+
+**When one club wins two things.** The Super Cup seats the four continental holders, but
+the Cup Winners Cup does not exclude the other three, so a club can arrive with two
 trophies and leave a seat empty; beaten finalists fill any gap. The same goes one round
-later — the Coronation winner may also have topped the Super Cup group, and cannot play
-itself, so the Super Cup runner-up steps up to contest the Ultimate Championship.
+later — the Coronation winner may also have won the Super Cup final, and cannot play
+itself, so the beaten finalist steps up to contest the Ultimate Championship, and the
+group table behind them after that.
 
-Weeks 44 to 52 are the finale: the Coronation Final alone in week 50, no
-club football at all in week 51, and the Ultimate Championship alone in week 52.
+Weeks 43 to 52 are the finale: the Cup Winners Cup final in 43, the three continental
+finals together in 44, the Coronation final in 45, the last domestic silverware in 46,
+the Super Cup group across 47 to 49 and its final in 50, internationals alone in 51, and
+the Ultimate Championship alone in week 52.
 
 ### National teams
 
@@ -250,20 +269,20 @@ club football at all in week 51, and the Ultimate Championship alone in week 52.
 | MSC Associates Trophy | the unregioned ten | every 4 years from 2004 | 6–32 |
 | Friendly windows × 3 | everyone | yearly | 8, 24, 44 |
 
-The three cycles interlock, so no two of them ever share a year — the World Cup from
-2002 on a four-year offset, the Nations League from 2003 on a two-year one, and the
-bloc championships from 2004 on a four-year one, midway between World Cups:
+The three cycles interlock, so no two of them ever share a year — the World Cup from 2002
+on a four-year offset, the Nations League from 2003 on a two-year one, and the bloc
+championships from 2004 on a four-year one, midway between World Cups:
 
-| 2030 | 2031 | 2032 | 2033 | 2034 |
+| 2029 | 2030 | 2031 | 2032 | 2033 |
 |---|---|---|---|---|
-| World Cup | Nations League | bloc championships | Nations League | World Cup |
+| Nations League | World Cup | Nations League | bloc championships | Nations League |
 
-The suggested start year of 2030 is therefore a World Cup season. Friendly windows run
-every year regardless.
+The suggested start year of 2029 is therefore a Nations League season running into the
+2030 World Cup. Friendly windows run every year regardless.
 
 Every nation has exactly one bloc-level championship, and the four cover all 24 with no
-overlap. The **Nexxus Drako Shield** is the bloc championship for the Itavrnai Union
-*and* the New Bradmanian Commonwealth, contested together — neither holds one of its own.
+overlap. The **Nexxus Drako Shield** is the bloc championship for the Itavrnai Union *and*
+the New Bradmanian Commonwealth, contested together — neither holds one of its own.
 
 ---
 
@@ -342,15 +361,27 @@ than game data.
 **Two undocumented engine limits** shaped this world. A pyramid cannot exceed **12
 tiers**, which is why the Itavrnai Union runs 12 flights of 18, 22 and 24 clubs rather
 than 16 of 16. A competition cannot exceed **256 teams**, which is why the Coronation is
-nine qualifiers feeding a final rather than one 2,144-club bracket. Neither limit appears
-in the manual.
+nine qualifiers feeding a final tournament rather than one 2,144-club bracket. Neither
+limit appears in the manual.
+
+**A venue counts as an entry.** `+ add 1 venue` occupies a seat in the competition's
+field, so a 24-team tournament with a fixed venue has room for 23 more adds. This is not
+documented either, and it is worth knowing before you edit any of the international
+competitions.
 
 **Comment character.** These files use `#`, matching the game's own shipped data. The
 manual specifies `;`. Every comment sits on its own line and never trails a value, so if
 a future build enforces the manual it is a find-and-replace.
 
-**No team or player files.** Clubs and squads are generated. Add `Data\Team\<Club>.txt`
-files if you want fixed kits, reputations or squads for particular clubs.
+**Squads.** Every club but AFC Nexxus Drako has its players generated from its nation's
+name lists at career start. Add more `Data\Team\<Club>.txt` files if you want fixed kits,
+reputations or squads for particular clubs.
+
+**Create a Club.** Some cups have been reported failing with *"Cup could not be played
+because only 0 of at least 2 valid teams were available"* in a Create a Club career, in
+builds where the same world runs cleanly as a watcher career. This looks like an engine
+path rather than a data fault, and a bug report has been written up for it. The cups that
+fail are byte-identical to ones that don't apart from their name, country and reputation.
 
 ---
 

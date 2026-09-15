@@ -240,87 +240,61 @@
 + reputation 17
 + international
 # 256 clubs - Itavrnai Union
-# 16 go through to the Coronation Tournament, one in 16
+# 32 go through to the Coronation Tournament, one in 8
 + round 1 "Round of 256" 1-256 2
 + draw 1
 + add 256 from "Itavrnai Union"
 + round 2 "Round of 128" 1-128 4
 + round 3 "Round of 64" 1-64 6
-+ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Union South
 + reputation 17
 + international
 # 256 clubs - Vyktoria, New Rythorn
-# 16 go through to the Coronation Tournament, one in 16
+# 32 go through to the Coronation Tournament, one in 8
 + round 1 "Round of 256" 1-256 2
 + draw 1
 + add 128 from "Vyktoria"
 + add 128 from "New Rythorn"
 + round 2 "Round of 128" 1-128 4
 + round 3 "Round of 64" 1-64 6
-+ round 4 "Round of 32" 1-32 8
+* MSC Coronation Qualifier Commonwealth
++ reputation 17
++ international
+# 224 clubs - New Bradman, Ryukawa, Castolo and Minanda
+# 56 go through to the Coronation Tournament, one in 4
++ round 1 "Round of 224" 1-224 2
++ draw 1
++ add 128 from "New Bradman"
++ add 64 from "Ryukawa"
++ add 32 from "Castolo and Minanda"
++ round 2 "Round of 112" 1-112 4
 * MSC Coronation Qualifier Galatyan North
 + reputation 17
 + international
 # 256 clubs - Mancunya, Wyrmwoode
-# 16 go through to the Coronation Tournament, one in 16
+# 32 go through to the Coronation Tournament, one in 8
 + round 1 "Round of 256" 1-256 2
 + draw 1
 + add 128 from "Mancunya"
 + add 128 from "Wyrmwoode"
 + round 2 "Round of 128" 1-128 4
 + round 3 "Round of 64" 1-64 6
-+ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Galatyan West
 + reputation 17
 + international
 # 256 clubs - Centralya, Esmeraldys
-# 16 go through to the Coronation Tournament, one in 16
+# 32 go through to the Coronation Tournament, one in 8
 + round 1 "Round of 256" 1-256 2
 + draw 1
 + add 128 from "Centralya"
 + add 128 from "Esmeraldys"
 + round 2 "Round of 128" 1-128 4
 + round 3 "Round of 64" 1-64 6
-+ round 4 "Round of 32" 1-32 8
-* MSC Coronation Qualifier Bradman
-+ reputation 17
-+ international
-# 128 clubs - New Bradman
-# 8 go through to the Coronation Tournament, one in 16
-+ round 1 "Round of 128" 1-128 2
-+ draw 1
-+ add 128 from "New Bradman"
-+ round 2 "Round of 64" 1-64 4
-+ round 3 "Round of 32" 1-32 6
-+ round 4 "Round of 16" 1-16 8
-* MSC Coronation Qualifier Ryukawa
-+ reputation 17
-+ international
-# 64 clubs - Ryukawa
-# 4 go through to the Coronation Tournament, one in 16
-+ round 1 "Round of 64" 1-64 2
-+ draw 1
-+ add 64 from "Ryukawa"
-+ round 2 "Round of 32" 1-32 4
-+ round 3 "Round of 16" 1-16 6
-+ round 4 "Round of 8" 1-8 8
-* MSC Coronation Qualifier Castolo
-+ reputation 17
-+ international
-# 32 clubs - Castolo and Minanda
-# 2 go through to the Coronation Tournament, one in 16
-+ round 1 "Round of 32" 1-32 2
-+ draw 1
-+ add 32 from "Castolo and Minanda"
-+ round 2 "Round of 16" 1-16 4
-+ round 3 "Round of 8" 1-8 6
-+ round 4 "Round of 4" 1-4 8
 * MSC Coronation Qualifier Cyberya
 + reputation 17
 + international
 # 256 clubs - Layn's Wyred, Determi, Nexxie, Jarokn
-# 16 go through to the Coronation Tournament, one in 16
+# 32 go through to the Coronation Tournament, one in 8
 + round 1 "Round of 256" 1-256 2
 + draw 1
 + add 64 from "Layn's Wyred"
@@ -329,7 +303,6 @@
 + add 64 from "Jarokn"
 + round 2 "Round of 128" 1-128 4
 + round 3 "Round of 64" 1-64 6
-+ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Open North
 + reputation 17
 + international
@@ -347,50 +320,48 @@
 * MSC Coronation Qualifier Open South
 + reputation 17
 + international
-# 256 clubs - Sindhara, Hanseong, Mazamba, Qamaria
-# 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Round of 256" 1-256 2
+# 192 clubs - Sindhara, Hanseong, Mazamba
+# 12 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 192" 1-192 2
 + draw 1
 + add 64 from "Sindhara"
 + add 64 from "Hanseong"
 + add 64 from "Mazamba"
-+ add 64 from "Qamaria"
-+ round 2 "Round of 128" 1-128 4
-+ round 3 "Round of 64" 1-64 6
-+ round 4 "Round of 32" 1-32 8
++ round 2 "Round of 96" 1-96 4
++ round 3 "Round of 48" 1-48 6
++ round 4 "Round of 24" 1-24 8
 * MSC Coronation Qualifier Open Reach
 + reputation 17
 + international
-# 128 clubs - Selanting, Norvalia
-# 8 go through to the Coronation Tournament, one in 16
-+ round 1 "Round of 128" 1-128 2
+# 192 clubs - Qamaria, Selanting, Norvalia
+# 12 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 192" 1-192 2
 + draw 1
++ add 64 from "Qamaria"
 + add 64 from "Selanting"
 + add 64 from "Norvalia"
-+ round 2 "Round of 64" 1-64 4
-+ round 3 "Round of 32" 1-32 6
-+ round 4 "Round of 16" 1-16 8
++ round 2 "Round of 96" 1-96 4
++ round 3 "Round of 48" 1-48 6
++ round 4 "Round of 24" 1-24 8
 * MSC Coronation Tournament
 + reputation 20
 + international
 # Every club in the Commission has a road in: the nine qualifiers between
-# them enter all 2144 clubs and send 134 through. A Preliminary trims the odd
-# 12, and the tournament proper then runs First Round to Fourth and on to
-# the Quarter Finals. Nothing is seeded past the Preliminary.
-+ round 1 "Preliminary Round" 123-134 12
-+ draw 10
-+ add 16 rank 1 "MSC Coronation Qualifier Itavrnai Round of 32"
-+ add 16 rank 1 "MSC Coronation Qualifier Union South Round of 32"
-+ add 16 rank 1 "MSC Coronation Qualifier Galatyan North Round of 32"
-+ add 16 rank 1 "MSC Coronation Qualifier Galatyan West Round of 32"
-+ add 8 rank 1 "MSC Coronation Qualifier Bradman Round of 16"
-+ add 4 rank 1 "MSC Coronation Qualifier Ryukawa Round of 8"
-+ add 2 rank 1 "MSC Coronation Qualifier Castolo Round of 4"
-+ add 16 rank 1 "MSC Coronation Qualifier Cyberya Round of 32"
+# them enter all 2144 clubs and send exactly 256 through - the engine's
+# ceiling for one competition - so this opens straight at a Round of 256
+# with no preliminary, no byes and nothing seeded.
++ round 1 "Round of 256" 1-256 12
++ draw 9
++ add 32 rank 1 "MSC Coronation Qualifier Itavrnai Round of 64"
++ add 32 rank 1 "MSC Coronation Qualifier Union South Round of 64"
++ add 56 rank 1 "MSC Coronation Qualifier Commonwealth Round of 112"
++ add 32 rank 1 "MSC Coronation Qualifier Galatyan North Round of 64"
++ add 32 rank 1 "MSC Coronation Qualifier Galatyan West Round of 64"
++ add 32 rank 1 "MSC Coronation Qualifier Cyberya Round of 64"
 + add 16 rank 1 "MSC Coronation Qualifier Open North Round of 32"
-+ add 16 rank 1 "MSC Coronation Qualifier Open South Round of 32"
-+ add 8 rank 1 "MSC Coronation Qualifier Open Reach Round of 16"
-+ round 2 "Round of 128" 1-128 15
++ add 12 rank 1 "MSC Coronation Qualifier Open South Round of 24"
++ add 12 rank 1 "MSC Coronation Qualifier Open Reach Round of 24"
++ round 2 "Round of 128" 1-128 14
 + round 3 "Round of 64" 1-64 18
 + round 4 "Round of 32" 1-32 21
 + round 5 "Round of 16" 1-16 24
