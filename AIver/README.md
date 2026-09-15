@@ -112,21 +112,6 @@ together at the foot of the pyramid in V-League Eight.
 pyramid in the world. Like every other club it has no file of its own — its squad, kit and
 reputation are generated at career start.
 
-### Colours
-
-Five associations carry declared colours, written into their `Data\League` file beneath
-`! Names`:
-
-| Nation | Home | Change |
-|---|---|---|
-| Itavrnai Union | `#ffff00` | `#0000ff` |
-| Vyktoria | `#7f0000` | `#ffd900` |
-| New Bradman | `#7f0000` | `#00007f` |
-| Ryukawa | `#ff0000` | `#ffff00` |
-| Castolo and Minanda | `#00007f` | `#ffffff` |
-
-Whether the engine reads them there is unconfirmed — see the note at the end.
-
 ---
 
 ## Competitions
@@ -366,17 +351,16 @@ unregioned ten stay pure.
 names load correctly rather than as mojibake. League, Nationalities and provider files use CRLF; the name lists use bare LF with no trailing newline. Don't re-save any of them as
 UTF-8. This README is the exception — it is UTF-8, being documentation rather than game data.
 
-**Kit colours are unresolved.** The lines above are the only colour data in the world, and
-they may well do nothing. Two things have been tried and neither worked in game: hex codes
-in the League files, which is what is there now, and the stock spelling — the game's own
-colour names in a `Data\Team\<Nation>.txt` file per national team, on the pattern of the
-stock `Zimbabwe.txt` and `Moldova.txt`. For the record, the stock data never uses hex, and
-the 21 colour names it does use are `amber`, `black`, `blue`, `brown`, `claret`, `darkblue`,
-`darkgray`, `darkgreen`, `darkred`, `gold`, `green`, `lightblue`, `lightgreen`,
-`lightyellow`, `midblue`, `orange`, `red`, `redwine`, `violet`, `white` and `yellow`, on
-`shirt`, `sleeves`, `stripes`, `shorts` and `socks`. The stock national-team files also
-carry an `! appear` line — `1 9 9` for Moldova, `0 0 0 1` for Zimbabwe — whose meaning is
-undocumented.
+**No colour data.** Nothing in this world declares a kit colour, because nothing that was
+tried worked in game: hex codes in the League files, and the stock spelling — the game's own
+colour names in a `Data\Team\<Nation>.txt` file per team, on the pattern of the stock
+`Zimbabwe.txt` and `Moldova.txt`. Kits are left to the engine. For the record, the stock data
+never uses hex, and the 21 colour names it does use are `amber`, `black`, `blue`, `brown`,
+`claret`, `darkblue`, `darkgray`, `darkgreen`, `darkred`, `gold`, `green`, `lightblue`,
+`lightgreen`, `lightyellow`, `midblue`, `orange`, `red`, `redwine`, `violet`, `white` and
+`yellow`, on `shirt`, `sleeves`, `stripes`, `shorts` and `socks`. The stock national-team
+files also carry an `! appear` line — `1 9 9` for Moldova, `0 0 0 1` for Zimbabwe — whose
+meaning is undocumented.
 
 **Two undocumented engine limits** shaped this world. A pyramid cannot exceed **12 tiers**,
 which is why the Itavrnai Union runs 12 flights of 18, 22 and 24 clubs rather than 16 of 16.

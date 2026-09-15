@@ -1,20 +1,19 @@
 # Changelog
 
-## 1.0.2 — colours reverted, Team folder removed
+## 1.0.2 — colours removed
 
-The named colours and national-team files from 1.0.1 did not work in game, so both are
-withdrawn. No competition, calendar, club or name data changed.
+The named colours and national-team files from 1.0.1 did not work in game, and neither did
+the hex codes 1.0 carried before them. All colour data is therefore withdrawn. No
+competition, calendar, club or name data changed.
+
+**No colour data anywhere.** The kit lines are gone from the five associations' `Data\League`
+files. Nothing in the world now declares a colour.
 
 **`Data\Team` removed entirely.** The five national-team files added in 1.0.1 are gone, and
 so is AFC Nexxus Drako's — the folder no longer exists. Every club in the world, AFC Nexxus
 Drako included, now has its kit, reputation and squad generated at career start from its
 division and its nation's name lists. The twenty-five youth players written for AFC Nexxus
 Drako go with the file; the club itself still plays in the Itavrnai twelfth flight.
-
-**Colours back where 1.0 had them.** The five associations with declared colours carry their
-kit lines in their `Data\League` file again, as hex, exactly as in 1.0 — `#7f0000`/`#ffd900`
-for Vyktoria, `#7f0000`/`#00007f` for New Bradman, `#ffff00`/`#0000ff` for the Itavrnai
-Union, `#ff0000`/`#ffff00` for Ryukawa, `#00007f`/`#ffffff` for Castolo and Minanda.
 
 ---
 
