@@ -10,20 +10,60 @@
 + Country "Mancunya"
 + reputation 13
 # Staggered entry by rank; two-legged semi finals.
-+ round 1 "First Round" 65-128 4
-+ draw 3
++ draw 2
++ round 1 "First Round" 65-128 3
 # seeded clubs enter later, as the Galatyan associations all insist
 + add 32 from "Mancunya"
 + add 32 from "Mancunya"
 + add 64 from "Mancunya"
 + round 2 "Second Round" 33-96 6
 + round 3 "Third Round" 1-64 9
-+ round 4 "Fourth Round" 1-32 13
++ round 4 "Fourth Round" 1-32 12
 + round 5 "Round of 16" 1-16 18
-+ round 6 "Quarter Finals" 1-8 24
++ round 6 "Quarter Finals" 1-8 27
 + round 7 "Semi Finals" 1-4
-+ week 32 34
-+ round 8 "Final" 1-2 41
++ week 36 39
++ round 8 "Final" 1-2 45
+* Mancunya Super Cup
++ Country "Mancunya"
++ reputation 10
+# Champions against cup holders, one match, week two.
++ draw 1
++ round 1 "Final" 1-2 2
+# champions against cup holders - the season opens with it
++ <1 add 1 cup-winner "Mancunya Challenge Cup Final"
++ <1 add 1 from "Mancunya"
++ <2 add 1 from "Mancunya"
+* Mancunya League Cup
++ Country "Mancunya"
++ reputation 12
+# Entry by division, so the band is exactly the tiers named.
++ draw 3
++ round 1 "First Round" 1-64 4
++ add 16 from "Mancunya Premiership"
++ add 16 from "Mancunya League One"
++ add 16 from "Mancunya League Two"
++ add 16 from "Mancunya League Three"
++ round 2 "Second Round" 1-32 7
++ round 3 "Third Round" 1-16 13
++ round 4 "Quarter Finals" 1-8 22
++ round 5 "Semi Finals" 1-4 34
++ round 6 "Final" 1-2 46
+* Mancunya Semi-Pro Trophy
++ Country "Mancunya"
++ reputation 8
+# Entry by division, so the band is exactly the tiers named.
++ draw 4
++ round 1 "First Round" 1-64 5
++ add 16 from "Mancunya League Four"
++ add 16 from "Mancunya League Five"
++ add 16 from "Mancunya League Six"
++ add 16 from "Mancunya League Seven"
++ round 2 "Second Round" 1-32 8
++ round 3 "Third Round" 1-16 11
++ round 4 "Quarter Finals" 1-8 20
++ round 5 "Semi Finals" 1-4 32
++ round 6 "Final" 1-2 44
 : Mancunya Premiership
 + division 1
 + promotions 0

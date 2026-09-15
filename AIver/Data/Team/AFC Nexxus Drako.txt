@@ -1,0 +1,534 @@
+! Name "AFC Nexxus Drako"
+! reputation 0
+! 1 shirt #7f0000
+! 1 shorts #ffd900
+! 1 socks #7f0000
+! 2 shirt #ffd900
+! 2 shorts #7f0000
+! 2 socks #ffd900
+! 3 shirt #ffffff
+! 3 shorts #7f0000
+! 3 socks #ffffff
+Yxissrn, Ólafur: GK C
+Takavyn, Kristján: GK C
+Draisss, Gorlos: GK C
+Kamarumbra, Anders: D C
+Graekhnar, Chris: D C
+Vaexivok, Ville: D C
+Luorrazz, Ziraanur: D C
+Smyth, Teemu: D C
+Kaessezhur, Ssyirrss: D C
+Taurnvyn, Neathrn: D L
+Tavyeth, Lee: D R
+Nhavyl, Ssyndenyx: DM C
+Kaeaelss, Ormarur: DM C
+Raissazz, Malaelxis: M C
+Ssyumel, Mikael: M C
+Gorathdel, Vathraazz: M C
+Xavresoth, Raxithar: M C
+Tavremir, Vaothkar: AM C
+Taurnvyn, Ssyrus: AM C
+Aurssethar, Zaszorsoth: F C
+Tirndesoth, Mads: F C
+Aurzorxis, Vorlol: F C
+White, Korndeth: F C
+Jóhannsson, Neoviael: F C
+Thyssearis, Thyvesoth: F C
+$ Yxissrn, Ólafur (2010)
+nationality = Itavrnai Union
+position = GK C
+dateofbirth = 2010-09-17
+ability = 69
+potential = 219
+reputation = 59
+handling = O
+reflexes = -
+jumping = -
+agility = -
+anticipation = +
+$ Takavyn, Kristján (2010)
+nationality = Itavrnai Union
+position = GK C
+dateofbirth = 2010-10-18
+ability = 68
+potential = 225
+reputation = 59
+handling = -
+reflexes = -
+jumping = +
+agility = -
+anticipation = O
+$ Draisss, Gorlos (2011)
+nationality = Itavrnai Union
+position = GK C
+dateofbirth = 2011-11-26
+ability = 58
+potential = 214
+reputation = 42
+handling = O
+reflexes = +
+jumping = +
+agility = -
+anticipation = O
+$ Kamarumbra, Anders (2012)
+nationality = Itavrnai Union
+position = D C
+dateofbirth = 2012-07-07
+ability = 72
+potential = 221
+reputation = 67
+speed = --
+shot power = O
+shot control = --
+stamina = --
+dribbling = O
+jumping = +
+anticipation = O
+agility = -
+tackling = --
+heading = --
+ball control = -
+aggression = -
+handling = ---
+reflexes = ---
+$ Graekhnar, Chris (2009)
+nationality = Itavrnai Union
+position = D C
+dateofbirth = 2009-01-11
+ability = 87
+potential = 221
+reputation = 57
+speed = -
+shot power = -
+shot control = -
+stamina = --
+dribbling = +
+jumping = --
+anticipation = -
+agility = +
+tackling = -
+heading = +
+ball control = -
+aggression = O
+handling = ---
+reflexes = ---
+$ Vaexivok, Ville (2012)
+nationality = Itavrnai Union
+position = D C
+dateofbirth = 2012-08-22
+ability = 95
+potential = 213
+reputation = 66
+speed = -
+shot power = --
+shot control = --
+stamina = -
+dribbling = -
+jumping = +
+anticipation = --
+agility = -
+tackling = +
+heading = +
+ball control = O
+aggression = -
+handling = ---
+reflexes = ---
+$ Luorrazz, Ziraanur (2010)
+nationality = Itavrnai Union
+position = D C
+dateofbirth = 2010-10-16
+ability = 62
+potential = 214
+reputation = 58
+speed = -
+shot power = --
+shot control = --
+stamina = O
+dribbling = O
+jumping = -
+anticipation = -
+agility = +
+tackling = +
+heading = -
+ball control = +
+aggression = --
+handling = ---
+reflexes = ---
+$ Smyth, Teemu (2012)
+nationality = Itavrnai Union
+position = D C
+dateofbirth = 2012-06-18
+ability = 89
+potential = 218
+reputation = 56
+speed = -
+shot power = -
+shot control = O
+stamina = --
+dribbling = O
+jumping = --
+anticipation = O
+agility = --
+tackling = O
+heading = +
+ball control = -
+aggression = -
+handling = ---
+reflexes = ---
+$ Kaessezhur, Ssyirrss (2009)
+nationality = Itavrnai Union
+position = D C
+dateofbirth = 2009-10-04
+ability = 65
+potential = 212
+reputation = 47
+speed = +
+shot power = --
+shot control = +
+stamina = +
+dribbling = O
+jumping = +
+anticipation = +
+agility = +
+tackling = --
+heading = O
+ball control = --
+aggression = +
+handling = ---
+reflexes = ---
+$ Taurnvyn, Neathrn (2010)
+nationality = Itavrnai Union
+position = D L
+dateofbirth = 2010-07-23
+ability = 68
+potential = 208
+reputation = 69
+speed = O
+shot power = +
+shot control = -
+stamina = --
+dribbling = O
+jumping = --
+anticipation = --
+agility = +
+tackling = -
+heading = +
+ball control = -
+aggression = O
+handling = ---
+reflexes = ---
+$ Tavyeth, Lee (2009)
+nationality = Itavrnai Union
+position = D R
+dateofbirth = 2009-08-04
+ability = 82
+potential = 207
+reputation = 51
+speed = -
+shot power = +
+shot control = --
+stamina = O
+dribbling = +
+jumping = +
+anticipation = O
+agility = -
+tackling = --
+heading = -
+ball control = -
+aggression = --
+handling = ---
+reflexes = ---
+$ Nhavyl, Ssyndenyx (2011)
+nationality = Itavrnai Union
+position = DM C
+dateofbirth = 2011-04-08
+ability = 60
+potential = 211
+reputation = 53
+speed = +
+shot power = --
+shot control = O
+stamina = -
+dribbling = --
+jumping = O
+anticipation = +
+agility = O
+tackling = -
+heading = +
+ball control = O
+aggression = O
+handling = ---
+reflexes = ---
+$ Kaeaelss, Ormarur (2009)
+nationality = Itavrnai Union
+position = DM C
+dateofbirth = 2009-12-11
+ability = 73
+potential = 209
+reputation = 42
+speed = +
+shot power = O
+shot control = --
+stamina = --
+dribbling = -
+jumping = -
+anticipation = --
+agility = O
+tackling = --
+heading = --
+ball control = -
+aggression = +
+handling = ---
+reflexes = ---
+$ Raissazz, Malaelxis (2012)
+nationality = Itavrnai Union
+position = M C
+dateofbirth = 2012-02-01
+ability = 74
+potential = 226
+reputation = 48
+speed = -
+shot power = -
+shot control = --
+stamina = +
+dribbling = -
+jumping = +
+anticipation = +
+agility = O
+tackling = O
+heading = --
+ball control = +
+aggression = +
+handling = ---
+reflexes = ---
+$ Ssyumel, Mikael (2012)
+nationality = Itavrnai Union
+position = M C
+dateofbirth = 2012-07-05
+ability = 81
+potential = 227
+reputation = 56
+speed = -
+shot power = -
+shot control = --
+stamina = O
+dribbling = -
+jumping = --
+anticipation = O
+agility = -
+tackling = +
+heading = --
+ball control = --
+aggression = --
+handling = ---
+reflexes = ---
+$ Gorathdel, Vathraazz (2010)
+nationality = Itavrnai Union
+position = M C
+dateofbirth = 2010-09-11
+ability = 86
+potential = 212
+reputation = 56
+speed = O
+shot power = --
+shot control = O
+stamina = O
+dribbling = --
+jumping = --
+anticipation = -
+agility = --
+tackling = O
+heading = --
+ball control = O
+aggression = --
+handling = ---
+reflexes = ---
+$ Xavresoth, Raxithar (2011)
+nationality = Itavrnai Union
+position = M C
+dateofbirth = 2011-12-04
+ability = 81
+potential = 215
+reputation = 45
+speed = +
+shot power = O
+shot control = +
+stamina = +
+dribbling = --
+jumping = O
+anticipation = +
+agility = O
+tackling = -
+heading = --
+ball control = --
+aggression = --
+handling = ---
+reflexes = ---
+$ Tavremir, Vaothkar (2010)
+nationality = Itavrnai Union
+position = AM C
+dateofbirth = 2010-10-20
+ability = 64
+potential = 210
+reputation = 49
+speed = +
+shot power = --
+shot control = +
+stamina = +
+dribbling = +
+jumping = --
+anticipation = -
+agility = O
+tackling = --
+heading = +
+ball control = +
+aggression = +
+handling = ---
+reflexes = ---
+$ Taurnvyn, Ssyrus (2009)
+nationality = Itavrnai Union
+position = AM C
+dateofbirth = 2009-08-10
+ability = 65
+potential = 213
+reputation = 55
+speed = +
+shot power = -
+shot control = --
+stamina = O
+dribbling = O
+jumping = -
+anticipation = -
+agility = +
+tackling = O
+heading = --
+ball control = O
+aggression = -
+handling = ---
+reflexes = ---
+$ Aurssethar, Zaszorsoth (2010)
+nationality = Itavrnai Union
+position = F C
+dateofbirth = 2010-09-17
+ability = 63
+potential = 226
+reputation = 66
+speed = +
+shot power = O
+shot control = O
+stamina = O
+dribbling = --
+jumping = O
+anticipation = -
+agility = -
+tackling = -
+heading = -
+ball control = +
+aggression = -
+handling = ---
+reflexes = ---
+$ Tirndesoth, Mads (2010)
+nationality = Itavrnai Union
+position = F C
+dateofbirth = 2010-10-14
+ability = 71
+potential = 225
+reputation = 67
+speed = O
+shot power = -
+shot control = +
+stamina = +
+dribbling = O
+jumping = +
+anticipation = +
+agility = O
+tackling = --
+heading = --
+ball control = --
+aggression = O
+handling = ---
+reflexes = ---
+$ Aurzorxis, Vorlol (2012)
+nationality = Itavrnai Union
+position = F C
+dateofbirth = 2012-08-17
+ability = 61
+potential = 208
+reputation = 65
+speed = O
+shot power = O
+shot control = -
+stamina = --
+dribbling = --
+jumping = +
+anticipation = --
+agility = +
+tackling = +
+heading = O
+ball control = -
+aggression = O
+handling = ---
+reflexes = ---
+$ White, Korndeth (2012)
+nationality = Itavrnai Union
+position = F C
+dateofbirth = 2012-11-10
+ability = 77
+potential = 210
+reputation = 68
+speed = --
+shot power = --
+shot control = --
+stamina = +
+dribbling = --
+jumping = +
+anticipation = O
+agility = O
+tackling = O
+heading = -
+ball control = -
+aggression = O
+handling = ---
+reflexes = ---
+$ Jóhannsson, Neoviael (2012)
+nationality = Itavrnai Union
+position = F C
+dateofbirth = 2012-10-16
+ability = 85
+potential = 221
+reputation = 42
+speed = +
+shot power = --
+shot control = O
+stamina = +
+dribbling = --
+jumping = O
+anticipation = O
+agility = -
+tackling = -
+heading = --
+ball control = +
+aggression = +
+handling = ---
+reflexes = ---
+$ Thyssearis, Thyvesoth (2012)
+nationality = Itavrnai Union
+position = F C
+dateofbirth = 2012-11-28
+ability = 92
+potential = 211
+reputation = 67
+speed = +
+shot power = --
+shot control = +
+stamina = O
+dribbling = O
+jumping = O
+anticipation = +
+agility = +
+tackling = --
+heading = --
+ball control = +
+aggression = -
+handling = ---
+reflexes = ---

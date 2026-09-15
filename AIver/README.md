@@ -7,7 +7,7 @@ calendar that runs from a 2,144-club Coronation down to a single match for every
 week 52.
 
 **Created by Nexxus Drako, with Claude's assistance.**
-Version 1.3 · Every club, nation and competition is fictional.
+Version 1.0 · Every club, nation and competition is fictional.
 
 ---
 
@@ -34,7 +34,8 @@ Documents\My Games\Championship Soccer\Data\Names\
 
 **Step 3.** Start a new career, pick **Multiverse Sporting Commission** on the *Career
 football world* screen, then choose countries and divisions on *Select Database*. The
-start year suggests 2030 and can be changed there.
+start year suggests 2029 — that season runs into the 2030 World Cup — and can
+be changed there.
 
 ---
 
@@ -44,10 +45,11 @@ start year suggests 2030 and can be changed there.
 Package.ini                    world name, author, version
 README.md                      this file
 Data\
-  StartYear.txt                2030
+  StartYear.txt                2029
   Nationalities.txt            country identities, aliases, region taxonomy
   League\                      24 nation files + International teams and tournaments.txt
   ScoutingProvider\            eight scouting providers, 23 packages
+  Team\                        AFC Nexxus Drako
   Names\                       48 name lists - copy these out, see step 2
 ```
 
@@ -130,9 +132,9 @@ Shield.
 | MSC Conference Trophy | 48 — 16 dropping from the Challengers, 32 smaller associations | wk 43 |
 | MSC Challengers League | 48 — 16 dropping from the Champions Cup, 32 from the leagues | wk 43 |
 | MSC Champions Cup | 48 — 16 seeded, 32 through qualifying | wk 43 |
-| MSC Super Cup | the four holders in one group | wks 46–48 |
-| MSC Coronation Qualifiers | nine, entering all 2,144 clubs | wks 2–8 |
-| **MSC Coronation Tournament** | the 142 who came through | wk 50 |
+| MSC Super Cup | the four holders in a group, then a final | wks 47–50 |
+| MSC Coronation Qualifiers | nine, entering all 2,144 clubs, one in sixteen | wks 2–8 |
+| **MSC Coronation Tournament** | the 134 who came through | wk 45 |
 | **MSC Ultimate Championship** | Coronation winner v Super Cup winner | **wk 52** |
 
 **The cascade.** The three league competitions run as a chain, UEFA-style, and the
@@ -160,9 +162,28 @@ The Cup Winners Cup takes weeks 16, 22, 27, 29, 31, 33, 36 and 38, with its fina
 42; the Coronation takes 10, 12, 14, 20, 26, 35 and 40 before its own final in 50.
 
 **The Coronation** gives every club in the Commission a road in. Nine qualifiers, none
-larger than 256, between them enter all 2,144; each halves down to its last sixteen, and
-the 142 survivors contest the Coronation itself — a preliminary trims the field to 128,
-then seven rounds to the final. Nothing is seeded past the preliminary.
+larger than 256, between them enter all 2,144 at the same rate — one club in sixteen,
+over four rounds — which brings 134 through. The Coronation trims the odd twelve in a
+Preliminary Round and then counts from scratch: First Round of 128, Second, Third,
+Fourth, Quarter Finals, Semi Finals, Coronation Final. Nothing is seeded past the
+Preliminary.
+
+**Domestic cups.** Every association has a Super Cup — champions against cup holders in
+week two. Any pyramid of eight tiers or more also has a League Cup for its top four
+divisions and a Semi-Pro Trophy for tiers five to eight, and the twelve-tier Itavrnai
+pyramid adds an Amateur Vase below that. Tier cups enter by division, so each takes
+exactly the band it is named for. Within a nation every cup runs on its own lane of
+weeks, so two cups a club could be in never share a night.
+
+**AFC Nexxus Drako** plays in the Itavrnai twelfth flight: reputation nil, twenty-five
+players none over 20, ability in the fifties and sixties against potential in the
+two-tens and twenties. Claret and gold. It has its own `Data\Team` file.
+
+**Every seat belongs to someone.** Where a competition inherits named clubs, each seat
+is written on its own incrementing threshold with its own fallback behind it, the way
+the stock European Cup does — an association's cup winner, and that same association's
+league if the cup went uncontested. A gap is never filled by whichever entry happens to
+sit first in the list.
 
 **The Cup Winners Cup** takes the main domestic trophy of each of the 24 associations
 and nothing else — the Itavrnai Grand Conclave, the New Bradman League Cup and the
@@ -176,7 +197,7 @@ trophies and leave a seat empty; beaten finalists fill any gap. The same goes on
 later — the Coronation winner may also have topped the Super Cup group, and cannot play
 itself, so the Super Cup runner-up steps up to contest the Ultimate Championship.
 
-Weeks 50 to 52 are reserved for the finale: the Coronation Final alone in week 50, no
+Weeks 44 to 52 are the finale: the Coronation Final alone in week 50, no
 club football at all in week 51, and the Ultimate Championship alone in week 52.
 
 ### National teams

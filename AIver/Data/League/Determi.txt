@@ -10,19 +10,29 @@
 + Country "Determi"
 + reputation 12
 # Every round is mourned twice. Only the final rite is settled in one night.
++ draw 2
 + round 1 "First Wake" 1-64
-+ week 4 6
-+ draw 3
++ week 3 5
 + add 64 from "Determi"
 + round 2 "Second Wake" 1-32
-+ week 8 10
++ week 6 8
 + round 3 "Third Wake" 1-16
 + week 12 14
 + round 4 "Quarter Requiem" 1-8
-+ week 18 20
++ week 21 23
 + round 5 "Semi Requiem" 1-4
-+ week 28 30
-+ round 6 "Final Rite" 1-2 40
++ week 32 34
++ round 6 "Final Rite" 1-2 46
+* Determi Super Cup
++ Country "Determi"
++ reputation 9
+# Champions against cup holders, one match, week two.
++ draw 1
++ round 1 "Final" 1-2 2
+# champions against cup holders - the season opens with it
++ <1 add 1 cup-winner "Determi Requiem Cup Final Rite"
++ <1 add 1 from "Determi"
++ <2 add 1 from "Determi"
 : Determi High Requiem
 + division 1
 + promotions 0

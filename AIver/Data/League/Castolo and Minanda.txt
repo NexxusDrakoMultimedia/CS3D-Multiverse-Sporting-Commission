@@ -6,31 +6,39 @@
 # Castolo and Minanda
 ! Country "Castolo and Minanda"
 ! Names "data/names/Castolo and Minanda_1st.txt" "data/names/Castolo and Minanda_2nd.txt"
+# national colours
+! 1 shirt #00007f
+! 1 shorts #ffffff
+! 1 socks #00007f
+! 2 shirt #ffffff
+! 2 shorts #00007f
+! 2 socks #ffffff
 * Copa Unida
 + Country "Castolo and Minanda"
 + reputation 10
 # Both divisions enter together; semi finals over two legs.
-+ round 1 "Primera Ronda" 1-32 4
-+ draw 3
++ draw 2
++ round 1 "Primera Ronda" 1-32 3
 + add 32 from "Castolo and Minanda"
-+ round 2 "Segunda Ronda" 1-16 8
-+ round 3 "Cuartos de Final" 1-8 15
++ round 2 "Segunda Ronda" 1-16 7
++ round 3 "Cuartos de Final" 1-8 16
 + round 4 "Semifinales" 1-4
-+ week 26 28
-+ round 5 "Final" 1-2 41
++ week 29 31
++ round 5 "Final" 1-2 46
 * Supercopa Unida
 + Country "Castolo and Minanda"
 + reputation 8
 # Champions, runners-up, third place and the cup holders, over two match days.
-+ round 1 "Semifinales" 1-4 4
-+ draw 3
-+ add 1 cup-winner "Copa Unida Final"
-# in the opening season there is no holder yet, so the league fills the field
++ draw 1
++ round 1 "Semifinales" 1-4 2
+# seat one is the cup holder, or the league if the cup has not been won
+# yet; the other three are the league placings behind them
++ <1 add 1 cup-winner "Copa Unida Final"
++ <1 add 1 from "Castolo and Minanda"
++ <2 add 1 from "Castolo and Minanda"
++ <3 add 1 from "Castolo and Minanda"
 + <4 add 1 from "Castolo and Minanda"
-+ <4 add 1 from "Castolo and Minanda"
-+ <4 add 1 from "Castolo and Minanda"
-+ <4 add 1 from "Castolo and Minanda"
-+ round 2 "Final" 1-2 6
++ round 2 "Final" 1-2 4
 : Primera Unida
 + division 1
 + promotions 0

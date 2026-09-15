@@ -6,12 +6,19 @@
 # New Bradman
 ! Country "New Bradman"
 ! Names "data/names/New Bradman_1st.txt" "data/names/New Bradman_2nd.txt"
+# national colours
+! 1 shirt #7f0000
+! 1 shorts #00007f
+! 1 socks #7f0000
+! 2 shirt #00007f
+! 2 shorts #7f0000
+! 2 socks #00007f
 * New Bradman FA Cup
 + Country "New Bradman"
 + reputation 14
 # Staggered entry: rank decides which round a club comes in at.
-+ round 1 "First Round" 65-128 4
 + draw 3
++ round 1 "First Round" 65-128 4
 # the 32 best clubs are seeded straight into the third round
 + add 32 from "New Bradman"
 # the next 32 join at the second round
@@ -19,25 +26,35 @@
 # the remaining 64 start in the first round
 + add 64 from "New Bradman"
 + round 2 "Second Round" 33-96 6
-+ round 3 "Third Round" 1-64 9
-+ round 4 "Fourth Round" 1-32 13
++ round 3 "Third Round" 1-64 8
++ round 4 "Fourth Round" 1-32 12
 + round 5 "Fifth Round" 1-16 18
-+ round 6 "Quarter Finals" 1-8 24
-+ round 7 "Semi Finals" 1-4 32
-+ round 8 "Final" 1-2 41
++ round 6 "Quarter Finals" 1-8 26
++ round 7 "Semi Finals" 1-4 36
++ round 8 "Final" 1-2 46
 * New Bradman League Cup
 + Country "New Bradman"
 + reputation 10
 # Top four divisions only. Two-legged semi finals.
-+ round 1 "First Round" 1-64 4
-+ draw 3
++ draw 2
++ round 1 "First Round" 1-64 3
 + add 64 from "New Bradman"
-+ round 2 "Second Round" 1-32 6
-+ round 3 "Third Round" 1-16 11
-+ round 4 "Quarter Finals" 1-8 18
++ round 2 "Second Round" 1-32 7
++ round 3 "Third Round" 1-16 13
++ round 4 "Quarter Finals" 1-8 21
 + round 5 "Semi Finals" 1-4
-+ week 28 30
-+ round 6 "Final" 1-2 40
++ week 31 33
++ round 6 "Final" 1-2 45
+* New Bradman Super Cup
++ Country "New Bradman"
++ reputation 11
+# Champions against cup holders, one match, week two.
++ draw 1
++ round 1 "Final" 1-2 2
+# champions against cup holders - the season opens with it
++ <1 add 1 cup-winner "New Bradman FA Cup Final"
++ <1 add 1 from "New Bradman"
++ <2 add 1 from "New Bradman"
 : New Bradman Premier League
 + division 1
 + promotions 0

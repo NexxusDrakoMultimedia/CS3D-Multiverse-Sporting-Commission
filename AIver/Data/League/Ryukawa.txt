@@ -6,30 +6,47 @@
 # Ryukawa
 ! Country "Ryukawa"
 ! Names "data/names/Ryukawa_1st.txt" "data/names/Ryukawa_2nd.txt"
+# national colours
+! 1 shirt #ff0000
+! 1 shorts #ffff00
+! 1 socks #ff0000
+! 2 shirt #ffff00
+! 2 shorts #ff0000
+! 2 socks #ffff00
 * Ryukawa Emperor's Cup
 + Country "Ryukawa"
 + reputation 12
 # Single matches throughout - a replay-free competition.
-+ round 1 "First Round" 1-64 4
 + draw 3
++ round 1 "First Round" 1-64 4
 + add 64 from "Ryukawa"
 + round 2 "Second Round" 1-32 6
-+ round 3 "Third Round" 1-16 11
-+ round 4 "Quarter Finals" 1-8 18
-+ round 5 "Semi Finals" 1-4 28
-+ round 6 "Final" 1-2 40
++ round 3 "Third Round" 1-16 12
++ round 4 "Quarter Finals" 1-8 22
++ round 5 "Semi Finals" 1-4 32
++ round 6 "Final" 1-2 46
 * Ryukawa Sakura Shield
 + Country "Ryukawa"
 + reputation 9
 # Ichibu clubs only: four groups of four, then a straight knockout.
++ draw 2
 + round 1 "Sakura group stage" 1-16
 + groups 4
-+ week 4 6 8 10 12 14
-+ draw 3
++ week 3 5 7 9 11 13
 + add 16 from "Ryukawa"
-+ round 2 "Quarter Finals" 1-8 16
-+ round 3 "Semi Finals" 1-4 22
-+ round 4 "Final" 1-2 40
++ round 2 "Quarter Finals" 1-8 15
++ round 3 "Semi Finals" 1-4 25
++ round 4 "Final" 1-2 45
+* Ryukawa Super Cup
++ Country "Ryukawa"
++ reputation 9
+# Champions against cup holders, one match, week two.
++ draw 1
++ round 1 "Final" 1-2 2
+# champions against cup holders - the season opens with it
++ <1 add 1 cup-winner "Ryukawa Emperor's Cup Final"
++ <1 add 1 from "Ryukawa"
++ <2 add 1 from "Ryukawa"
 : Ryukawa Ichibu
 + division 1
 + promotions 0

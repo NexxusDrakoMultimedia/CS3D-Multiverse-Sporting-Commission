@@ -10,18 +10,28 @@
 + Country "Jarokn"
 + reputation 12
 # Rank decides how many trials a club must survive.
-+ round 1 "Trial of Mortals" 33-64 4
-+ draw 3
++ draw 2
++ round 1 "Trial of Mortals" 33-64 3
 # the Pantheon is spared both early trials; the Mortals League starts at the bottom
 + add 16 from "Jarokn"
 + add 16 from "Jarokn"
 + add 32 from "Jarokn"
-+ round 2 "Trial of Heroes" 17-48 6
++ round 2 "Trial of Heroes" 17-48 5
 + round 3 "Trial of Demigods" 1-32 9
-+ round 4 "Trial of Titans" 1-16 14
-+ round 5 "Trial of Gods" 1-8 21
-+ round 6 "Ascension" 1-4 30
-+ round 7 "Apotheosis" 1-2 40
++ round 4 "Trial of Titans" 1-16 15
++ round 5 "Trial of Gods" 1-8 23
++ round 6 "Ascension" 1-4 33
++ round 7 "Apotheosis" 1-2 45
+* Jarokn Super Cup
++ Country "Jarokn"
++ reputation 9
+# Champions against cup holders, one match, week two.
++ draw 1
++ round 1 "Final" 1-2 2
+# champions against cup holders - the season opens with it
++ <1 add 1 cup-winner "Jarokn Trial of Heroes Apotheosis"
++ <1 add 1 from "Jarokn"
++ <2 add 1 from "Jarokn"
 : Jarokn Pantheon
 + division 1
 + promotions 0

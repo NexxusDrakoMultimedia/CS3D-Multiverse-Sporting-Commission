@@ -4,9 +4,119 @@ All notable changes to the **Multiverse Sporting Commission** football world.
 
 Created by Nexxus Drako, with Claude's assistance.
 
+Everything before this release was a development build. What were versions 1.0
+through 1.4 are renumbered 0.0 to 0.4, and this is the first release proper.
+
 ---
 
-## 1.3 — current
+## 1.0 — first release
+
+### The World Cup was a nation short
+
+`+ add 1 venue` picks a host ground, and the engine counts that pick as an entry.
+With the nations written as `+ <1 add 1 team` through `+ <24`, the venue already
+held seat one, so the `<1` line never fired and only 23 of the 24 got in. The
+nations are now plain `+ add 1 team` lines. The validator was making the same
+mistake in reverse — counting the venue as a competitor — and now ignores it.
+
+### The Coronation Tournament
+
+Nine qualifiers, every one at the same rate of one club in sixteen over four
+rounds, which brings 134 through. The Coronation trims the odd twelve in a
+**Preliminary Round** and then starts its own numbering clean: First Round of
+128, Second, Third, Fourth, then Quarter Finals, Semi Finals and the Coronation
+Final. The old seeded preliminary and the borrowed numbering are gone.
+
+### A Super Cup final
+
+The four continental holders still play a group, but the top two now meet in a
+**Super Cup Final** in week 50. That winner goes to the Ultimate Championship —
+or, if it also won the Coronation and so cannot play itself, the club it beat
+in that final, and then the group table behind them.
+
+### Room to breathe
+
+The club calendar is stretched across the whole season and every competition
+keeps a uniform shape. Continental groups run on three-week gaps from week 16 to
+30, knockouts from 32 to 42, finals in 44. The Cup Winners Cup keeps to the
+off-weeks. Domestic cups now run from week 3 to week 46 rather than 4 to 41.
+
+Within a nation, each cup gets its own **lane** — its own residue class of weeks
+— so two cups a club could be in never fall on the same night. Cups drawing from
+disjoint tier bands share a lane, because no club can be in both.
+
+### Super cups and tier cups everywhere
+
+Every association that lacked one now has a **Super Cup**: champions against cup
+holders, one match, week two. Any pyramid of eight tiers or more also gets a
+**League Cup** for its top four divisions and a **Semi-Pro Trophy** for tiers
+five to eight; the twelve-tier Itavrnai pyramid adds an **Amateur Vase** for
+tiers nine down.
+
+These enter by division rather than by country — `+ add 24 from "Itavrnai Ninth
+Flight"` — which is how the stock National Cup of Germany seeds its rounds, so a
+tier cup takes exactly the tiers it is named for. Where a band does not hold a
+power of two, the opening round seeds the surplus out rather than breaking the
+bracket.
+
+Two super cups were pointing at a round that does not exist: Determi closes on a
+*Final Rite* and Jarokn on an *Apotheosis*, not a Final. They now read the real
+closing round of their nation's main cup.
+
+### AFC Nexxus Drako
+
+Takes the bottom place in the Itavrnai twelfth flight, at reputation nil, with a
+`Data\Team` file of its own: twenty-five players, none over 20 at the 2029 start,
+ability 58–95 against potential 207–228. Claret and gold.
+
+### Colours and start year
+
+Vyktoria, New Bradman, the Itavrnai Union, Ryukawa and Castolo and Minanda carry
+national colours. The start year is **2029**, whose season runs into the 2030
+World Cup.
+
+---
+
+## 0.4
+
+### Backup entries were biased, and are not any more
+
+Six competitions filled empty seats from a list of lines that all shared one threshold —
+24 lines of `+ <24 add 1 from "…"` on the Cup Winners Cup, for instance. Each line fires
+at most once and only while the field is still short, so a gap anywhere was filled by
+whichever association sat highest in the list. Since the list ran in reputation order,
+that meant the strongest associations took every spare seat.
+
+The stock European Cup shows the correct shape: one **incrementing** threshold per seat,
+with the fallback written directly beneath the entry it backs up.
+
+```
++ <41 add 1 cup-winner "National Cup of England Final"
++ <41 add 1 from "England"
++ <42 add 1 cup-winner "National Cup of Spain Final"
++ <42 add 1 from "Spain"
+```
+
+Now every seat is owned by one association or one trophy, and falls back to itself:
+
+- **Cup Winners Cup** — each association's trophy, backed by that association's league.
+- **Super Cup** — each continental trophy, backed by the club beaten in its final.
+- **Ultimate Championship** — seat one the Coronation winner, seat two the Super Cup
+  group, passing down the table if the same club holds both.
+- **World Cup** — one seat per nation instead of 24 lines racing for 24 places.
+- **Supercopa Unida** and the **Vyktoria Charity Shield** — the cup holder's seat backed
+  by the league, then the league placings behind it.
+
+### Matching the stock layout
+
+Domestic cups now write `+ draw` before round one, as the National Cup of Germany does,
+rather than after it. Every one of the 24 league files was checked against the stock
+layout — section key order, even division sizes, the presence of `! Country` and
+`! Names`, and draw placement — and all 24 now conform.
+
+---
+
+## 0.3
 
 ### The World Cup
 
@@ -63,7 +173,7 @@ number of groups and leaves at least one team behind.
 
 ---
 
-## 1.2
+## 0.2
 
 ### Scouting providers rebuilt on the stock eight
 
@@ -102,7 +212,7 @@ borrow the pool of the nation they sit in.
 
 ---
 
-## 1.1
+## 0.1
 
 ### The continental cascade
 
@@ -174,7 +284,7 @@ Domestic cups now open in week 4 rather than week 3, which puts every cup draw i
 
 ---
 
-## 1.0 — initial standalone-world release
+## 0.0 — initial standalone-world release
 
 ### The Commission
 

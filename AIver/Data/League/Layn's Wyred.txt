@@ -10,15 +10,25 @@
 + Country "Layn's Wyred"
 + reputation 12
 # Top two layers only: eight groups, then straight down the stack.
++ draw 2
 + round 1 "Handshake group stage" 1-32
 + groups 8
-+ week 4 6 8 10 12 14
-+ draw 3
++ week 3 5 7 9 11 13
 + add 32 from "Layn's Wyred"
-+ round 2 "Round of 16" 1-16 16
-+ round 3 "Quarter Finals" 1-8 18
-+ round 4 "Semi Finals" 1-4 26
-+ round 5 "Final" 1-2 41
++ round 2 "Round of 16" 1-16 14
++ round 3 "Quarter Finals" 1-8 16
++ round 4 "Semi Finals" 1-4 29
++ round 5 "Final" 1-2 46
+* Layn's Wyred Super Cup
++ Country "Layn's Wyred"
++ reputation 9
+# Champions against cup holders, one match, week two.
++ draw 1
++ round 1 "Final" 1-2 2
+# champions against cup holders - the season opens with it
++ <1 add 1 cup-winner "Wyred Root Access Cup Final"
++ <1 add 1 from "Layn's Wyred"
++ <2 add 1 from "Layn's Wyred"
 : Wyred Mainline
 + division 1
 + promotions 0
