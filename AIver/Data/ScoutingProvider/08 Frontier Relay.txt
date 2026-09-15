@@ -1,14 +1,6 @@
 # Scouting provider contract: scouting-provider-v1
 #  Created by Nexxus Drako, with Claude's assistance.
-# MSC regions - itavrnai/vyktoria/new-rythorn form the Itavrnai Union,
-# new-bradman/ryukawa/castolo the New Bradmanian Commonwealth,
-# layns-wyred/determi/nexxie/jarokn Cyberya, and
-# mancunya/centralya/wyrmwoode/esmeraldys Galatyan.
-# Ten further nations are unregioned and are sold by nation only.
-# The unregioned ten - full members with their own pyramids that belong
-# to no bloc, so no region product reaches them. Cheap, slow, patchy,
-# and occasionally the only place a player is listed at all.
-# Products rotate: two of the four are on sale in any given season.
+# Slow, cheap and everywhere. Often the only place a player is listed.
 ! Provider "frontier-relay" 1
 ! Name "Frontier Relay"
 ! Archetype frontier-network
@@ -23,36 +15,15 @@
 ! Small club maximum reputation 8
 ! Small club discount 600 1500
 
-: Product "frontier.academy" 1
-+ Name "Relay Academy Watch"
-+ Family "frontier.academy"
-+ Presentation network-lead
-+ Fields identity sporting development
-+ Scope provider-market-nation
-+ Sales relations core regional export global
-+ Scope selections 0 0
-+ Age 14 23
-+ Professional any
-+ Market statuses any
-+ Divisions 1 99
-+ Coverage 7000 5500
-+ Contribution 2300 700 1300
-+ Freshness days 35
-+ Monthly reference factor 2200
-+ Billing monthly
-+ Seasonal access months 12
-+ Seasonal charge months 12
-+ Availability rotating
-+ Club reputation 0 20
-
-: Product "frontier.topflight" 1
-+ Name "Relay Top Flight"
-+ Family "frontier.topflight"
+# Three associations, top flight only, filed when it arrives.
+: Product "frontier.lite" 1
++ Name "Relay Lite"
++ Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting
-+ Scope provider-market-nation
++ Scope selected-nation
 + Sales relations core regional export global
-+ Scope selections 0 0
++ Scope selections 3 3
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -60,21 +31,22 @@
 + Coverage 6000 4500
 + Contribution 2100 600 500
 + Freshness days 45
-+ Monthly reference factor 1800
++ Monthly reference factor 1500
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability rotating
 + Club reputation 0 20
 
-: Product "frontier.national" 1
-+ Name "Relay National"
-+ Family "frontier.national"
+# The same three associations, all the way down.
+: Product "frontier.standard" 1
++ Name "Relay Standard"
++ Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting
-+ Scope provider-market-nation
++ Scope selected-nation
 + Sales relations core regional export global
-+ Scope selections 0 0
++ Scope selections 3 3
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -82,21 +54,22 @@
 + Coverage 5800 4200
 + Contribution 2000 600 500
 + Freshness days 50
-+ Monthly reference factor 1800
++ Monthly reference factor 2700
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability rotating
 + Club reputation 0 20
 
+# Two associations, below the top flight, where the relay is strongest.
 : Product "frontier.depth" 1
 + Name "Relay Depth"
-+ Family "frontier.depth"
++ Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting
-+ Scope provider-market-nation
++ Scope selected-nation
 + Sales relations core regional export global
-+ Scope selections 0 0
++ Scope selections 2 2
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -104,163 +77,61 @@
 + Coverage 4500 6200
 + Contribution 2300 700 500
 + Freshness days 40
-+ Monthly reference factor 3000
++ Monthly reference factor 2100
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability rotating
 + Club reputation 0 20
 
-: Market "frontier.veslavia" 1
-+ Name "Frontier Veslavia"
-+ Kind local
-+ Home nation "Veslavia"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 7800
-+ Regional price factor 9800
-+ Export price factor 12300
-+ Global price factor 0
-+ Visibility standard
+# Two associations' youth sides, patchy but nobody else files them.
+: Product "frontier.academy" 1
++ Name "Relay Academy"
++ Family "frontier.relay"
++ Presentation network-lead
++ Fields identity sporting development
++ Scope selected-nation
++ Sales relations core regional export global
++ Scope selections 2 2
++ Age 14 23
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 7000 5500
++ Contribution 2300 700 1300
++ Freshness days 35
++ Monthly reference factor 2400
++ Billing monthly
++ Seasonal access months 12
++ Seasonal charge months 12
++ Availability rotating
 + Club reputation 0 20
-+ Selection priority 500
 
-: Market "frontier.valcarena" 1
-+ Name "Frontier Valcarena"
-+ Kind local
-+ Home nation "Valcarena"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 7850
-+ Regional price factor 9850
-+ Export price factor 12350
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 460
-
-: Market "frontier.tianlu" 1
-+ Name "Frontier Tianlu"
-+ Kind local
-+ Home nation "Tianlu"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 7900
-+ Regional price factor 9900
-+ Export price factor 12400
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 420
-
-: Market "frontier.akwanta" 1
-+ Name "Frontier Akwanta"
-+ Kind local
-+ Home nation "Akwanta"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 7950
-+ Regional price factor 9950
-+ Export price factor 12450
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 380
-
-: Market "frontier.sindhara" 1
-+ Name "Frontier Sindhara"
-+ Kind local
-+ Home nation "Sindhara"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 8000
-+ Regional price factor 10000
-+ Export price factor 12500
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 340
-
-: Market "frontier.hanseong" 1
-+ Name "Frontier Hanseong"
-+ Kind local
-+ Home nation "Hanseong"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 8050
-+ Regional price factor 10050
-+ Export price factor 12550
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 300
-
-: Market "frontier.mazamba" 1
-+ Name "Frontier Mazamba"
-+ Kind local
-+ Home nation "Mazamba"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 8100
-+ Regional price factor 10100
-+ Export price factor 12600
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 260
-
-: Market "frontier.qamaria" 1
-+ Name "Frontier Qamaria"
-+ Kind local
-+ Home nation "Qamaria"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 8150
-+ Regional price factor 10150
-+ Export price factor 12650
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 220
-
-: Market "frontier.selanting" 1
-+ Name "Frontier Selanting"
-+ Kind local
-+ Home nation "Selanting"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 8200
-+ Regional price factor 10200
-+ Export price factor 12700
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 180
-
-: Market "frontier.norvalia" 1
-+ Name "Frontier Norvalia"
-+ Kind local
-+ Home nation "Norvalia"
-+ Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
-+ Core price factor 8250
-+ Regional price factor 10250
-+ Export price factor 12750
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 140
-
-: Market "frontier.invitation" 1
-+ Name "Frontier Relay Invitation"
+# Two of the four packages are on sale in any given season.
+: Market "frontier.desk" 1
++ Name "Frontier Relay Desk"
 + Kind global
 + Sales reach worldwide
-+ Products "frontier.academy" "frontier.topflight" "frontier.national" "frontier.depth"
++ Products "frontier.lite" "frontier.standard" "frontier.depth" "frontier.academy"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
-+ Global price factor 12000
-+ Visibility invitation
++ Global price factor 10000
++ Visibility standard
 + Club reputation 0 20
-+ Selection priority 500
++ Selection priority 100
+
+# Standing orders, for clubs that cannot wait for the rotation.
+: Market "frontier.standing" 1
++ Name "Frontier Standing Order"
++ Kind global
++ Sales reach worldwide
++ Products "frontier.lite" "frontier.standard" "frontier.depth" "frontier.academy"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 9500
++ Visibility standard
++ Club reputation 0 20
++ Selection priority 200
 

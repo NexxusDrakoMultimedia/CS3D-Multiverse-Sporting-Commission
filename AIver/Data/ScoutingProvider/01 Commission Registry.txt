@@ -1,7 +1,6 @@
 # Scouting provider contract: scouting-provider-v1
 #  Created by Nexxus Drako, with Claude's assistance.
-# The Commission's own compulsory club register. Thin, cheap and
-# everywhere - every member association files into it.
+# The Commission's own club register. Universal, cheap, and thin.
 ! Provider "registry" 1
 ! Name "Commission Registry"
 ! Archetype registry
@@ -16,9 +15,10 @@
 ! Small club maximum reputation 7
 ! Small club discount 500 1000
 
-: Product "registry.local" 1
-+ Name "Registry Local"
-+ Family "registry.local"
+# Your own competition, filed by the clubs in it.
+: Product "registry.basic" 1
++ Name "Registry Basic"
++ Family "registry.records"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope club-home-competition
@@ -31,21 +31,22 @@
 + Coverage 9600 9200
 + Contribution 3300 2200 800
 + Freshness days 30
-+ Monthly reference factor 1800
++ Monthly reference factor 6600
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-: Product "registry.national" 1
-+ Name "Registry National"
-+ Family "registry.national"
+# Two associations of your choosing, whole pyramid.
+: Product "registry.plus" 1
++ Name "Registry Plus"
++ Family "registry.records"
 + Presentation data-dossier
 + Fields identity sporting
-+ Scope provider-market-nation
++ Scope selected-nation
 + Sales relations core regional export
-+ Scope selections 0 0
++ Scope selections 2 2
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -53,94 +54,61 @@
 + Coverage 9200 7000
 + Contribution 3500 2100 700
 + Freshness days 30
-+ Monthly reference factor 4500
++ Monthly reference factor 11400
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-: Market "registry.itavrnai" 1
-+ Name "Registry Itavrnai Union"
-+ Kind local
-+ Home nation "Itavrnai Union"
-+ Sales reach worldwide
-+ Products "registry.local" "registry.national"
-+ Core price factor 9000
-+ Regional price factor 11000
-+ Export price factor 13000
-+ Global price factor 0
-+ Visibility standard
+# Every club in the Commission, to registry depth.
+: Product "registry.full" 2
++ Name "Registry Full"
++ Family "registry.records"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope global
++ Sales relations core regional export global
++ Scope selections 0 0
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 8600 6000
++ Contribution 3600 2200 700
++ Freshness days 30
++ Monthly reference factor 20500
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
 + Club reputation 0 20
-+ Selection priority 400
 
-: Market "registry.bradman" 1
-+ Name "Registry New Bradman"
-+ Kind local
-+ Home nation "New Bradman"
+# Open to every member club.
+: Market "registry.desk" 1
++ Name "Registry Desk"
++ Kind global
 + Sales reach worldwide
-+ Products "registry.local" "registry.national"
-+ Core price factor 8800
-+ Regional price factor 10800
-+ Export price factor 12800
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 300
-
-: Market "registry.vyktoria" 1
-+ Name "Registry Vyktoria"
-+ Kind local
-+ Home nation "Vyktoria"
-+ Sales reach worldwide
-+ Products "registry.local" "registry.national"
-+ Core price factor 8500
-+ Regional price factor 10500
-+ Export price factor 12500
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 250
-
-: Market "registry.mancunya" 1
-+ Name "Registry Mancunya"
-+ Kind local
-+ Home nation "Mancunya"
-+ Sales reach worldwide
-+ Products "registry.local" "registry.national"
-+ Core price factor 8600
-+ Regional price factor 10600
-+ Export price factor 12600
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 200
-
-: Market "registry.wyrmwoode" 1
-+ Name "Registry Wyrmwoode"
-+ Kind local
-+ Home nation "Wyrmwoode"
-+ Sales reach worldwide
-+ Products "registry.local" "registry.national"
-+ Core price factor 8400
-+ Regional price factor 10400
-+ Export price factor 12400
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 150
-
-: Market "registry.ryukawa" 1
-+ Name "Registry Ryukawa"
-+ Kind local
-+ Home nation "Ryukawa"
-+ Sales reach worldwide
-+ Products "registry.local" "registry.national"
-+ Core price factor 8200
-+ Regional price factor 10200
-+ Export price factor 12200
-+ Global price factor 0
++ Products "registry.basic" "registry.plus" "registry.full"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
 + Selection priority 100
+
+# The full file, sold on application.
+: Market "registry.archive" 2
++ Name "Registry Archive"
++ Kind global
++ Sales reach worldwide
++ Products "registry.full"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 10500
++ Visibility invitation
++ Club reputation 0 20
++ Selection priority 200
 

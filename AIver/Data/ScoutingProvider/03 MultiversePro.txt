@@ -1,6 +1,6 @@
 # Scouting provider contract: scouting-provider-v1
 #  Created by Nexxus Drako, with Claude's assistance.
-# The expensive one. Full Commission coverage, top flights first.
+# The expensive one. Full reach, fast turnaround, top flights first.
 ! Provider "multiversepro" 1
 ! Name "MultiversePro"
 ! Archetype global-catalog
@@ -15,9 +15,10 @@
 ! Small club maximum reputation 5
 ! Small club discount 800 1600
 
-: Product "multiversepro.elite" 3
-+ Name "MultiversePro Elite"
-+ Family "multiversepro.elite"
+# Every top flight in the Commission, nothing below.
+: Product "multiversepro.pro" 2
++ Name "MultiversePro"
++ Family "multiversepro.professional"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope global
@@ -30,16 +31,17 @@
 + Coverage 8200 0
 + Contribution 3900 2300 500
 + Freshness days 18
-+ Monthly reference factor 12000
++ Monthly reference factor 6800
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-: Product "multiversepro.global" 3
-+ Name "MultiversePro Commission"
-+ Family "multiversepro.global"
+# The same reach, carried down through the professional tiers.
+: Product "multiversepro.elite" 3
++ Name "MultiversePro Elite"
++ Family "multiversepro.professional"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope global
@@ -52,16 +54,18 @@
 + Coverage 7000 2000
 + Contribution 4200 2400 500
 + Freshness days 21
-+ Monthly reference factor 26000
++ Monthly reference factor 14700
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-: Product "multiversepro.premier" 1
-+ Name "MultiversePro Premier"
-+ Family "multiversepro.premier"
+# Everything they hold, refreshed weekly, priced accordingly.
+#  Priced above the line on purpose: this is the ceiling package.
+: Product "multiversepro.enterprise" 1
++ Name "MultiversePro Enterprise"
++ Family "multiversepro.professional"
 + Presentation data-dossier
 + Fields identity sporting development market-contract
 + Scope global
@@ -74,18 +78,19 @@
 + Coverage 8500 5500
 + Contribution 5600 3600 3400
 + Freshness days 7
-+ Monthly reference factor 100000
++ Monthly reference factor 118700
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-: Market "multiversepro.commission" 2
-+ Name "MultiversePro International"
+# Sold to anyone who can pay.
+: Market "multiversepro.desk" 2
++ Name "MultiversePro Desk"
 + Kind global
 + Sales reach worldwide
-+ Products "multiversepro.elite" "multiversepro.global" "multiversepro.premier"
++ Products "multiversepro.pro" "multiversepro.elite" "multiversepro.enterprise"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
@@ -94,11 +99,12 @@
 + Club reputation 0 20
 + Selection priority 100
 
-: Market "multiversepro.invitation" 2
-+ Name "MultiversePro Invitation"
+# Enterprise terms, by approach only.
+: Market "multiversepro.partners" 2
++ Name "MultiversePro Partners"
 + Kind global
 + Sales reach worldwide
-+ Products "multiversepro.elite"
++ Products "multiversepro.enterprise"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0

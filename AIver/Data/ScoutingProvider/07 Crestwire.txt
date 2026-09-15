@@ -1,11 +1,6 @@
 # Scouting provider contract: scouting-provider-v1
 #  Created by Nexxus Drako, with Claude's assistance.
-# MSC regions - itavrnai/vyktoria/new-rythorn form the Itavrnai Union,
-# new-bradman/ryukawa/castolo the New Bradmanian Commonwealth,
-# layns-wyred/determi/nexxie/jarokn Cyberya, and
-# mancunya/centralya/wyrmwoode/esmeraldys Galatyan.
-# Ten further nations are unregioned and are sold by nation only.
-# Stringers filing from press boxes, not a database.
+# Stringers filing from press boxes. Tips, not a database.
 ! Provider "crestwire" 1
 ! Name "Crestwire"
 ! Archetype correspondent-network
@@ -20,15 +15,15 @@
 ! Small club maximum reputation 7
 ! Small club discount 500 1300
 
-: Product "crestwire.league" 2
-+ Name "Crestwire League"
-+ Family "crestwire.league"
+# Two competitions, filed by whoever was at the ground.
+: Product "crestwire.wire" 1
++ Name "Crestwire Wire"
++ Family "crestwire.correspondents"
 + Presentation network-lead
 + Fields identity market-contract
 + Scope selected-competition
 + Sales relations core regional export
-+ Scope selections 1 all
-+ Scope bundle discount 500 2000
++ Scope selections 2 2
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -36,35 +31,22 @@
 + Coverage 6800 5500
 + Contribution 2200 700 100
 + Freshness days 21
-+ Monthly reference factor 1600
++ Monthly reference factor 2300
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability standard
 + Club reputation 0 20
 
-: Product "crestwire.opportunity" 1
-+ Name "Crestwire Opportunity"
-+ Family "crestwire.opportunity"
+# A region's worth of correspondents, market angle first.
+: Product "crestwire.wire-plus" 2
++ Name "Crestwire Wire Plus"
++ Family "crestwire.correspondents"
 + Presentation network-lead
 + Fields identity market-contract
 + Scope selected-region
 + Sales relations core regional export
 + Scope selections 1 1
-+ Allowed region "itavrnai"
-+ Allowed region "vyktoria"
-+ Allowed region "new-rythorn"
-+ Allowed region "new-bradman"
-+ Allowed region "ryukawa"
-+ Allowed region "castolo"
-+ Allowed region "layns-wyred"
-+ Allowed region "determi"
-+ Allowed region "nexxie"
-+ Allowed region "jarokn"
-+ Allowed region "mancunya"
-+ Allowed region "centralya"
-+ Allowed region "wyrmwoode"
-+ Allowed region "esmeraldys"
 + Age 15 99
 + Professional any
 + Market statuses free listed expiring
@@ -72,51 +54,60 @@
 + Coverage 6200 6200
 + Contribution 2500 800 100
 + Freshness days 14
-+ Monthly reference factor 2800
++ Monthly reference factor 1900
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability standard
 + Club reputation 0 20
 
-: Market "crestwire.vyktoria" 1
-+ Name "Crestwire Vyktoria"
-+ Kind regional
-+ Home region "vyktoria"
+# Three regions on retainer, with someone reading the football.
+: Product "crestwire.bureau" 1
++ Name "Crestwire Bureau"
++ Family "crestwire.correspondents"
++ Presentation network-lead
++ Fields identity sporting market-contract
++ Scope selected-region
++ Sales relations core regional export
++ Scope selections 3 3
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
++ Coverage 6000 5800
++ Contribution 2700 1400 900
++ Freshness days 14
++ Monthly reference factor 9100
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+# Open to every member club.
+: Market "crestwire.desk" 1
++ Name "Crestwire Desk"
++ Kind global
 + Sales reach worldwide
-+ Products "crestwire.league" "crestwire.opportunity"
-+ Core price factor 8000
-+ Regional price factor 10000
-+ Export price factor 12500
-+ Global price factor 0
++ Products "crestwire.wire" "crestwire.wire-plus" "crestwire.bureau"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
 + Selection priority 100
 
-: Market "crestwire.determi" 1
-+ Name "Crestwire Determi"
-+ Kind regional
-+ Home region "determi"
+# Retained clients only.
+: Market "crestwire.bureau-desk" 1
++ Name "Crestwire Bureau Circle"
++ Kind global
 + Sales reach worldwide
-+ Products "crestwire.league" "crestwire.opportunity"
-+ Core price factor 7800
-+ Regional price factor 9800
-+ Export price factor 12200
-+ Global price factor 0
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 150
-
-: Market "crestwire.castolo" 1
-+ Name "Crestwire Castolo Invitation"
-+ Kind regional
-+ Home region "castolo"
-+ Sales reach worldwide
-+ Products "crestwire.league" "crestwire.opportunity"
-+ Core price factor 8500
-+ Regional price factor 10500
-+ Export price factor 13000
-+ Global price factor 0
++ Products "crestwire.bureau"
++ Core price factor 0
++ Regional price factor 0
++ Export price factor 0
++ Global price factor 10400
 + Visibility invitation
 + Club reputation 0 20
 + Selection priority 200

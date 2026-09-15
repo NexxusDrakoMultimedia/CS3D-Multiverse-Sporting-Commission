@@ -6,7 +6,43 @@ Created by Nexxus Drako, with Claude's assistance.
 
 ---
 
-## 1.1 — current
+## 1.2 — current
+
+### Scouting providers rebuilt
+
+**No nation or region names anywhere.** Every market is now a global desk. Previously
+six associations had a Registry storefront, six a HatchlingXI one, six a DeepFlight one
+and three regions a Crestwire one, which meant most of the Commission was shopping in
+somebody else's home market — and every one of those markets carried a nation's name in
+its label. Packages that cover less than the whole Commission now let the buyer choose
+the competitions, associations or regions.
+
+**One price for one value.** Every package's monthly reference factor is derived from a
+single formula — coverage, payload, freshness, breadth, pyramid depth, age restriction,
+market-status restriction and the form the report takes — rather than being hand-picked.
+All 26 packages sit within 5% of the same value line. MultiversePro Enterprise carries
+an explicit 2.4× premium and says so in the file, because it is the ceiling package.
+
+Two packages were badly mispriced under the old numbers and the new model catches both:
+a contracts-only market brief was outpricing full scouting data, and "LedgerPulse Free"
+read as free of charge while costing more than a top-flight data feed. It is now
+**LedgerPulse Releases**, and market briefs and correspondent tips are priced below
+written dossiers.
+
+Provider and package descriptions are down to one line each, and the packages are named
+the way real subscriptions are — Basic, Plus, Full, Solo, Trio, Six, Enterprise, Academy
+Intake, The Basement — rather than by invented geography.
+
+### Name lists
+
+`Nationalities.txt` still pointed all 40 entries at `names = Multiverse`, a shared pool
+that was replaced by 48 per-nation lists back in 1.0 and is not in the package. Each
+member association now names its own pair, and the sixteen inactive reference regions
+borrow the pool of the nation they sit in.
+
+---
+
+## 1.1
 
 ### The continental cascade
 

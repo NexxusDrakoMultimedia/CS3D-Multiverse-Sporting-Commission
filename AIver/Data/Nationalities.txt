@@ -7,8 +7,9 @@
 # Data/Names merely allow an otherwise inactive country to represent imported
 # player nationalities as a reference country.
 #
-# Every MSC nation draws on the shared Multiverse name pool, so 'names' is
-# Multiverse throughout - Multiverse_1st.txt / Multiverse_2nd.txt.
+# Each member association reads its own pair of name lists, so 'names' names
+# that nation - Vyktoria means Vyktoria_1st.txt / Vyktoria_2nd.txt. The
+# inactive reference regions below borrow the pool of the nation they sit in.
 #
 # Repeating alias is intentional. Matching is exact apart from surrounding
 # whitespace and case. Repeating rewrite replaces that standalone phrase with
@@ -36,7 +37,7 @@
 # region itavrnai  |  bloc Itavrnai Union
 [itavrnai-union]
 display = Itavrnai Union
-names = Multiverse
+names = Itavrnai Union
 alias = Itavrnai Union
 alias = The Itavrnai Union
 alias = Itavrnai
@@ -47,7 +48,7 @@ rewrite = The Itavrnai Union
 # region vyktoria  |  bloc Itavrnai Union
 [vyktoria]
 display = Vyktoria
-names = Multiverse
+names = Vyktoria
 alias = Vyktoria
 alias = Victoria-Vyktoria
 alias = Vyktorian Federation
@@ -57,7 +58,7 @@ rewrite = Vyktorian Federation
 # region new-rythorn  |  bloc Itavrnai Union
 [new-rythorn]
 display = New Rythorn
-names = Multiverse
+names = New Rythorn
 alias = New Rythorn
 alias = Rythorn
 alias = Nyrythorn
@@ -71,7 +72,7 @@ rewrite = Kingdom of New Rythorn
 # region new-bradman  |  bloc New Bradmanian Commonwealth
 [new-bradman]
 display = New Bradman
-names = Multiverse
+names = New Bradman
 alias = New Bradman
 alias = Bradman
 alias = The Bradman Isles
@@ -81,7 +82,7 @@ rewrite = The Bradman Isles
 # region ryukawa  |  bloc New Bradmanian Commonwealth
 [ryukawa]
 display = Ryukawa
-names = Multiverse
+names = Ryukawa
 alias = Ryukawa
 alias = Ryukawa Republic
 alias = Ryuukawa
@@ -91,7 +92,7 @@ rewrite = Ryukawa Republic
 # region castolo  |  bloc New Bradmanian Commonwealth
 [castolo-and-minanda]
 display = Castolo and Minanda
-names = Multiverse
+names = Castolo and Minanda
 alias = Castolo and Minanda
 alias = Castolo & Minanda
 alias = Castolo-Minanda
@@ -107,7 +108,7 @@ rewrite = Unión Castolo-Minanda
 # region layns-wyred  |  bloc Cyberya
 [layns-wyred]
 display = Layn's Wyred
-names = Multiverse
+names = Layn's Wyred
 alias = Layn's Wyred
 alias = Layns Wyred
 alias = The Wyred
@@ -118,7 +119,7 @@ rewrite = The Wyred
 # region determi  |  bloc Cyberya
 [determi]
 display = Determi
-names = Multiverse
+names = Determi
 alias = Determi
 alias = Determi Reach
 alias = The Determi
@@ -128,7 +129,7 @@ rewrite = The Determi
 # region nexxie  |  bloc Cyberya
 [nexxie]
 display = Nexxie
-names = Multiverse
+names = Nexxie
 alias = Nexxie
 alias = Nexxieland
 alias = Nexxi
@@ -138,7 +139,7 @@ rewrite = Nexxieland
 # region jarokn  |  bloc Cyberya
 [jarokn]
 display = Jarokn
-names = Multiverse
+names = Jarokn
 alias = Jarokn
 alias = Jarokhn
 alias = Jaroknia
@@ -152,7 +153,7 @@ rewrite = Jaroknia
 # region mancunya  |  bloc Galatyan
 [mancunya]
 display = Mancunya
-names = Multiverse
+names = Mancunya
 alias = Mancunya
 alias = Mancunia
 alias = North Galatyan
@@ -162,7 +163,7 @@ rewrite = North Galatyan
 # region centralya  |  bloc Galatyan
 [centralya]
 display = Centralya
-names = Multiverse
+names = Centralya
 alias = Centralya
 alias = Centralia
 alias = Central Galatyan
@@ -172,7 +173,7 @@ rewrite = Central Galatyan
 # region wyrmwoode  |  bloc Galatyan
 [wyrmwoode]
 display = Wyrmwoode
-names = Multiverse
+names = Wyrmwoode
 alias = Wyrmwoode
 alias = Wyrmwood
 alias = Gwyrmwydd
@@ -182,7 +183,7 @@ rewrite = West Galatyan
 # region esmeraldys  |  bloc Galatyan
 [esmeraldys]
 display = Esmeraldys
-names = Multiverse
+names = Esmeraldys
 alias = Esmeraldys
 alias = Esmeralda
 alias = Oileán Esmeraldys
@@ -196,7 +197,7 @@ rewrite = The Emerald Coast
 # unregioned
 [veslavia]
 display = Veslavia
-names = Multiverse
+names = Veslavia
 alias = Veslavia
 alias = Veslaviya
 alias = Veslavija
@@ -205,7 +206,7 @@ alias = Veslav
 # unregioned
 [valcarena]
 display = Valcarena
-names = Multiverse
+names = Valcarena
 alias = Valcarena
 alias = Valcareña
 alias = República de Valcarena
@@ -215,7 +216,7 @@ rewrite = República de Valcarena
 # unregioned
 [tianlu]
 display = Tianlu
-names = Multiverse
+names = Tianlu
 alias = Tianlu
 alias = Tian Lu
 alias = Tianlu Republic
@@ -225,7 +226,7 @@ rewrite = Tianlu Republic
 # unregioned
 [akwanta]
 display = Akwanta
-names = Multiverse
+names = Akwanta
 alias = Akwanta
 alias = Akwantaland
 alias = Republic of Akwanta
@@ -234,7 +235,7 @@ rewrite = Republic of Akwanta
 # unregioned
 [sindhara]
 display = Sindhara
-names = Multiverse
+names = Sindhara
 alias = Sindhara
 alias = Sindharat
 alias = Sindhara Union
@@ -243,7 +244,7 @@ rewrite = Sindhara Union
 # unregioned
 [hanseong]
 display = Hanseong
-names = Multiverse
+names = Hanseong
 alias = Hanseong
 alias = Han Seong
 alias = Hanseong Republic
@@ -252,7 +253,7 @@ rewrite = Hanseong Republic
 # unregioned
 [mazamba]
 display = Mazamba
-names = Multiverse
+names = Mazamba
 alias = Mazamba
 alias = Mazambaland
 alias = Republic of Mazamba
@@ -261,7 +262,7 @@ rewrite = Republic of Mazamba
 # unregioned
 [qamaria]
 display = Qamaria
-names = Multiverse
+names = Qamaria
 alias = Qamaria
 alias = Al-Qamaria
 alias = Qamariyah
@@ -270,7 +271,7 @@ rewrite = Al-Qamaria
 # unregioned
 [selanting]
 display = Selanting
-names = Multiverse
+names = Selanting
 alias = Selanting
 alias = Selantin
 alias = Negara Selanting
@@ -280,7 +281,7 @@ rewrite = Negara Selanting
 # unregioned
 [norvalia]
 display = Norvalia
-names = Multiverse
+names = Norvalia
 alias = Norvalia
 alias = Norvale
 alias = Norvalian Union
@@ -294,14 +295,14 @@ rewrite = Norvalian Union
 
 [itavrnai-union-bloc]
 display = Itavrnai Union
-names = Multiverse
+names = Itavrnai Union
 alias = Itavrnai Union Bloc
 alias = IU Bloc
 alias = Union Bloc
 
 [new-bradmanian-commonwealth]
 display = New Bradmanian Commonwealth
-names = Multiverse
+names = New Bradman
 alias = New Bradmanian Commonwealth
 alias = Bradmanian Commonwealth
 alias = NBC
@@ -310,7 +311,7 @@ rewrite = Bradmanian Commonwealth
 
 [cyberya-bloc]
 display = Cyberya
-names = Multiverse
+names = Layn's Wyred
 alias = Cyberya
 alias = Cyberya Bloc
 alias = The Cyberyan States
@@ -318,7 +319,7 @@ rewrite = The Cyberyan States
 
 [galatyan-bloc]
 display = Galatyan
-names = Multiverse
+names = Mancunya
 alias = Galatyan
 alias = Galatyan Bloc
 alias = The Galatyan Isles
@@ -326,80 +327,80 @@ rewrite = The Galatyan Isles
 
 [castolo]
 display = Castolo
-names = Multiverse
+names = Castolo and Minanda
 alias = Castolo
 alias = Castolo Region
 
 [minanda]
 display = Minanda
-names = Multiverse
+names = Castolo and Minanda
 alias = Minanda
 alias = Minanda Region
 alias = Mirandela Coast
 
 [indigo-coast]
 display = Indigo Coast
-names = Multiverse
+names = New Bradman
 alias = Indigo Coast
 alias = Indigo Bay
 alias = Indigo Bay Territory
 
 [old-bradman]
 display = Old Bradman
-names = Multiverse
+names = New Bradman
 alias = Old Bradman
 alias = Bradman Old Colony
 alias = Bradman Prime
 
 [wyrmspire]
 display = Wyrmspire
-names = Multiverse
+names = Itavrnai Union
 alias = Wyrmspire
 alias = Wyrmspire Hold
 alias = Itavrn Prime
 
 [hjaldur-march]
 display = Hjaldur March
-names = Multiverse
+names = New Rythorn
 alias = Hjaldur March
 alias = Hjaldur
 alias = Hjaldurmark
 
 [shirakami]
 display = Shirakami
-names = Multiverse
+names = Ryukawa
 alias = Shirakami
 alias = Shirakami Prefecture
 
 [port-myles]
 display = Port Myles
-names = Multiverse
+names = New Bradman
 alias = Port Myles
 alias = Myles Territory
 
 [deepnet]
 display = Deepnet
-names = Multiverse
+names = Layn's Wyred
 alias = Deepnet
 alias = The Deepnet
 alias = Wyred Deepnet
 
 [mournhollow]
 display = Mournhollow
-names = Multiverse
+names = Determi
 alias = Mournhollow
 alias = Mourn Hollow
 alias = Determi Fens
 
 [northern-counties]
 display = Northern Counties
-names = Multiverse
+names = Mancunya
 alias = Northern Counties
 alias = Mancunya Counties
 
 [the-marches]
 display = The Marches
-names = Multiverse
+names = Wyrmwoode
 alias = The Marches
 alias = Wyrmwoode Marches
 alias = Y Gororau
