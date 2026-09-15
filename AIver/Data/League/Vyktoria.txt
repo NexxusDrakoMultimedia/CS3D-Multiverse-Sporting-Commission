@@ -14,60 +14,65 @@
 ! 2 shorts #7f0000
 ! 2 socks #ffd900
 * VFF Cup
+#! lane all
 + Country "Vyktoria"
 + reputation 13
-# Open to the whole pyramid, amateurs included, from round one.
+# Every club in the pyramid.
 + draw 2
-+ round 1 "First Round" 1-128 3
++ round 1 "Round of 128" 1-128 3
 + add 128 from "Vyktoria"
-+ round 2 "Second Round" 1-64 6
-+ round 3 "Third Round" 1-32 9
-+ round 4 "Fourth Round" 1-16 15
-+ round 5 "Quarter Finals" 1-8 24
-+ round 6 "Semi Finals" 1-4
-+ week 33 36
++ round 2 "Round of 64" 1-64 6
++ round 3 "Round of 32" 1-32 9
++ round 4 "Round of 16" 1-16 15
++ round 5 "Quarter Final" 1-8 24
++ round 6 "Semi Final" 1-4 33
 + round 7 "Final" 1-2 45
-* Vyktoria Charity Shield
-+ Country "Vyktoria"
-+ reputation 9
-# Champions against cup holders, one match to open the season.
-+ draw 1
-+ round 1 "Final" 1-2 2
-# the cup holder takes seat one, or the league if there is no holder yet;
-# the champions take seat two
-+ <1 add 1 cup-winner "VFF Cup Final"
-+ <1 add 1 from "Vyktoria"
-+ <2 add 1 from "Vyktoria"
 * Vyktoria League Cup
+#! lane league
 + Country "Vyktoria"
-+ reputation 12
-# Entry by division, so the band is exactly the tiers named.
++ reputation 11
+# Tiers 1 to 4, entering by division.
 + draw 3
-+ round 1 "First Round" 1-64 4
++ round 1 "Round of 64" 1-64 4
 + add 16 from "V-League One"
 + add 16 from "V-League Two"
 + add 16 from "V-League Three"
 + add 16 from "V-League Four"
-+ round 2 "Second Round" 1-32 7
-+ round 3 "Third Round" 1-16 13
-+ round 4 "Quarter Finals" 1-8 22
-+ round 5 "Semi Finals" 1-4 34
++ round 2 "Round of 32" 1-32 7
++ round 3 "Round of 16" 1-16 13
++ round 4 "Quarter Final" 1-8 22
++ round 5 "Semi Final" 1-4 34
 + round 6 "Final" 1-2 46
-* Vyktoria Semi-Pro Trophy
+* Vyktoria Challenge Trophy
+#! lane lower
 + Country "Vyktoria"
 + reputation 8
-# Entry by division, so the band is exactly the tiers named.
+# Tiers 5 to 8, entering by division.
 + draw 4
-+ round 1 "First Round" 1-64 5
++ round 1 "Round of 64" 1-64 5
 + add 16 from "V-League Five"
 + add 16 from "V-League Six"
 + add 16 from "V-League Seven"
 + add 16 from "V-League Eight"
-+ round 2 "Second Round" 1-32 8
-+ round 3 "Third Round" 1-16 11
-+ round 4 "Quarter Finals" 1-8 20
-+ round 5 "Semi Finals" 1-4 32
++ round 2 "Round of 32" 1-32 8
++ round 3 "Round of 16" 1-16 11
++ round 4 "Quarter Final" 1-8 20
++ round 5 "Semi Final" 1-4 32
 + round 6 "Final" 1-2 44
+* Vyktoria Charity Shield
++ Country "Vyktoria"
++ reputation 10
+# National Cup holders against the champions.
++ draw 1
++ round 1 "Final" 1-2 2
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
++ <1 add 1 cup-winner "VFF Cup Final"
++ <1 add 1 from "V-League One"
++ <2 add 1 from "V-League One"
++ <2 add 1 from "V-League One"
 : V-League One
 + division 1
 + promotions 0

@@ -14,31 +14,44 @@
 ! 2 shorts #00007f
 ! 2 socks #ffffff
 * Copa Unida
+#! lane all
 + Country "Castolo and Minanda"
 + reputation 10
-# Both divisions enter together; semi finals over two legs.
-+ draw 2
-+ round 1 "Primera Ronda" 1-32 3
+# Every club in the pyramid.
++ draw 3
++ round 1 "Round of 32" 1-32 4
 + add 32 from "Castolo and Minanda"
-+ round 2 "Segunda Ronda" 1-16 7
-+ round 3 "Cuartos de Final" 1-8 16
-+ round 4 "Semifinales" 1-4
-+ week 29 31
++ round 2 "Round of 16" 1-16 8
++ round 3 "Quarter Final" 1-8 16
++ round 4 "Semi Final" 1-4 30
 + round 5 "Final" 1-2 46
-* Supercopa Unida
+* Copa de la Liga Unida
+#! lane league
 + Country "Castolo and Minanda"
 + reputation 8
-# Champions, runners-up, third place and the cup holders, over two match days.
+# Tiers 1 to 2, entering by division.
++ draw 2
++ round 1 "Round of 32" 1-32 3
++ add 16 from "Primera Unida"
++ add 16 from "Segunda Unida"
++ round 2 "Round of 16" 1-16 7
++ round 3 "Quarter Final" 1-8 15
++ round 4 "Semi Final" 1-4 29
++ round 5 "Final" 1-2 45
+* Supercopa Unida
++ Country "Castolo and Minanda"
++ reputation 7
+# National Cup holders against the champions.
 + draw 1
-+ round 1 "Semifinales" 1-4 2
-# seat one is the cup holder, or the league if the cup has not been won
-# yet; the other three are the league placings behind them
++ round 1 "Final" 1-2 2
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
 + <1 add 1 cup-winner "Copa Unida Final"
-+ <1 add 1 from "Castolo and Minanda"
-+ <2 add 1 from "Castolo and Minanda"
-+ <3 add 1 from "Castolo and Minanda"
-+ <4 add 1 from "Castolo and Minanda"
-+ round 2 "Final" 1-2 4
++ <1 add 1 from "Primera Unida"
++ <2 add 1 from "Primera Unida"
++ <2 add 1 from "Primera Unida"
 : Primera Unida
 + division 1
 + promotions 0

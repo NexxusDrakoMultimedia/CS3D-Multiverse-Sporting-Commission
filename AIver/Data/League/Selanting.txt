@@ -7,27 +7,58 @@
 ! Country "Selanting"
 ! Names "data/names/Selanting_1st.txt" "data/names/Selanting_2nd.txt"
 * Piala Selanting
+#! lane all
 + Country "Selanting"
 + reputation 8
-# All four divisions enter at the first round.
+# Every club in the pyramid.
 + draw 2
-+ round 1 "First Round" 1-64 3
++ round 1 "Round of 64" 1-64 3
 + add 64 from "Selanting"
-+ round 2 "Second Round" 1-32 6
++ round 2 "Round of 32" 1-32 6
 + round 3 "Round of 16" 1-16 12
-+ round 4 "Quarter Finals" 1-8 21
-+ round 5 "Semi Finals" 1-4 32
-+ round 6 "Final" 1-2 46
-* Selanting Super Cup
++ round 4 "Quarter Final" 1-8 21
++ round 5 "Semi Final" 1-4 33
++ round 6 "Final" 1-2 45
+* Piala Liga Selanting
+#! lane league
++ Country "Selanting"
++ reputation 7
+# Tiers 1 to 2, entering by division.
++ draw 3
++ round 1 "Round of 32" 1-32 4
++ add 16 from "Liga Utama Selanting"
++ add 16 from "Liga Pertama Selanting"
++ round 2 "Round of 16" 1-16 7
++ round 3 "Quarter Final" 1-8 16
++ round 4 "Semi Final" 1-4 31
++ round 5 "Final" 1-2 46
+* Piala Amatur
+#! lane lower
++ Country "Selanting"
++ reputation 3
+# Tiers 3 to 4, entering by division.
++ draw 4
++ round 1 "Round of 32" 1-32 5
++ add 16 from "Liga Kedua Selanting"
++ add 16 from "Liga Ketiga Selanting"
++ round 2 "Round of 16" 1-16 8
++ round 3 "Quarter Final" 1-8 17
++ round 4 "Semi Final" 1-4 29
++ round 5 "Final" 1-2 44
+* Piala Juara Selanting
 + Country "Selanting"
 + reputation 6
-# Champions against cup holders, one match, week two.
+# National Cup holders against the champions.
 + draw 1
 + round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
 + <1 add 1 cup-winner "Piala Selanting Final"
-+ <1 add 1 from "Selanting"
-+ <2 add 1 from "Selanting"
++ <1 add 1 from "Liga Utama Selanting"
++ <2 add 1 from "Liga Utama Selanting"
++ <2 add 1 from "Liga Utama Selanting"
 : Liga Utama Selanting
 + division 1
 + promotions 0

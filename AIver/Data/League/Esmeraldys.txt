@@ -7,63 +7,65 @@
 ! Country "Esmeraldys"
 ! Names "data/names/Esmeraldys_1st.txt" "data/names/Esmeraldys_2nd.txt"
 * Corn Esmeraldys
+#! lane all
 + Country "Esmeraldys"
 + reputation 11
-# Staggered entry by rank; two-legged semi finals.
+# Every club in the pyramid.
 + draw 2
-+ round 1 "First Round" 65-128 3
-# seeded clubs enter later, as the Galatyan associations all insist
-+ add 32 from "Esmeraldys"
-+ add 32 from "Esmeraldys"
-+ add 64 from "Esmeraldys"
-+ round 2 "Second Round" 33-96 6
-+ round 3 "Third Round" 1-64 9
-+ round 4 "Fourth Round" 1-32 12
-+ round 5 "Round of 16" 1-16 18
-+ round 6 "Quarter Finals" 1-8 27
-+ round 7 "Semi Finals" 1-4
-+ week 36 39
-+ round 8 "Final" 1-2 45
-* Esmeraldys Super Cup
++ round 1 "Round of 128" 1-128 3
++ add 128 from "Esmeraldys"
++ round 2 "Round of 64" 1-64 6
++ round 3 "Round of 32" 1-32 9
++ round 4 "Round of 16" 1-16 15
++ round 5 "Quarter Final" 1-8 24
++ round 6 "Semi Final" 1-4 33
++ round 7 "Final" 1-2 45
+* Corn na Sraithe
+#! lane league
 + Country "Esmeraldys"
-+ reputation 8
-# Champions against cup holders, one match, week two.
-+ draw 1
-+ round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
-+ <1 add 1 cup-winner "Corn Esmeraldys Final"
-+ <1 add 1 from "Esmeraldys"
-+ <2 add 1 from "Esmeraldys"
-* Esmeraldys League Cup
-+ Country "Esmeraldys"
-+ reputation 10
-# Entry by division, so the band is exactly the tiers named.
++ reputation 9
+# Tiers 1 to 4, entering by division.
 + draw 3
-+ round 1 "First Round" 1-64 4
++ round 1 "Round of 64" 1-64 4
 + add 16 from "Esmeraldys Príomhroinn"
 + add 16 from "Esmeraldys Roinn a hAon"
 + add 16 from "Esmeraldys Roinn a Dó"
 + add 16 from "Esmeraldys Roinn a Trí"
-+ round 2 "Second Round" 1-32 7
-+ round 3 "Third Round" 1-16 13
-+ round 4 "Quarter Finals" 1-8 22
-+ round 5 "Semi Finals" 1-4 34
++ round 2 "Round of 32" 1-32 7
++ round 3 "Round of 16" 1-16 13
++ round 4 "Quarter Final" 1-8 22
++ round 5 "Semi Final" 1-4 34
 + round 6 "Final" 1-2 46
-* Esmeraldys Semi-Pro Trophy
+* Corn na hAthbhliana
+#! lane lower
 + Country "Esmeraldys"
 + reputation 6
-# Entry by division, so the band is exactly the tiers named.
+# Tiers 5 to 8, entering by division.
 + draw 4
-+ round 1 "First Round" 1-64 5
++ round 1 "Round of 64" 1-64 5
 + add 16 from "Esmeraldys Roinn a Ceathair"
 + add 16 from "Esmeraldys Roinn a Cúig"
 + add 16 from "Esmeraldys Roinn a Sé"
 + add 16 from "Esmeraldys Roinn a Seacht"
-+ round 2 "Second Round" 1-32 8
-+ round 3 "Third Round" 1-16 11
-+ round 4 "Quarter Finals" 1-8 20
-+ round 5 "Semi Finals" 1-4 32
++ round 2 "Round of 32" 1-32 8
++ round 3 "Round of 16" 1-16 11
++ round 4 "Quarter Final" 1-8 20
++ round 5 "Semi Final" 1-4 32
 + round 6 "Final" 1-2 44
+* Sciath Esmeraldys
++ Country "Esmeraldys"
++ reputation 8
+# National Cup holders against the champions.
++ draw 1
++ round 1 "Final" 1-2 2
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
++ <1 add 1 cup-winner "Corn Esmeraldys Final"
++ <1 add 1 from "Esmeraldys Príomhroinn"
++ <2 add 1 from "Esmeraldys Príomhroinn"
++ <2 add 1 from "Esmeraldys Príomhroinn"
 : Esmeraldys Príomhroinn
 + division 1
 + promotions 0

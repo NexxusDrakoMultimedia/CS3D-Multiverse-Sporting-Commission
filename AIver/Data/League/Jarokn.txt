@@ -7,31 +7,58 @@
 ! Country "Jarokn"
 ! Names "data/names/Jarokn_1st.txt" "data/names/Jarokn_2nd.txt"
 * Jarokn Trial of Heroes
+#! lane all
 + Country "Jarokn"
 + reputation 12
-# Rank decides how many trials a club must survive.
+# Every club in the pyramid.
 + draw 2
-+ round 1 "Trial of Mortals" 33-64 3
-# the Pantheon is spared both early trials; the Mortals League starts at the bottom
-+ add 16 from "Jarokn"
-+ add 16 from "Jarokn"
-+ add 32 from "Jarokn"
-+ round 2 "Trial of Heroes" 17-48 5
-+ round 3 "Trial of Demigods" 1-32 9
-+ round 4 "Trial of Titans" 1-16 15
-+ round 5 "Trial of Gods" 1-8 23
-+ round 6 "Ascension" 1-4 33
-+ round 7 "Apotheosis" 1-2 45
-* Jarokn Super Cup
++ round 1 "Round of 64" 1-64 3
++ add 64 from "Jarokn"
++ round 2 "Round of 32" 1-32 6
++ round 3 "Round of 16" 1-16 12
++ round 4 "Quarter Final" 1-8 21
++ round 5 "Semi Final" 1-4 33
++ round 6 "Final" 1-2 45
+* Pantheon League Cup
+#! lane league
++ Country "Jarokn"
++ reputation 10
+# Tiers 1 to 2, entering by division.
++ draw 3
++ round 1 "Round of 32" 1-32 4
++ add 16 from "Jarokn Pantheon"
++ add 16 from "Jarokn Demigod Tier"
++ round 2 "Round of 16" 1-16 7
++ round 3 "Quarter Final" 1-8 16
++ round 4 "Semi Final" 1-4 31
++ round 5 "Final" 1-2 46
+* Mortal's Vase
+#! lane lower
++ Country "Jarokn"
++ reputation 4
+# Tiers 3 to 4, entering by division.
++ draw 4
++ round 1 "Round of 32" 1-32 5
++ add 16 from "Jarokn Heroes League"
++ add 16 from "Jarokn Mortals League"
++ round 2 "Round of 16" 1-16 8
++ round 3 "Quarter Final" 1-8 17
++ round 4 "Semi Final" 1-4 29
++ round 5 "Final" 1-2 44
+* Ascendant Shield
 + Country "Jarokn"
 + reputation 9
-# Champions against cup holders, one match, week two.
+# National Cup holders against the champions.
 + draw 1
 + round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
-+ <1 add 1 cup-winner "Jarokn Trial of Heroes Apotheosis"
-+ <1 add 1 from "Jarokn"
-+ <2 add 1 from "Jarokn"
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
++ <1 add 1 cup-winner "Jarokn Trial of Heroes Final"
++ <1 add 1 from "Jarokn Pantheon"
++ <2 add 1 from "Jarokn Pantheon"
++ <2 add 1 from "Jarokn Pantheon"
 : Jarokn Pantheon
 + division 1
 + promotions 0

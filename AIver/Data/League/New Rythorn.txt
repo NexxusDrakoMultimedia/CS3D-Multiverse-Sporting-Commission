@@ -7,67 +7,65 @@
 ! Country "New Rythorn"
 ! Names "data/names/New Rythorn_1st.txt" "data/names/New Rythorn_2nd.txt"
 * Rythornsmästerskapet
+#! lane all
 + Country "New Rythorn"
 + reputation 11
-# Quarter finals and semi finals are both played over two legs.
-# The final closes the calendar in week 52.
+# Every club in the pyramid.
 + draw 2
-+ round 1 "Första omgången" 65-128 3
-# the 32 best clubs enter at the third round
-+ add 32 from "New Rythorn"
-# the next 32 enter at the second round
-+ add 32 from "New Rythorn"
-# the remaining 64 start in the first round
-+ add 64 from "New Rythorn"
-+ round 2 "Andra omgången" 33-96 6
-+ round 3 "Tredje omgången" 1-64 9
-+ round 4 "Fjärde omgången" 1-32 12
-+ round 5 "Åttondelsfinal" 1-16 18
-+ round 6 "Kvartsfinal" 1-8
-+ week 27 30
-+ round 7 "Semifinal" 1-4
-+ week 36 39
-+ round 8 "Final" 1-2 45
-* New Rythorn Super Cup
++ round 1 "Round of 128" 1-128 3
++ add 128 from "New Rythorn"
++ round 2 "Round of 64" 1-64 6
++ round 3 "Round of 32" 1-32 9
++ round 4 "Round of 16" 1-16 15
++ round 5 "Quarter Final" 1-8 24
++ round 6 "Semi Final" 1-4 33
++ round 7 "Final" 1-2 45
+* Rythorn Ligacupen
+#! lane league
 + Country "New Rythorn"
-+ reputation 8
-# Champions against cup holders, one match, week two.
-+ draw 1
-+ round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
-+ <1 add 1 cup-winner "Rythornsmästerskapet Final"
-+ <1 add 1 from "New Rythorn"
-+ <2 add 1 from "New Rythorn"
-* New Rythorn League Cup
-+ Country "New Rythorn"
-+ reputation 10
-# Entry by division, so the band is exactly the tiers named.
++ reputation 9
+# Tiers 1 to 4, entering by division.
 + draw 3
-+ round 1 "First Round" 1-64 4
++ round 1 "Round of 64" 1-64 4
 + add 16 from "Rythorn Överliga"
 + add 16 from "Rythorn Division Ett"
 + add 16 from "Rythorn Division Två"
 + add 16 from "Rythorn Division Tre"
-+ round 2 "Second Round" 1-32 7
-+ round 3 "Third Round" 1-16 13
-+ round 4 "Quarter Finals" 1-8 22
-+ round 5 "Semi Finals" 1-4 34
++ round 2 "Round of 32" 1-32 7
++ round 3 "Round of 16" 1-16 13
++ round 4 "Quarter Final" 1-8 22
++ round 5 "Semi Final" 1-4 34
 + round 6 "Final" 1-2 46
-* New Rythorn Semi-Pro Trophy
+* Rythorn Distriktspokalen
+#! lane lower
 + Country "New Rythorn"
 + reputation 6
-# Entry by division, so the band is exactly the tiers named.
+# Tiers 5 to 8, entering by division.
 + draw 4
-+ round 1 "First Round" 1-64 5
++ round 1 "Round of 64" 1-64 5
 + add 16 from "Rythorn Division Fyra"
 + add 16 from "Rythorn Division Fem"
 + add 16 from "Rythorn Division Sex"
 + add 16 from "Rythorn Division Sju"
-+ round 2 "Second Round" 1-32 8
-+ round 3 "Third Round" 1-16 11
-+ round 4 "Quarter Finals" 1-8 20
-+ round 5 "Semi Finals" 1-4 32
++ round 2 "Round of 32" 1-32 8
++ round 3 "Round of 16" 1-16 11
++ round 4 "Quarter Final" 1-8 20
++ round 5 "Semi Final" 1-4 32
 + round 6 "Final" 1-2 44
+* Rythorn Supercupen
++ Country "New Rythorn"
++ reputation 8
+# National Cup holders against the champions.
++ draw 1
++ round 1 "Final" 1-2 2
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
++ <1 add 1 cup-winner "Rythornsmästerskapet Final"
++ <1 add 1 from "Rythorn Överliga"
++ <2 add 1 from "Rythorn Överliga"
++ <2 add 1 from "Rythorn Överliga"
 : Rythorn Överliga
 + division 1
 + promotions 0

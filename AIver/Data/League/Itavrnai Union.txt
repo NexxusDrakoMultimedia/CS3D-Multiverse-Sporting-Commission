@@ -14,93 +14,85 @@
 ! 2 shorts #ffff00
 ! 2 socks #0000ff
 * Wyrmfire Cup
+#! lane all
 + Country "Itavrnai Union"
-+ reputation 15
-# Every club in the Union enters at the first round.
-# Semi finals are settled over two legs; the final is one match at the Wyrmspire.
-+ draw 3
-+ round 1 "First Flight Round" 1-256 4
++ reputation 16
+# Every club in the pyramid.
++ draw 2
++ round 1 "Round of 256" 1-256 3
 + add 256 from "Itavrnai Union"
-+ round 2 "Second Flight Round" 1-128 8
-+ round 3 "Third Flight Round" 1-64 12
-+ round 4 "Fourth Flight Round" 1-32 16
-+ round 5 "Round of 16" 1-16 20
-+ round 6 "Quarter Finals" 1-8 28
-+ round 7 "Semi Finals" 1-4
-+ week 36 40
-+ round 8 "Final" 1-2 44
-* Itavrnai Grand Conclave
++ round 2 "Round of 128" 1-128 6
++ round 3 "Round of 64" 1-64 9
++ round 4 "Round of 32" 1-32 12
++ round 5 "Round of 16" 1-16 18
++ round 6 "Quarter Final" 1-8 27
++ round 7 "Semi Final" 1-4 36
++ round 8 "Final" 1-2 45
+* Drakonhold League Cup
+#! lane league
 + Country "Itavrnai Union"
-+ reputation 13
-# The top two flights only: eight groups of four, two advance from each.
-+ draw 4
-+ round 1 "Conclave group stage" 1-32
-+ groups 8
-+ week 5 9 13 17 21 25
-+ add 32 from "Itavrnai Union"
-+ round 2 "Round of 16" 1-16 29
-+ round 3 "Quarter Finals" 1-8 33
-+ round 4 "Semi Finals" 1-4
-+ week 37 41
-+ round 5 "Final" 1-2 45
-* Itavrnai Union Super Cup
-+ Country "Itavrnai Union"
-+ reputation 13
-# Champions against cup holders, one match, week two.
-+ draw 1
-+ round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
-+ <1 add 1 cup-winner "Wyrmfire Cup Final"
-+ <1 add 1 from "Itavrnai Union"
-+ <2 add 1 from "Itavrnai Union"
-* Itavrnai Union League Cup
-+ Country "Itavrnai Union"
-+ reputation 15
-# Entry by division, so the band is exactly the tiers named.
-+ draw 5
-+ round 1 "Preliminary Round" 57-72 6
++ reputation 14
+# Tiers 1 to 4, entering by division.
++ draw 3
++ round 1 "Preliminary Round" 57-72 4
 + add 18 from "Itavrnai Prime Flight"
 + add 18 from "Itavrnai First Flight"
 + add 18 from "Itavrnai Second Flight"
 + add 18 from "Itavrnai Third Flight"
-+ round 2 "First Round" 1-64 10
-+ round 3 "Second Round" 1-32 14
-+ round 4 "Third Round" 1-16 18
-+ round 5 "Quarter Finals" 1-8 26
-+ round 6 "Semi Finals" 1-4 34
++ round 2 "Round of 64" 1-64 7
++ round 3 "Round of 32" 1-32 10
++ round 4 "Round of 16" 1-16 16
++ round 5 "Quarter Final" 1-8 25
++ round 6 "Semi Final" 1-4 34
 + round 7 "Final" 1-2 46
-* Itavrnai Union Semi-Pro Trophy
+* Emberforge Trophy
+#! lane lower
 + Country "Itavrnai Union"
 + reputation 11
-# Entry by division, so the band is exactly the tiers named.
-+ draw 6
-+ round 1 "Preliminary Round" 41-88 7
+# Tiers 5 to 8, entering by division.
++ draw 4
++ round 1 "Preliminary Round" 41-88 5
 + add 22 from "Itavrnai Fourth Flight"
 + add 22 from "Itavrnai Fifth Flight"
 + add 22 from "Itavrnai Sixth Flight"
 + add 22 from "Itavrnai Seventh Flight"
-+ round 2 "First Round" 1-64 11
-+ round 3 "Second Round" 1-32 15
-+ round 4 "Third Round" 1-16 19
-+ round 5 "Quarter Finals" 1-8 23
-+ round 6 "Semi Finals" 1-4 31
-+ round 7 "Final" 1-2 43
-* Itavrnai Union Amateur Vase
++ round 2 "Round of 64" 1-64 8
++ round 3 "Round of 32" 1-32 11
++ round 4 "Round of 16" 1-16 17
++ round 5 "Quarter Final" 1-8 23
++ round 6 "Semi Final" 1-4 35
++ round 7 "Final" 1-2 44
+* Hatchling Vase
+#! lane lower
 + Country "Itavrnai Union"
-+ reputation 7
-# Entry by division, so the band is exactly the tiers named.
-+ draw 6
-+ round 1 "Preliminary Round" 33-96 7
++ reputation 8
+# Tiers 9 to 12, entering by division.
++ draw 4
++ round 1 "Preliminary Round" 33-96 5
 + add 24 from "Itavrnai Eighth Flight"
 + add 24 from "Itavrnai Ninth Flight"
 + add 24 from "Itavrnai Tenth Flight"
 + add 24 from "Itavrnai Eleventh Flight"
-+ round 2 "First Round" 1-64 11
-+ round 3 "Second Round" 1-32 15
-+ round 4 "Third Round" 1-16 19
-+ round 5 "Quarter Finals" 1-8 23
-+ round 6 "Semi Finals" 1-4 31
-+ round 7 "Final" 1-2 43
++ round 2 "Round of 64" 1-64 8
++ round 3 "Round of 32" 1-32 11
++ round 4 "Round of 16" 1-16 17
++ round 5 "Quarter Final" 1-8 23
++ round 6 "Semi Final" 1-4 35
++ round 7 "Final" 1-2 44
+* Wyrmcrown Shield
++ Country "Itavrnai Union"
++ reputation 13
+# National Cup holders against the champions.
++ draw 1
++ round 1 "Final" 1-2 2
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
++ <1 add 1 cup-winner "Wyrmfire Cup Final"
++ <1 add 1 from "Itavrnai Prime Flight"
++ <2 add 1 from "Itavrnai Prime Flight"
++ <2 add 1 from "Itavrnai Prime Flight"
 : Itavrnai Prime Flight
 + division 1
 + promotions 0

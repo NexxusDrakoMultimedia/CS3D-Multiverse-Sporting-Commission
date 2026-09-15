@@ -116,19 +116,49 @@ together at the foot of the pyramid in V-League Eight.
 
 ### Domestic
 
-Every nation has at least one cup, and the rules deliberately differ. The Itavrnai
-Wyrmfire Cup takes all 256 clubs. New Bradman, the Galatyan four and Jarokn stagger entry
-by rank. Determi mourns every round twice and settles only the Final Rite in one night.
-Nexxie plays single matches and hands out rosettes. Ryukawa's Sakura Shield and Layn's
-Wyred's Root Access Cup open with group stages. Castolo squeezes a four-team Supercopa
-into two match days. Vyktoria opens its cup to amateurs from round one and adds a Charity
-Shield.
+Every association runs the same five competitions, named in its own register:
+
+| | Field |
+|---|---|
+| **National Cup** | every club in the pyramid — the association's entry to the MSC Cup Winners Cup |
+| **League Cup** | the top band of tiers |
+| **Semi-Pro Cup** | the middle band — eight- and twelve-tier pyramids only |
+| **Amateur Cup** | the bottom band — four- and twelve-tier pyramids only |
+| **Super Cup** | National Cup holders against the champions, one match, week two |
+
+Which band cups an association gets depends on how deep its pyramid runs. Four tiers is
+a professional half and an amateur half with no middle, so those associations have no
+Semi-Pro Cup. Eight tiers bottoms out at semi-professional, so those have no Amateur Cup.
+Only the twelve-tier Itavrnai pyramid is deep enough for all three. Castolo and Minanda,
+at two tiers, has a League Cup and nothing below it.
+
+| Pyramid | Competitions |
+|---|---|
+| 12 tiers | National, League (1–4), Semi-Pro (5–8), Amateur (9–12), Super |
+| 8 tiers | National, League (1–4), Semi-Pro (5–8), Super |
+| 4 tiers | National, League (1–2), Amateur (3–4), Super |
+| 2 tiers | National, League (1–2), Super |
+
+The band cups enter by division rather than by country, so each takes exactly the tiers
+it is named for and no club can be in two of them.
+
+The **Super Cup** seats the National Cup holders against the champions. If one club won
+both — and cannot play itself — the league runners-up take the second seat.
+
+Names are local throughout: Itavrnai's Wyrmfire Cup, Drakonhold League Cup, Emberforge
+Trophy, Hatchling Vase and Wyrmcrown Shield; Wyrmwoode's Cwpan Wyrmwoode, Cwpan y
+Cynghrair, Tlws yr Her, Cwpan yr Amaturiaid and Darian Wyrmwoode; Qamaria's Kas Qamaria,
+Kas ad-Dawri, Kas al-Ittihad, Kas al-Hawa and Kas al-Abtal.
+
+Within a nation each cup runs on its own lane of weeks, so two cups a club could enter
+never fall on the same night. The Semi-Pro and Amateur Cups share a lane, since no club
+is in both.
 
 ### Club
 
 | Competition | Field | Decided |
 |---|---|---|
-| MSC Cup Winners Cup | 24 — one main trophy per association | wk 42 |
+| MSC Cup Winners Cup | 24 — every association's National Cup winner | wk 43 |
 | MSC Conference Trophy | 48 — 16 dropping from the Challengers, 32 smaller associations | wk 43 |
 | MSC Challengers League | 48 — 16 dropping from the Champions Cup, 32 from the leagues | wk 43 |
 | MSC Champions Cup | 48 — 16 seeded, 32 through qualifying | wk 43 |
@@ -178,6 +208,14 @@ weeks, so two cups a club could be in never share a night.
 **AFC Nexxus Drako** plays in the Itavrnai twelfth flight: reputation nil, twenty-five
 players none over 20, ability in the fifties and sixties against potential in the
 two-tens and twenties. Claret and gold. It has its own `Data\Team` file.
+
+**One naming rule everywhere.** Every knockout round in the world is a **Round of N**,
+a **Quarter Final**, a **Semi Final** or a **Final**. Where a field is not a power of
+two, the opening round is a **Preliminary Round** that seeds the surplus out and lands
+exactly on one — the Coronation's 134 down to 128, the Itavrnai Hatchling Vase's 96 down
+to 64. Quarter Final, Semi Final and Final are only used where a competition plays to a
+single winner, so the Coronation qualifiers — which stop early and send several through
+— name their rounds for the field they start with throughout.
 
 **Every seat belongs to someone.** Where a competition inherits named clubs, each seat
 is written on its own incrementing threshold with its own fallback behind it, the way

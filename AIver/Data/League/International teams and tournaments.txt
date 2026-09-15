@@ -65,9 +65,9 @@
 + week 16 19 22 25 28 30
 + round 3 "Round of 16" 1-16
 + week 32 34
-+ round 4 "Quarter Finals" 1-8
++ round 4 "Quarter Final" 1-8
 + week 36 38
-+ round 5 "Semi Finals" 1-4
++ round 5 "Semi Final" 1-4
 + week 40 42
 + round 6 "Final" 1-2 44
 * MSC Challengers League
@@ -108,9 +108,9 @@
 + week 16 19 22 25 28 30
 + round 3 "Round of 16" 1-16
 + week 32 34
-+ round 4 "Quarter Finals" 1-8
++ round 4 "Quarter Final" 1-8
 + week 36 38
-+ round 5 "Semi Finals" 1-4
++ round 5 "Semi Final" 1-4
 + week 40 42
 + round 6 "Final" 1-2 44
 * MSC Conference Trophy
@@ -142,9 +142,9 @@
 + week 16 19 22 25 28 30
 + round 3 "Round of 16" 1-16
 + week 32 34
-+ round 4 "Quarter Finals" 1-8
++ round 4 "Quarter Final" 1-8
 + week 36 38
-+ round 5 "Semi Finals" 1-4
++ round 5 "Semi Final" 1-4
 + week 40 42
 + round 6 "Final" 1-2 44
 * MSC Cup Winners Cup
@@ -169,13 +169,13 @@
 + <5 add 1 from "New Rythorn"
 + <6 add 1 cup-winner "Copa Unida Final"
 + <6 add 1 from "Castolo and Minanda"
-+ <7 add 1 cup-winner "Wyred Root Access Cup Final"
++ <7 add 1 cup-winner "Root Access Cup Final"
 + <7 add 1 from "Layn's Wyred"
-+ <8 add 1 cup-winner "Determi Requiem Cup Final Rite"
++ <8 add 1 cup-winner "Determi Requiem Cup Final"
 + <8 add 1 from "Determi"
 + <9 add 1 cup-winner "Nexxie Friendship Trophy Final"
 + <9 add 1 from "Nexxie"
-+ <10 add 1 cup-winner "Jarokn Trial of Heroes Apotheosis"
++ <10 add 1 cup-winner "Jarokn Trial of Heroes Final"
 + <10 add 1 from "Jarokn"
 + <11 add 1 cup-winner "Mancunya Challenge Cup Final"
 + <11 add 1 from "Mancunya"
@@ -207,9 +207,9 @@
 + <24 add 1 from "Norvalia"
 + round 2 "Round of 16" 1-16
 + week 29 31
-+ round 3 "Quarter Finals" 1-8
++ round 3 "Quarter Final" 1-8
 + week 33 35
-+ round 4 "Semi Finals" 1-4
++ round 4 "Semi Final" 1-4
 + week 37 39
 + round 5 "Final" 1-2 43
 * MSC Super Cup
@@ -235,121 +235,141 @@
 + <4 add 1 cup-winner "MSC Conference Trophy Final"
 + <4 add 1 rank 2 "MSC Conference Trophy Final"
 # The top two of the group meet in a final the following week.
-+ round 2 "Super Cup Final" 1-2 50
++ round 2 "Final" 1-2 50
 * MSC Coronation Qualifier Itavrnai
 + reputation 17
 + international
 # 256 clubs - Itavrnai Union
 # 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-256 2
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 256 from "Itavrnai Union"
-+ round 2 "Qualifying Round Two" 1-128 4
-+ round 3 "Qualifying Round Three" 1-64 6
-+ round 4 "Qualifying Round Four" 1-32 8
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Union South
 + reputation 17
 + international
 # 256 clubs - Vyktoria, New Rythorn
 # 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-256 2
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 128 from "Vyktoria"
 + add 128 from "New Rythorn"
-+ round 2 "Qualifying Round Two" 1-128 4
-+ round 3 "Qualifying Round Three" 1-64 6
-+ round 4 "Qualifying Round Four" 1-32 8
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Galatyan North
 + reputation 17
 + international
 # 256 clubs - Mancunya, Wyrmwoode
 # 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-256 2
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 128 from "Mancunya"
 + add 128 from "Wyrmwoode"
-+ round 2 "Qualifying Round Two" 1-128 4
-+ round 3 "Qualifying Round Three" 1-64 6
-+ round 4 "Qualifying Round Four" 1-32 8
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Galatyan West
 + reputation 17
 + international
 # 256 clubs - Centralya, Esmeraldys
 # 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-256 2
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 128 from "Centralya"
 + add 128 from "Esmeraldys"
-+ round 2 "Qualifying Round Two" 1-128 4
-+ round 3 "Qualifying Round Three" 1-64 6
-+ round 4 "Qualifying Round Four" 1-32 8
-* MSC Coronation Qualifier Commonwealth
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
+* MSC Coronation Qualifier Bradman
 + reputation 17
 + international
-# 224 clubs - New Bradman, Ryukawa, Castolo and Minanda
-# 14 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-224 2
+# 128 clubs - New Bradman
+# 8 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 128" 1-128 2
 + draw 1
 + add 128 from "New Bradman"
++ round 2 "Round of 64" 1-64 4
++ round 3 "Round of 32" 1-32 6
++ round 4 "Round of 16" 1-16 8
+* MSC Coronation Qualifier Ryukawa
++ reputation 17
++ international
+# 64 clubs - Ryukawa
+# 4 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 64" 1-64 2
++ draw 1
 + add 64 from "Ryukawa"
++ round 2 "Round of 32" 1-32 4
++ round 3 "Round of 16" 1-16 6
++ round 4 "Round of 8" 1-8 8
+* MSC Coronation Qualifier Castolo
++ reputation 17
++ international
+# 32 clubs - Castolo and Minanda
+# 2 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 32" 1-32 2
++ draw 1
 + add 32 from "Castolo and Minanda"
-+ round 2 "Qualifying Round Two" 1-112 4
-+ round 3 "Qualifying Round Three" 1-56 6
-+ round 4 "Qualifying Round Four" 1-28 8
++ round 2 "Round of 16" 1-16 4
++ round 3 "Round of 8" 1-8 6
++ round 4 "Round of 4" 1-4 8
 * MSC Coronation Qualifier Cyberya
 + reputation 17
 + international
 # 256 clubs - Layn's Wyred, Determi, Nexxie, Jarokn
 # 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-256 2
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 64 from "Layn's Wyred"
 + add 64 from "Determi"
 + add 64 from "Nexxie"
 + add 64 from "Jarokn"
-+ round 2 "Qualifying Round Two" 1-128 4
-+ round 3 "Qualifying Round Three" 1-64 6
-+ round 4 "Qualifying Round Four" 1-32 8
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Open North
 + reputation 17
 + international
 # 256 clubs - Veslavia, Valcarena, Tianlu, Akwanta
 # 16 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-256 2
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 64 from "Veslavia"
 + add 64 from "Valcarena"
 + add 64 from "Tianlu"
 + add 64 from "Akwanta"
-+ round 2 "Qualifying Round Two" 1-128 4
-+ round 3 "Qualifying Round Three" 1-64 6
-+ round 4 "Qualifying Round Four" 1-32 8
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Open South
 + reputation 17
 + international
-# 192 clubs - Sindhara, Hanseong, Mazamba
-# 12 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-192 2
+# 256 clubs - Sindhara, Hanseong, Mazamba, Qamaria
+# 16 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 256" 1-256 2
 + draw 1
 + add 64 from "Sindhara"
 + add 64 from "Hanseong"
 + add 64 from "Mazamba"
-+ round 2 "Qualifying Round Two" 1-96 4
-+ round 3 "Qualifying Round Three" 1-48 6
-+ round 4 "Qualifying Round Four" 1-24 8
++ add 64 from "Qamaria"
++ round 2 "Round of 128" 1-128 4
++ round 3 "Round of 64" 1-64 6
++ round 4 "Round of 32" 1-32 8
 * MSC Coronation Qualifier Open Reach
 + reputation 17
 + international
-# 192 clubs - Qamaria, Selanting, Norvalia
-# 12 go through to the Coronation Tournament, one in 16
-+ round 1 "Qualifying Round One" 1-192 2
+# 128 clubs - Selanting, Norvalia
+# 8 go through to the Coronation Tournament, one in 16
++ round 1 "Round of 128" 1-128 2
 + draw 1
-+ add 64 from "Qamaria"
 + add 64 from "Selanting"
 + add 64 from "Norvalia"
-+ round 2 "Qualifying Round Two" 1-96 4
-+ round 3 "Qualifying Round Three" 1-48 6
-+ round 4 "Qualifying Round Four" 1-24 8
++ round 2 "Round of 64" 1-64 4
++ round 3 "Round of 32" 1-32 6
++ round 4 "Round of 16" 1-16 8
 * MSC Coronation Tournament
 + reputation 20
 + international
@@ -359,22 +379,24 @@
 # the Quarter Finals. Nothing is seeded past the Preliminary.
 + round 1 "Preliminary Round" 123-134 12
 + draw 10
-+ add 16 rank 1 "MSC Coronation Qualifier Itavrnai Qualifying Round Four"
-+ add 16 rank 1 "MSC Coronation Qualifier Union South Qualifying Round Four"
-+ add 16 rank 1 "MSC Coronation Qualifier Galatyan North Qualifying Round Four"
-+ add 16 rank 1 "MSC Coronation Qualifier Galatyan West Qualifying Round Four"
-+ add 14 rank 1 "MSC Coronation Qualifier Commonwealth Qualifying Round Four"
-+ add 16 rank 1 "MSC Coronation Qualifier Cyberya Qualifying Round Four"
-+ add 16 rank 1 "MSC Coronation Qualifier Open North Qualifying Round Four"
-+ add 12 rank 1 "MSC Coronation Qualifier Open South Qualifying Round Four"
-+ add 12 rank 1 "MSC Coronation Qualifier Open Reach Qualifying Round Four"
-+ round 2 "First Round" 1-128 15
-+ round 3 "Second Round" 1-64 18
-+ round 4 "Third Round" 1-32 21
-+ round 5 "Fourth Round" 1-16 24
-+ round 6 "Quarter Finals" 1-8 27
-+ round 7 "Semi Finals" 1-4 41
-+ round 8 "Coronation Final" 1-2 45
++ add 16 rank 1 "MSC Coronation Qualifier Itavrnai Round of 32"
++ add 16 rank 1 "MSC Coronation Qualifier Union South Round of 32"
++ add 16 rank 1 "MSC Coronation Qualifier Galatyan North Round of 32"
++ add 16 rank 1 "MSC Coronation Qualifier Galatyan West Round of 32"
++ add 8 rank 1 "MSC Coronation Qualifier Bradman Round of 16"
++ add 4 rank 1 "MSC Coronation Qualifier Ryukawa Round of 8"
++ add 2 rank 1 "MSC Coronation Qualifier Castolo Round of 4"
++ add 16 rank 1 "MSC Coronation Qualifier Cyberya Round of 32"
++ add 16 rank 1 "MSC Coronation Qualifier Open North Round of 32"
++ add 16 rank 1 "MSC Coronation Qualifier Open South Round of 32"
++ add 8 rank 1 "MSC Coronation Qualifier Open Reach Round of 16"
++ round 2 "Round of 128" 1-128 15
++ round 3 "Round of 64" 1-64 18
++ round 4 "Round of 32" 1-32 21
++ round 5 "Round of 16" 1-16 24
++ round 6 "Quarter Final" 1-8 27
++ round 7 "Semi Final" 1-4 41
++ round 8 "Final" 1-2 45
 * MSC Ultimate Championship
 + reputation 20
 + international
@@ -386,9 +408,9 @@
 # Seat one is the Coronation winner. Seat two is whoever won the Super Cup
 # final - and if that is the same club, which cannot play itself, the seat
 # passes to the club it beat, then down the group table behind them.
-+ <1 add 1 cup-winner "MSC Coronation Tournament Coronation Final"
-+ <2 add 1 cup-winner "MSC Super Cup Super Cup Final"
-+ <2 add 1 rank 2 "MSC Super Cup Super Cup Final"
++ <1 add 1 cup-winner "MSC Coronation Tournament Final"
++ <2 add 1 cup-winner "MSC Super Cup Final"
++ <2 add 1 rank 2 "MSC Super Cup Final"
 + <2 add 1 rank 3 "MSC Super Cup Group stage"
 #
 #
@@ -459,7 +481,7 @@
 + add 1 team "Selanting"
 + add 1 team "Norvalia"
 + round 2 "Round of 16" 1-16 50
-+ round 3 "Quarter finals" 1-8 50
++ round 3 "Quarter Final" 1-8 50
 + round 4 "Semi Final" 1-4 51
 + round 5 "Third Place Playoff" 3-4 51
 + round 5 "Final" 1-2 51
@@ -496,9 +518,9 @@
 + add 1 team "Qamaria"
 + add 1 team "Selanting"
 + add 1 team "Norvalia"
-+ round 2 "Nations League Quarter Finals" 1-8 49
-+ round 3 "Nations League Semi Finals" 1-4 50
-+ round 4 "Nations League Final" 1-2 51
++ round 2 "Quarter Final" 1-8 49
++ round 3 "Semi Final" 1-4 50
++ round 4 "Final" 1-2 51
 * Cyberya Championship
 + reputation 17
 + international
@@ -549,7 +571,7 @@
 + add 1 team "Qamaria"
 + add 1 team "Selanting"
 + add 1 team "Norvalia"
-+ round 2 "Semi Finals" 1-4 28
++ round 2 "Semi Final" 1-4 28
 + round 3 "Final" 1-2 32
 * Nexxus Drako Shield
 + reputation 18
@@ -567,7 +589,7 @@
 + add 1 team "Ryukawa"
 + add 1 team "New Rythorn"
 + add 1 team "Castolo and Minanda"
-+ round 2 "Semi Finals" 1-4 16
++ round 2 "Semi Final" 1-4 16
 + round 3 "Final" 1-2 20
 * MSC International Window 1
 + international

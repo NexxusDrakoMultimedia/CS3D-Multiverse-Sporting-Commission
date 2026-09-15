@@ -7,27 +7,58 @@
 ! Country "Sindhara"
 ! Names "data/names/Sindhara_1st.txt" "data/names/Sindhara_2nd.txt"
 * Sindhara Federation Cup
+#! lane all
 + Country "Sindhara"
-+ reputation 9
-# All four divisions enter at the first round.
++ reputation 8
+# Every club in the pyramid.
 + draw 2
-+ round 1 "First Round" 1-64 3
++ round 1 "Round of 64" 1-64 3
 + add 64 from "Sindhara"
-+ round 2 "Second Round" 1-32 6
++ round 2 "Round of 32" 1-32 6
 + round 3 "Round of 16" 1-16 12
-+ round 4 "Quarter Finals" 1-8 21
-+ round 5 "Semi Finals" 1-4 32
-+ round 6 "Final" 1-2 46
++ round 4 "Quarter Final" 1-8 21
++ round 5 "Semi Final" 1-4 33
++ round 6 "Final" 1-2 45
+* Sindhara League Cup
+#! lane league
++ Country "Sindhara"
++ reputation 7
+# Tiers 1 to 2, entering by division.
++ draw 3
++ round 1 "Round of 32" 1-32 4
++ add 16 from "Sindhara Premier League"
++ add 16 from "Sindhara First Division"
++ round 2 "Round of 16" 1-16 7
++ round 3 "Quarter Final" 1-8 16
++ round 4 "Semi Final" 1-4 31
++ round 5 "Final" 1-2 46
+* Sindhara Amateur Vase
+#! lane lower
++ Country "Sindhara"
++ reputation 3
+# Tiers 3 to 4, entering by division.
++ draw 4
++ round 1 "Round of 32" 1-32 5
++ add 16 from "Sindhara Second Division"
++ add 16 from "Sindhara Third Division"
++ round 2 "Round of 16" 1-16 8
++ round 3 "Quarter Final" 1-8 17
++ round 4 "Semi Final" 1-4 29
++ round 5 "Final" 1-2 44
 * Sindhara Super Cup
 + Country "Sindhara"
 + reputation 6
-# Champions against cup holders, one match, week two.
+# National Cup holders against the champions.
 + draw 1
 + round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
 + <1 add 1 cup-winner "Sindhara Federation Cup Final"
-+ <1 add 1 from "Sindhara"
-+ <2 add 1 from "Sindhara"
++ <1 add 1 from "Sindhara Premier League"
++ <2 add 1 from "Sindhara Premier League"
++ <2 add 1 from "Sindhara Premier League"
 : Sindhara Premier League
 + division 1
 + promotions 0

@@ -45,23 +45,47 @@ Within a nation, each cup gets its own **lane** — its own residue class of wee
 — so two cups a club could be in never fall on the same night. Cups drawing from
 disjoint tier bands share a lane, because no club can be in both.
 
-### Super cups and tier cups everywhere
+### Domestic competitions rebuilt
 
-Every association that lacked one now has a **Super Cup**: champions against cup
-holders, one match, week two. Any pyramid of eight tiers or more also gets a
-**League Cup** for its top four divisions and a **Semi-Pro Trophy** for tiers
-five to eight; the twelve-tier Itavrnai pyramid adds an **Amateur Vase** for
-tiers nine down.
+Every hand-written domestic cup is gone and each association now runs the same
+set, named in its own register: a **National Cup** for the whole pyramid, band
+cups for the tiers beneath it, and a **Super Cup** — National Cup holders against
+the champions, one match, week two, with the league runners-up taking the second
+seat when one club won both.
 
-These enter by division rather than by country — `+ add 24 from "Itavrnai Ninth
-Flight"` — which is how the stock National Cup of Germany seeds its rounds, so a
-tier cup takes exactly the tiers it is named for. Where a band does not hold a
-power of two, the opening round seeds the surplus out rather than breaking the
-bracket.
+Which band cups an association gets follows the depth of its pyramid. Four tiers
+is a professional half and an amateur half with no middle, so no Semi-Pro Cup.
+Eight tiers bottoms out at semi-professional, so no Amateur Cup. Only the
+twelve-tier Itavrnai pyramid carries all three. Castolo and Minanda, at two
+tiers, has a League Cup and nothing below it.
 
-Two super cups were pointing at a round that does not exist: Determi closes on a
-*Final Rite* and Jarokn on an *Apotheosis*, not a Final. They now read the real
-closing round of their nation's main cup.
+The band cups enter by division rather than by country, which is how the stock
+National Cup of Germany seeds its rounds, so each takes exactly the tiers it is
+named for and no club is in two of them. Where a band does not hold a power of
+two — the Itavrnai amateur tiers hold 96 — the opening round seeds the surplus
+out rather than breaking the bracket.
+
+This fixes three faults at once. The Itavrnai Grand Conclave, a second all-comers
+cup, is gone. The Supercopa Unida was a four-team affair where every other
+association had a two-team super cup, and is now one match like the rest. And the
+super cups that pointed at a round their nation's cup does not have — Determi
+closed on a *Final Rite*, Jarokn on an *Apotheosis* — now all close on a Final,
+because every National Cup is built to the same bracket.
+
+The MSC Cup Winners Cup takes the 24 National Cup winners.
+
+### One naming rule for every round
+
+Round names are standard throughout: **Round of N**, **Quarter Final**, **Semi
+Final**, **Final**, and a **Preliminary Round** wherever a field has to be seeded
+down to a power of two. Quarter Final, Semi Final and Final are reserved for
+competitions that play to a single winner — the Coronation qualifiers stop early
+and send several through, so their rounds are named for the field they start
+with. The Super Cup's decider is now simply a Final.
+
+The eleven Coronation qualifiers were regrouped so every one holds a power of two
+— 256, 128, 64 or 32 — which means no qualifier needs a preliminary or a bye at
+all, and each still qualifies at the same one club in sixteen.
 
 ### AFC Nexxus Drako
 

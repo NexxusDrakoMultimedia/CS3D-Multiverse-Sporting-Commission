@@ -7,32 +7,58 @@
 ! Country "Determi"
 ! Names "data/names/Determi_1st.txt" "data/names/Determi_2nd.txt"
 * Determi Requiem Cup
+#! lane all
 + Country "Determi"
 + reputation 12
-# Every round is mourned twice. Only the final rite is settled in one night.
+# Every club in the pyramid.
 + draw 2
-+ round 1 "First Wake" 1-64
-+ week 3 5
++ round 1 "Round of 64" 1-64 3
 + add 64 from "Determi"
-+ round 2 "Second Wake" 1-32
-+ week 6 8
-+ round 3 "Third Wake" 1-16
-+ week 12 14
-+ round 4 "Quarter Requiem" 1-8
-+ week 21 23
-+ round 5 "Semi Requiem" 1-4
-+ week 32 34
-+ round 6 "Final Rite" 1-2 46
-* Determi Super Cup
++ round 2 "Round of 32" 1-32 6
++ round 3 "Round of 16" 1-16 12
++ round 4 "Quarter Final" 1-8 21
++ round 5 "Semi Final" 1-4 33
++ round 6 "Final" 1-2 45
+* Determi Vigil Cup
+#! lane league
++ Country "Determi"
++ reputation 10
+# Tiers 1 to 2, entering by division.
++ draw 3
++ round 1 "Round of 32" 1-32 4
++ add 16 from "Determi High Requiem"
++ add 16 from "Determi Second Vigil"
++ round 2 "Round of 16" 1-16 7
++ round 3 "Quarter Final" 1-8 16
++ round 4 "Semi Final" 1-4 31
++ round 5 "Final" 1-2 46
+* Pauper's Vase
+#! lane lower
++ Country "Determi"
++ reputation 4
+# Tiers 3 to 4, entering by division.
++ draw 4
++ round 1 "Round of 32" 1-32 5
++ add 16 from "Determi Third Vigil"
++ add 16 from "Determi Pauper's Tier"
++ round 2 "Round of 16" 1-16 8
++ round 3 "Quarter Final" 1-8 17
++ round 4 "Semi Final" 1-4 29
++ round 5 "Final" 1-2 44
+* Mourning Shield
 + Country "Determi"
 + reputation 9
-# Champions against cup holders, one match, week two.
+# National Cup holders against the champions.
 + draw 1
 + round 1 "Final" 1-2 2
-# champions against cup holders - the season opens with it
-+ <1 add 1 cup-winner "Determi Requiem Cup Final Rite"
-+ <1 add 1 from "Determi"
-+ <2 add 1 from "Determi"
+# Seat one is the National Cup holder, or the champions
+# if the cup has not been won yet. Seat two is the
+# champions - and the runners-up behind them, for when
+# one club took both.
++ <1 add 1 cup-winner "Determi Requiem Cup Final"
++ <1 add 1 from "Determi High Requiem"
++ <2 add 1 from "Determi High Requiem"
++ <2 add 1 from "Determi High Requiem"
 : Determi High Requiem
 + division 1
 + promotions 0
