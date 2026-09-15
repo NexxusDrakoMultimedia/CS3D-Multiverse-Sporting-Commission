@@ -15,15 +15,15 @@
 ! Small club maximum reputation 7
 ! Small club discount 500 1300
 
-# Two competitions, filed by whoever was at the ground.
-: Product "crestwire.wire" 1
-+ Name "Crestwire Wire"
+# One association, filed by whoever was at the ground.
+: Product "crestwire.nation" 1
++ Name "Crestwire Nation"
 + Family "crestwire.correspondents"
 + Presentation network-lead
 + Fields identity market-contract
-+ Scope selected-competition
-+ Sales relations core regional export
-+ Scope selections 2 2
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 1
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -31,22 +31,22 @@
 + Coverage 6800 5500
 + Contribution 2200 700 100
 + Freshness days 21
-+ Monthly reference factor 2300
++ Monthly reference factor 1800
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability standard
 + Club reputation 0 20
 
-# A region's worth of correspondents, market angle first.
-: Product "crestwire.wire-plus" 2
-+ Name "Crestwire Wire Plus"
+# Correspondents across a bloc, market angle first.
+: Product "crestwire.bloc" 2
++ Name "Crestwire Bloc"
 + Family "crestwire.correspondents"
 + Presentation network-lead
 + Fields identity market-contract
-+ Scope selected-region
-+ Sales relations core regional export
-+ Scope selections 1 1
++ Scope selected-nation
++ Sales relations global
++ Scope selections 4 4
 + Age 15 99
 + Professional any
 + Market statuses free listed expiring
@@ -54,22 +54,22 @@
 + Coverage 6200 6200
 + Contribution 2500 800 100
 + Freshness days 14
-+ Monthly reference factor 1900
++ Monthly reference factor 2100
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability standard
 + Club reputation 0 20
 
-# Three regions on retainer, with someone reading the football.
+# The whole network on retainer, with someone reading the football.
 : Product "crestwire.bureau" 1
 + Name "Crestwire Bureau"
 + Family "crestwire.correspondents"
 + Presentation network-lead
 + Fields identity sporting market-contract
-+ Scope selected-region
-+ Sales relations core regional export
-+ Scope selections 3 3
++ Scope global
++ Sales relations global
++ Scope selections 0 0
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -77,7 +77,7 @@
 + Coverage 6000 5800
 + Contribution 2700 1400 900
 + Freshness days 14
-+ Monthly reference factor 9100
++ Monthly reference factor 10200
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -86,20 +86,20 @@
 
 # Open to every member club.
 : Market "crestwire.desk" 1
-+ Name "Crestwire Desk"
++ Name "Crestwire"
 + Kind global
 + Sales reach worldwide
-+ Products "crestwire.wire" "crestwire.wire-plus" "crestwire.bureau"
++ Products "crestwire.nation" "crestwire.bloc" "crestwire.bureau"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
++ Selection priority 400
 
 # Retained clients only.
-: Market "crestwire.bureau-desk" 1
+: Market "crestwire.circle" 1
 + Name "Crestwire Bureau Circle"
 + Kind global
 + Sales reach worldwide
@@ -110,5 +110,5 @@
 + Global price factor 10400
 + Visibility invitation
 + Club reputation 0 20
-+ Selection priority 200
++ Selection priority 100
 

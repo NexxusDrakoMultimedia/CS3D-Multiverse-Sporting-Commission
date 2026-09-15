@@ -1,6 +1,6 @@
 # Scouting provider contract: scouting-provider-v1
 #  Created by Nexxus Drako, with Claude's assistance.
-# Slow, cheap and everywhere. Often the only place a player is listed.
+# Slow, cheap and everywhere. Two of the four are on sale each season.
 ! Provider "frontier-relay" 1
 ! Name "Frontier Relay"
 ! Archetype frontier-network
@@ -15,19 +15,19 @@
 ! Small club maximum reputation 8
 ! Small club discount 600 1500
 
-# Three associations, top flight only, filed when it arrives.
-: Product "frontier.lite" 1
-+ Name "Relay Lite"
+# One association, all the way down, filed when it arrives.
+: Product "frontier.nation" 1
++ Name "Relay Nation"
 + Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting
 + Scope selected-nation
-+ Sales relations core regional export global
-+ Scope selections 3 3
++ Sales relations global
++ Scope selections 1 1
 + Age 15 99
 + Professional any
 + Market statuses any
-+ Divisions 1 1
++ Divisions 1 99
 + Coverage 6000 4500
 + Contribution 2100 600 500
 + Freshness days 45
@@ -38,15 +38,15 @@
 + Availability rotating
 + Club reputation 0 20
 
-# The same three associations, all the way down.
-: Product "frontier.standard" 1
-+ Name "Relay Standard"
+# Four associations at once, slower still.
+: Product "frontier.bloc" 1
++ Name "Relay Bloc"
 + Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting
 + Scope selected-nation
-+ Sales relations core regional export global
-+ Scope selections 3 3
++ Sales relations global
++ Scope selections 4 4
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -54,22 +54,22 @@
 + Coverage 5800 4200
 + Contribution 2000 600 500
 + Freshness days 50
-+ Monthly reference factor 2700
++ Monthly reference factor 3000
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability rotating
 + Club reputation 0 20
 
-# Two associations, below the top flight, where the relay is strongest.
+# A bloc below the top flight, where the relay is strongest.
 : Product "frontier.depth" 1
 + Name "Relay Depth"
 + Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting
 + Scope selected-nation
-+ Sales relations core regional export global
-+ Scope selections 2 2
++ Sales relations global
++ Scope selections 4 4
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -77,22 +77,22 @@
 + Coverage 4500 6200
 + Contribution 2300 700 500
 + Freshness days 40
-+ Monthly reference factor 2100
++ Monthly reference factor 2800
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
 + Availability rotating
 + Club reputation 0 20
 
-# Two associations' youth sides, patchy but nobody else files them.
+# A bloc's youth sides, patchy but nobody else files them.
 : Product "frontier.academy" 1
 + Name "Relay Academy"
 + Family "frontier.relay"
 + Presentation network-lead
 + Fields identity sporting development
 + Scope selected-nation
-+ Sales relations core regional export global
-+ Scope selections 2 2
++ Sales relations global
++ Scope selections 4 4
 + Age 14 23
 + Professional any
 + Market statuses any
@@ -100,7 +100,7 @@
 + Coverage 7000 5500
 + Contribution 2300 700 1300
 + Freshness days 35
-+ Monthly reference factor 2400
++ Monthly reference factor 3200
 + Billing monthly
 + Seasonal access months 12
 + Seasonal charge months 12
@@ -109,29 +109,15 @@
 
 # Two of the four packages are on sale in any given season.
 : Market "frontier.desk" 1
-+ Name "Frontier Relay Desk"
++ Name "Frontier Relay"
 + Kind global
 + Sales reach worldwide
-+ Products "frontier.lite" "frontier.standard" "frontier.depth" "frontier.academy"
++ Products "frontier.nation" "frontier.bloc" "frontier.depth" "frontier.academy"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
-
-# Standing orders, for clubs that cannot wait for the rotation.
-: Market "frontier.standing" 1
-+ Name "Frontier Standing Order"
-+ Kind global
-+ Sales reach worldwide
-+ Products "frontier.lite" "frontier.standard" "frontier.depth" "frontier.academy"
-+ Core price factor 0
-+ Regional price factor 0
-+ Export price factor 0
-+ Global price factor 9500
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 200
++ Selection priority 400
 

@@ -31,30 +31,7 @@
 + Coverage 9500 8800
 + Contribution 3400 2300 800
 + Freshness days 14
-+ Monthly reference factor 8500
-+ Billing monthly seasonal
-+ Seasonal access months 12
-+ Seasonal charge months 11
-+ Availability standard
-+ Club reputation 0 20
-
-# Three competitions on one bill.
-: Product "charterscope.trio" 2
-+ Name "CharterScope Trio"
-+ Family "charterscope.catalog"
-+ Presentation data-dossier
-+ Fields identity sporting
-+ Scope selected-competition
-+ Sales relations global
-+ Scope selections 3 3
-+ Age 15 99
-+ Professional any
-+ Market statuses any
-+ Divisions 1 99
-+ Coverage 9000 7200
-+ Contribution 3600 2100 700
-+ Freshness days 14
-+ Monthly reference factor 12100
++ Monthly reference factor 6800
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -74,25 +51,48 @@
 + Professional any
 + Market statuses any
 + Divisions 1 99
++ Coverage 9000 7200
++ Contribution 3600 2100 700
++ Freshness days 14
++ Monthly reference factor 20000
++ Billing monthly seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
+# Whole associations instead - a bloc of four.
+: Product "charterscope.bloc" 2
++ Name "CharterScope Bloc"
++ Family "charterscope.catalog"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations global
++ Scope selections 4 4
++ Age 15 99
++ Professional any
++ Market statuses any
++ Divisions 1 99
 + Coverage 8800 7000
 + Contribution 3600 2100 700
 + Freshness days 14
-+ Monthly reference factor 18500
++ Monthly reference factor 17500
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# A whole region instead of a shortlist of leagues.
-: Product "charterscope.region" 1
-+ Name "CharterScope Region"
+# The entire catalogue.
+: Product "charterscope.commission" 1
++ Name "CharterScope Commission"
 + Family "charterscope.catalog"
 + Presentation data-dossier
 + Fields identity sporting
-+ Scope selected-region
++ Scope global
 + Sales relations global
-+ Scope selections 1 1
++ Scope selections 0 0
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -100,7 +100,7 @@
 + Coverage 8400 6400
 + Contribution 3700 2200 600
 + Freshness days 14
-+ Monthly reference factor 15000
++ Monthly reference factor 23800
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -109,29 +109,15 @@
 
 # One catalogue, same prices everywhere.
 : Market "charterscope.desk" 1
-+ Name "CharterScope Desk"
++ Name "CharterScope"
 + Kind global
 + Sales reach worldwide
-+ Products "charterscope.solo" "charterscope.trio" "charterscope.six" "charterscope.region"
++ Products "charterscope.solo" "charterscope.six" "charterscope.bloc" "charterscope.commission"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
-
-# Discounted rates for clubs already buying elsewhere.
-: Market "charterscope.trade" 2
-+ Name "CharterScope Trade"
-+ Kind global
-+ Sales reach worldwide
-+ Products "charterscope.solo" "charterscope.trio" "charterscope.six" "charterscope.region"
-+ Core price factor 0
-+ Regional price factor 0
-+ Export price factor 0
-+ Global price factor 9400
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 200
++ Selection priority 400
 

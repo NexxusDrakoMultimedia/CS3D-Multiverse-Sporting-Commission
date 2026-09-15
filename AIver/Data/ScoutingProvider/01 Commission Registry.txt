@@ -15,46 +15,46 @@
 ! Small club maximum reputation 7
 ! Small club discount 500 1000
 
-# Your own competition, filed by the clubs in it.
-: Product "registry.basic" 1
-+ Name "Registry Basic"
+# One association, whole pyramid.
+: Product "registry.nation" 1
++ Name "Registry Nation"
 + Family "registry.records"
 + Presentation data-dossier
 + Fields identity sporting
-+ Scope club-home-competition
-+ Sales relations core
-+ Scope selections 0 0
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 1
 + Age 15 99
 + Professional any
 + Market statuses any
 + Divisions 1 99
 + Coverage 9600 9200
-+ Contribution 3300 2200 800
++ Contribution 2500 900 300
 + Freshness days 30
-+ Monthly reference factor 6600
++ Monthly reference factor 4700
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Two associations of your choosing, whole pyramid.
-: Product "registry.plus" 1
-+ Name "Registry Plus"
+# A bloc's worth - four associations.
+: Product "registry.bloc" 1
++ Name "Registry Bloc"
 + Family "registry.records"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope selected-nation
-+ Sales relations core regional export
-+ Scope selections 2 2
++ Sales relations global
++ Scope selections 4 4
 + Age 15 99
 + Professional any
 + Market statuses any
 + Divisions 1 99
 + Coverage 9200 7000
-+ Contribution 3500 2100 700
++ Contribution 2600 1000 300
 + Freshness days 30
-+ Monthly reference factor 11400
++ Monthly reference factor 9500
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -62,22 +62,22 @@
 + Club reputation 0 20
 
 # Every club in the Commission, to registry depth.
-: Product "registry.full" 2
-+ Name "Registry Full"
+: Product "registry.commission" 2
++ Name "Registry Commission"
 + Family "registry.records"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope global
-+ Sales relations core regional export global
++ Sales relations global
 + Scope selections 0 0
 + Age 15 99
 + Professional any
 + Market statuses any
 + Divisions 1 99
 + Coverage 8600 6000
-+ Contribution 3600 2200 700
++ Contribution 2700 1100 300
 + Freshness days 30
-+ Monthly reference factor 20500
++ Monthly reference factor 12900
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -86,29 +86,29 @@
 
 # Open to every member club.
 : Market "registry.desk" 1
-+ Name "Registry Desk"
++ Name "Commission Registry"
 + Kind global
 + Sales reach worldwide
-+ Products "registry.basic" "registry.plus" "registry.full"
++ Products "registry.nation" "registry.bloc" "registry.commission"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
++ Selection priority 400
 
 # The full file, sold on application.
 : Market "registry.archive" 2
 + Name "Registry Archive"
 + Kind global
 + Sales reach worldwide
-+ Products "registry.full"
++ Products "registry.commission"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10500
 + Visibility invitation
 + Club reputation 0 20
-+ Selection priority 200
++ Selection priority 100
 

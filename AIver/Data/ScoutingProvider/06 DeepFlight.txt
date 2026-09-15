@@ -15,15 +15,15 @@
 ! Small club maximum reputation 8
 ! Small club discount 600 1400
 
-# The divisions immediately under your own.
-: Product "deepflight.starter" 1
-+ Name "Depth Starter"
+# One association, every tier but the first.
+: Product "deepflight.nation" 1
++ Name "Depth Nation"
 + Family "deepflight.depth"
 + Presentation data-dossier
 + Fields identity sporting
-+ Scope club-home-competition
-+ Sales relations core
-+ Scope selections 0 0
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 1
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -31,21 +31,21 @@
 + Coverage 6000 8800
 + Contribution 2900 1900 600
 + Freshness days 21
-+ Monthly reference factor 3500
++ Monthly reference factor 4200
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Four associations, every tier but the first.
-: Product "deepflight.pro" 2
-+ Name "Depth Pro"
+# Four associations, still nothing at the top.
+: Product "deepflight.bloc" 2
++ Name "Depth Bloc"
 + Family "deepflight.depth"
 + Presentation data-dossier
 + Fields identity sporting
 + Scope selected-nation
-+ Sales relations core regional export
++ Sales relations global
 + Scope selections 4 4
 + Age 15 99
 + Professional any
@@ -54,7 +54,7 @@
 + Coverage 5000 7500
 + Contribution 3200 1800 500
 + Freshness days 24
-+ Monthly reference factor 8500
++ Monthly reference factor 8000
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -68,8 +68,8 @@
 + Presentation data-dossier
 + Fields identity sporting development
 + Scope selected-nation
-+ Sales relations core regional export
-+ Scope selections 2 2
++ Sales relations global
++ Scope selections 4 4
 + Age 15 99
 + Professional any
 + Market statuses any
@@ -77,7 +77,7 @@
 + Coverage 3200 9400
 + Contribution 2600 1600 1400
 + Freshness days 28
-+ Monthly reference factor 3200
++ Monthly reference factor 4300
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -86,29 +86,15 @@
 
 # Open to every member club.
 : Market "deepflight.desk" 2
-+ Name "DeepFlight Desk"
++ Name "DeepFlight"
 + Kind global
 + Sales reach worldwide
-+ Products "deepflight.starter" "deepflight.pro" "deepflight.basement"
++ Products "deepflight.nation" "deepflight.bloc" "deepflight.basement"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
-
-# Rates written for clubs outside the top flight.
-: Market "deepflight.smallclub" 2
-+ Name "DeepFlight Small Club"
-+ Kind global
-+ Sales reach worldwide
-+ Products "deepflight.starter" "deepflight.pro" "deepflight.basement"
-+ Core price factor 0
-+ Regional price factor 0
-+ Export price factor 0
-+ Global price factor 9200
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 200
++ Selection priority 400
 

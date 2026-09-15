@@ -15,6 +15,29 @@
 ! Small club maximum reputation 5
 ! Small club discount 800 1600
 
+# Four associations, professional tiers, at full depth.
+: Product "multiversepro.bloc" 1
++ Name "MultiversePro Bloc"
++ Family "multiversepro.professional"
++ Presentation data-dossier
++ Fields identity sporting
++ Scope selected-nation
++ Sales relations global
++ Scope selections 4 4
++ Age 15 99
++ Professional professional-only
++ Market statuses any
++ Divisions 1 99
++ Coverage 7600 3200
++ Contribution 4000 2350 500
++ Freshness days 18
++ Monthly reference factor 12200
++ Billing seasonal
++ Seasonal access months 12
++ Seasonal charge months 11
++ Availability standard
++ Club reputation 0 20
+
 # Every top flight in the Commission, nothing below.
 : Product "multiversepro.pro" 2
 + Name "MultiversePro"
@@ -78,7 +101,7 @@
 + Coverage 8500 5500
 + Contribution 5600 3600 3400
 + Freshness days 7
-+ Monthly reference factor 118700
++ Monthly reference factor 74200
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -87,17 +110,17 @@
 
 # Sold to anyone who can pay.
 : Market "multiversepro.desk" 2
-+ Name "MultiversePro Desk"
++ Name "MultiversePro"
 + Kind global
 + Sales reach worldwide
-+ Products "multiversepro.pro" "multiversepro.elite" "multiversepro.enterprise"
++ Products "multiversepro.bloc" "multiversepro.pro" "multiversepro.elite" "multiversepro.enterprise"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
++ Selection priority 400
 
 # Enterprise terms, by approach only.
 : Market "multiversepro.partners" 2
@@ -111,5 +134,5 @@
 + Global price factor 11000
 + Visibility invitation
 + Club reputation 0 20
-+ Selection priority 200
++ Selection priority 100
 

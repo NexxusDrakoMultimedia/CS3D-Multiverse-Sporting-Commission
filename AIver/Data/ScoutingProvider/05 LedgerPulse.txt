@@ -84,9 +84,9 @@
 + Availability standard
 + Club reputation 0 20
 
-# Open to every member club.
+# The market is one market - sold whole, or not at all.
 : Market "ledgerpulse.desk" 1
-+ Name "LedgerPulse Desk"
++ Name "LedgerPulse"
 + Kind global
 + Sales reach worldwide
 + Products "ledgerpulse.releases" "ledgerpulse.window" "ledgerpulse.season"
@@ -96,19 +96,5 @@
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
-
-# Transfer-window terms, month by month.
-: Market "ledgerpulse.window-desk" 2
-+ Name "LedgerPulse Window Desk"
-+ Kind global
-+ Sales reach worldwide
-+ Products "ledgerpulse.window" "ledgerpulse.season"
-+ Core price factor 0
-+ Regional price factor 0
-+ Export price factor 0
-+ Global price factor 9800
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 200
++ Selection priority 400
 

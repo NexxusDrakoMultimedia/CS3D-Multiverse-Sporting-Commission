@@ -33,6 +33,54 @@ Provider and package descriptions are down to one line each, and the packages ar
 the way real subscriptions are — Basic, Plus, Full, Solo, Trio, Six, Enterprise, Academy
 Intake, The Basement — rather than by invented geography.
 
+### Scouting providers, second pass
+
+Checked against what the game actually renders, which turned up three faults the
+files alone could not show.
+
+**Three providers were invisible.** A package can only be sold if one of its
+`Sales relations` names a price factor its market actually sets. Every market here
+is a global desk — it sets the Global factor and zeroes Core, Regional and Export —
+but HatchlingXI, DeepFlight and Crestwire sold on `core regional export`, so every
+one of their packages was unpriceable and the providers never appeared at all.
+Commission Registry lost two of its three the same way, leaving only Registry Full
+and making the cheap universal register look like the dearest thing on the list.
+Every package now sells on `global`.
+
+**Region packages silently vanished.** `selected-region` needs `+ Allowed region`
+lines, which the nation-neutral rewrite had removed. Since every region slug in this
+world is a nation's name, regions are gone entirely: coverage is now chosen as
+competitions or associations, both of which the *Choose coverage* screen drives
+properly.
+
+**Desks were shadowing each other.** The game lists one market per provider — the
+highest-priority visible one — so the second desk was winning and carrying only part
+of its own catalogue. That is why the list read "CharterScope Trade" and "LedgerPulse
+Window Desk" with two packages instead of three. Each provider now has one standard
+desk, named for the provider, carrying everything, with invitation desks ranked below
+it.
+
+**A three-tier ladder.** Nearly every provider now sells the same shape: **Nation** (one
+association), **Bloc** (four — a Cyberya or Galatyan bloc exactly, or any four), and
+**Commission** (everything). Selection counts are exact pairs as in the stock files,
+where RegionScope One is `1 1` and FutureXI Corridor 8 is `8 8`. An earlier build wrote
+them as ranges like `1 4`; that is not a form the originals use and the game did not cap
+it, so a bloc package could be pointed at the whole Commission. Blocs are a
+four-association selection rather than a region, because a custom world does not define
+the engine's region taxonomy and region packages never reach the shop at all.
+
+**Market format taken straight from the stock files.** Every market is a `Kind global`
+desk with the Global price factor set, Core/Regional/Export zeroed, and no home nation
+or home region, and every package sells on `Sales relations global` — the shape
+RegionScope, WorldPro and MarketPulse use. An attempt to blend the two stock shapes,
+setting all four price factors on a global desk and carrying all four relations, left
+the game offering no provider at all and was reverted.
+
+Bundles were also re-cut so they get cheaper per unit as they grow, since the
+buyer chooses the size of the coverage. Registry's payload figures were lowered to
+match what it is — a thin register — which drops it to the cheap end where it belongs,
+and the MultiversePro Enterprise premium came down from 2.4x to 1.5x.
+
 ### Name lists
 
 `Nationalities.txt` still pointed all 40 entries at `names = Multiverse`, a shared pool

@@ -15,15 +15,15 @@
 ! Small club maximum reputation 7
 ! Small club discount 500 1100
 
-# The age groups on your own doorstep.
-: Product "hatchlingxi.intake" 1
-+ Name "Academy Intake"
+# One association's age groups, cradle to first team.
+: Product "hatchlingxi.nation" 1
++ Name "Academy Nation"
 + Family "hatchlingxi.youth"
 + Presentation data-dossier
 + Fields identity sporting development
-+ Scope club-home-competition
-+ Sales relations core
-+ Scope selections 0 0
++ Scope selected-nation
++ Sales relations global
++ Scope selections 1 1
 + Age 14 21
 + Professional any
 + Market statuses any
@@ -31,22 +31,22 @@
 + Coverage 8200 7000
 + Contribution 3000 1700 2500
 + Freshness days 10
-+ Monthly reference factor 4300
++ Monthly reference factor 5200
 + Billing monthly seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Three associations' youth systems, cradle to first team.
-: Product "hatchlingxi.pathway" 2
-+ Name "Academy Pathway"
+# Four youth systems - a bloc's intake.
+: Product "hatchlingxi.bloc" 2
++ Name "Academy Bloc"
 + Family "hatchlingxi.youth"
 + Presentation data-dossier
 + Fields identity sporting development
 + Scope selected-nation
-+ Sales relations core regional export
-+ Scope selections 3 3
++ Sales relations global
++ Scope selections 4 4
 + Age 14 23
 + Professional any
 + Market statuses any
@@ -54,22 +54,22 @@
 + Coverage 7200 6200
 + Contribution 3300 1800 2700
 + Freshness days 10
-+ Monthly reference factor 10000
++ Monthly reference factor 11200
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
 + Availability standard
 + Club reputation 0 20
 
-# Two regions, every academy in them.
-: Product "hatchlingxi.network" 1
-+ Name "Academy Network"
+# Every academy in the Commission.
+: Product "hatchlingxi.commission" 1
++ Name "Academy Commission"
 + Family "hatchlingxi.youth"
 + Presentation data-dossier
 + Fields identity sporting development
-+ Scope selected-region
-+ Sales relations core regional export
-+ Scope selections 2 2
++ Scope global
++ Sales relations global
++ Scope selections 0 0
 + Age 14 23
 + Professional any
 + Market statuses any
@@ -77,7 +77,7 @@
 + Coverage 6500 5500
 + Contribution 3600 1900 2900
 + Freshness days 10
-+ Monthly reference factor 11700
++ Monthly reference factor 15400
 + Billing seasonal
 + Seasonal access months 12
 + Seasonal charge months 11
@@ -86,29 +86,15 @@
 
 # Open to every member club.
 : Market "hatchlingxi.desk" 2
-+ Name "HatchlingXI Desk"
++ Name "HatchlingXI"
 + Kind global
 + Sales reach worldwide
-+ Products "hatchlingxi.intake" "hatchlingxi.pathway" "hatchlingxi.network"
++ Products "hatchlingxi.nation" "hatchlingxi.bloc" "hatchlingxi.commission"
 + Core price factor 0
 + Regional price factor 0
 + Export price factor 0
 + Global price factor 10000
 + Visibility standard
 + Club reputation 0 20
-+ Selection priority 100
-
-# Reduced terms for clubs running a licensed academy.
-: Market "hatchlingxi.academy" 2
-+ Name "HatchlingXI Academy Circle"
-+ Kind global
-+ Sales reach worldwide
-+ Products "hatchlingxi.intake" "hatchlingxi.pathway" "hatchlingxi.network"
-+ Core price factor 0
-+ Regional price factor 0
-+ Export price factor 0
-+ Global price factor 9600
-+ Visibility standard
-+ Club reputation 0 20
-+ Selection priority 200
++ Selection priority 400
 

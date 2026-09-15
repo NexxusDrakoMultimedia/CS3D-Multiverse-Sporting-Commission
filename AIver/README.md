@@ -47,7 +47,7 @@ Data\
   StartYear.txt                2030
   Nationalities.txt            country identities, aliases, region taxonomy
   League\                      24 nation files + International teams and tournaments.txt
-  ScoutingProvider\            eight scouting providers, 26 packages
+  ScoutingProvider\            eight scouting providers, 27 packages
   Names\                       48 name lists - copy these out, see step 2
 ```
 
@@ -187,28 +187,52 @@ overlap. The **Nexxus Drako Shield** is the bloc championship for the Itavrnai U
 
 ## Scouting
 
-Eight providers, 26 packages, and not a single one of them tied to a nation. Every
-market is a global desk selling at the same price to every member club, so no
-association has a home advantage and none is shut out. Where a package covers less than
-the whole Commission, *you* pick the competitions, associations or regions — the
-provider never picks for you.
+Eight providers, 27 packages, and not a single one of them tied to an association.
+Every market is a global desk selling to every member club, so no association has a
+home advantage and none is shut out.
+
+**Three tiers of coverage, everywhere.** Almost every provider sells the same ladder,
+and you pick the coverage yourself on the *Choose coverage* screen:
+
+| Tier | What you buy |
+|---|---|
+| **Nation** | one association, whole pyramid |
+| **Bloc** | four associations — a Cyberya or Galatyan bloc exactly, or any four you like |
+| **Commission** | everything, no picking |
+
+Blocs are sold as a four-association selection rather than as a region, because the
+engine's region taxonomy is not something a custom world defines — a `selected-region`
+package simply never appears in the shop. Four is the size of the largest bloc, so the
+tier does the job without the machinery.
+
+Each package takes an exact count, the way the stock ones do — RegionScope One is one
+competition, FutureXI Corridor 8 is eight nations. A nation package is one association,
+a bloc package is four, and a Commission package takes no selection at all.
+
+**One shape, taken from the stock files.** Every market is a `Kind global` desk: Global
+price factor set, Core/Regional/Export zeroed, no home nation and no home region — the
+same shape RegionScope, WorldPro and MarketPulse use. The stock data's core / regional /
+export rates only ever apply to a market that declares a home, and a home would put one
+association's name on the shop front and give it a cheaper rate than the other
+twenty-three, so they are not used here.
 
 | Provider | What it sells |
 |---|---|
 | Commission Registry | The Commission's own club register. Universal, cheap, thin. |
-| CharterScope | Pay per competition — one, three or six, or a whole region. |
+| CharterScope | Pay per competition — one or six — or step up to a bloc, or the lot. |
 | MultiversePro | The expensive one. Full reach, fast turnaround, top flights first. |
 | HatchlingXI | Academies and reserve sides. Nobody over 23 on the books. |
 | LedgerPulse | Contracts, wages and expiries. No opinion on whether they can play. |
 | DeepFlight | Everything below the top flight and nothing in it, down to the ninth tier. |
 | Crestwire | Stringers filing from press boxes. Tips, not a database. |
-| Frontier Relay | Slow, cheap and everywhere. Often the only place a player is listed. |
+| Frontier Relay | Slow, cheap and everywhere. Two of its four rotate in each season. |
 
 Every package's price is derived from one formula — how much it covers, how much it
 tells you, how fresh it is, how much of the Commission and of a pyramid it reaches, and
-whether it is restricted by age or market status. Prices sit within 5% of the same value
-line, so no provider is quietly the obvious buy. The one deliberate exception is
-MultiversePro Enterprise, which carries a stated premium because it is the ceiling.
+whether it is restricted by age or market status. Bundles get cheaper per unit as they
+grow. All 27 sit within 5% of the same value line, so no provider is quietly the
+obvious buy. The one deliberate exception is MultiversePro Enterprise, which carries a
+stated 1.5× premium because it is the ceiling.
 
 ---
 
