@@ -1,5 +1,37 @@
 # Changelog
 
+## 1.0.1 — colours
+
+A colour-only release. No competition, calendar, club or name data changed.
+
+**Hex codes replaced with the game's colour names.** Every kit in 1.0 was written as a hex
+code — `#7f0000`, `#ffd900` and so on — which the stock data never does. All of them are now
+the game's own names.
+
+| Nation | 1.0 | 1.0.1 |
+|---|---|---|
+| Itavrnai Union | `#ffff00` / `#0000ff` | yellow / blue |
+| Vyktoria | `#7f0000` / `#ffd900` | claret / gold |
+| New Bradman | `#7f0000` / `#00007f` | claret / darkblue |
+| Ryukawa | `#ff0000` / `#ffff00` | red / yellow |
+| Castolo and Minanda | `#00007f` / `#ffffff` | darkblue / white |
+| AFC Nexxus Drako | `#7f0000` / `#ffd900` | claret / gold |
+
+**National kits moved out of the League files.** In 1.0 the five nations' colours sat in
+their `Data\League` file after `! Country`, where the game does not read them — stock league
+files carry no kit lines at all. Each now has its own `Data\Team\<Nation>.txt`, the same
+shape a club file takes, on the pattern of the game's `Zimbabwe.txt` and `Moldova.txt`. The
+League files are back to plain `! Country` and `! Names`.
+
+**Documented the colour vocabulary.** The stock data uses 21 colour names: `amber`, `black`,
+`blue`, `brown`, `claret`, `darkblue`, `darkgray`, `darkgreen`, `darkred`, `gold`, `green`,
+`lightblue`, `lightgreen`, `lightyellow`, `midblue`, `orange`, `red`, `redwine`, `violet`,
+`white` and `yellow`, on `shirt`, `sleeves`, `stripes`, `shorts` and `socks`. The README
+carries the list, along with a note on the `! appear` line the stock national-team files
+have and these do not.
+
+---
+
 ## 1.0 — first release
 
 The first public build of the Multiverse Sporting Commission. Everything before this was

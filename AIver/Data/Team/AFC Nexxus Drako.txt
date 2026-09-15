@@ -1,14 +1,14 @@
 ! Name "AFC Nexxus Drako"
 ! reputation 0
-! 1 shirt #7f0000
-! 1 shorts #ffd900
-! 1 socks #7f0000
-! 2 shirt #ffd900
-! 2 shorts #7f0000
-! 2 socks #ffd900
-! 3 shirt #ffffff
-! 3 shorts #7f0000
-! 3 socks #ffffff
+! 1 shirt claret
+! 1 shorts gold
+! 1 socks claret
+! 2 shirt gold
+! 2 shorts claret
+! 2 socks gold
+! 3 shirt white
+! 3 shorts claret
+! 3 socks white
 Yxissrn, Ólafur: GK C
 Takavyn, Kristján: GK C
 Draisss, Gorlos: GK C

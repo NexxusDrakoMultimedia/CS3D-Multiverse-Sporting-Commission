@@ -6,13 +6,6 @@
 # Itavrnai Union
 ! Country "Itavrnai Union"
 ! Names "data/names/Itavrnai Union_1st.txt" "data/names/Itavrnai Union_2nd.txt"
-# national colours
-! 1 shirt #ffff00
-! 1 shorts #0000ff
-! 1 socks #ffff00
-! 2 shirt #0000ff
-! 2 shorts #ffff00
-! 2 socks #0000ff
 * Wyrmfire Cup
 #! lane all
 + Country "Itavrnai Union"

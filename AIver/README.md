@@ -2,40 +2,38 @@
 
 A standalone football world for **Championship Soccer**.
 
-24 member associations, 2,144 clubs, 130 divisions, four blocs, and a competition
-calendar that runs from a 2,144-club Coronation down to a single match for everything in
-week 52.
+24 member associations, 2,144 clubs, 130 divisions, four blocs, and a competition calendar
+that runs from a 2,144-club Coronation down to a single match for everything in week 52.
 
 **Created by Nexxus Drako, with Claude's assistance.**
-Version 1.0 · Every club, nation and competition is fictional.
+Version 1.0.1 · Every club, nation and competition is fictional.
 
 ---
 
 ## Install
 
-**Step 1 — the world.** Put the `Multiverse Sporting Commission` folder (or its zip)
+**Step 1 — the world.** Put the `Multiverse Sporting Commission v1.0.1` folder (or its zip)
 into:
 
 ```
 Documents\My Games\Championship Soccer\DataSets\
 ```
 
-**Step 2 — the names. Don't skip this one.** Copy the 48 files from `Data\Names\` into
-the *shared* folder:
+**Step 2 — the names. Don't skip this one.** Copy the 48 files from `Data\Names\` into the
+*shared* folder:
 
 ```
 Documents\My Games\Championship Soccer\Data\Names\
 ```
 
-> Name lists inside a package are **not** read at runtime — the game loads them only
-> from the shared `Data\Names` folder. Skip this step and the player-name pool comes up
-> empty, which can make a career fail to save with *"Invalid or empty career second
-> names"*. The copies inside the package exist purely for you to copy out.
+> Name lists inside a package are **not** read at runtime — the game loads them only from
+> the shared `Data\Names` folder. Skip this step and the player-name pool comes up empty,
+> which can make a career fail to save with *"Invalid or empty career second names"*. The
+> copies inside the package exist purely for you to copy out.
 
 **Step 3.** Start a new career, pick **Multiverse Sporting Commission** on the *Career
-football world* screen, then choose countries and divisions on *Select Database*. The
-start year suggests 2029 — that season runs into the 2030 World Cup — and can be changed
-there.
+football world* screen, then choose countries and divisions on *Select Database*. The start
+year suggests 2029 — that season runs into the 2030 World Cup — and can be changed there.
 
 ---
 
@@ -50,13 +48,13 @@ Data\
   Nationalities.txt            country identities, aliases, region taxonomy
   League\                      24 nation files + International teams and tournaments.txt
   ScoutingProvider\            eight scouting providers, 23 packages
-  Team\                        AFC Nexxus Drako
+  Team\                        AFC Nexxus Drako + five national kits
   Names\                       48 name lists - copy these out, see step 2
 ```
 
 Every club but one is generated from its nation's name lists, with no `Player\` folder at
-all, which is what keeps a 2,144-club world under 400 KB. The single `Data\Team` file is
-AFC Nexxus Drako, described below.
+all, which is what keeps a 2,144-club world under 600 KB. `Data\Team` holds one club, AFC
+Nexxus Drako, and the kits of the five national teams that have declared colours.
 
 ---
 
@@ -99,22 +97,38 @@ Fourteen regions in four blocs, plus ten unregioned nations.
 | Selanting | 4 | 64 | 10 | South East Asian |
 | Norvalia | 4 | 64 | 10 | North American |
 
-Each pyramid keeps its named top flight and counts from one below it — New Bradman
-Premier League then First to Seventh Division, Rythorn Överliga then Division Ett to Sju,
-Wyrmwoode Uwch Gynghrair then Cynghrair Un to Saith. Cyberya is the exception and keeps
-thematic names throughout: Wyred Mainline down to Darknet, Determi's High Requiem and
-Pauper's Tier, Nexxie's Super Sparkle League, Jarokn's Pantheon.
+Each pyramid keeps its named top flight and counts from one below it — New Bradman Premier
+League then First to Seventh Division, Rythorn Överliga then Division Ett to Sju, Wyrmwoode
+Uwch Gynghrair then Cynghrair Un to Saith. Cyberya is the exception and keeps thematic
+names throughout: Wyred Mainline down to Darknet, Determi's High Requiem and Pauper's Tier,
+Nexxie's Super Sparkle League, Jarokn's Pantheon.
 
-Promotion and relegation chain correctly everywhere: each tier's relegation count equals
-the promotion count of the tier below, so division sizes never drift.
+Promotion and relegation chain correctly everywhere: each tier's relegation count equals the
+promotion count of the tier below, so division sizes never drift.
 
 **Vyktoria and New Bradman** reproduce their NationStates league threads exactly down to
 tier four, club for club and in thread order. Vyktoria's ten original amateur clubs stay
 together at the foot of the pyramid in V-League Eight.
 
 **AFC Nexxus Drako** plays in the Itavrnai twelfth flight: reputation nil, twenty-five
-players none over 20, ability in the fifties and sixties against potential in the
-two-tens and twenties. Claret and gold. It is the world's only `Data\Team` file.
+players none over 20, ability in the fifties and sixties against potential in the two-tens
+and twenties. Claret and gold. It is the world's only club with a `Data\Team` file.
+
+### Colours
+
+Five associations have declared national colours:
+
+| Nation | Home | Change |
+|---|---|---|
+| Itavrnai Union | yellow | blue |
+| Vyktoria | claret | gold |
+| New Bradman | claret | darkblue |
+| Ryukawa | red | yellow |
+| Castolo and Minanda | darkblue | white |
+
+These live in `Data\Team\<Nation>.txt`, one file per national team, the same shape a club
+file takes. Stock league files carry no kit lines at all — see the game's own `Zimbabwe.txt`
+and `Moldova.txt` — so this is where the game reads them from.
 
 ---
 
@@ -134,11 +148,11 @@ Every association runs the same five competitions, named in its own register:
 | **Amateur Cup** | the bottom band — four- and twelve-tier pyramids only | wk 44 |
 | **Super Cup** | National Cup holders against the champions, one match | wk 2 |
 
-Which band cups an association gets depends on how deep its pyramid runs. Four tiers is
-a professional half and an amateur half with no middle, so those associations have no
-Semi-Pro Cup. Eight tiers bottoms out at semi-professional, so those have no Amateur Cup.
-Only the twelve-tier Itavrnai pyramid is deep enough for all three. Castolo and Minanda,
-at two tiers, has a League Cup and nothing below it.
+Which band cups an association gets depends on how deep its pyramid runs. Four tiers is a
+professional half and an amateur half with no middle, so those associations have no Semi-Pro
+Cup. Eight tiers bottoms out at semi-professional, so those have no Amateur Cup. Only the
+twelve-tier Itavrnai pyramid is deep enough for all three. Castolo and Minanda, at two
+tiers, has a League Cup and nothing below it.
 
 | Pyramid | Competitions |
 |---|---|
@@ -147,20 +161,19 @@ at two tiers, has a League Cup and nothing below it.
 | 4 tiers | National, League (1–2), Amateur (3–4), Super |
 | 2 tiers | National, League (1–2), Super |
 
-The band cups enter by division rather than by country, so each takes exactly the tiers
-it is named for and no club can be in two of them.
+The band cups enter by division rather than by country, so each takes exactly the tiers it
+is named for and no club can be in two of them.
 
-The **Super Cup** seats the National Cup holders against the champions. If one club won
-both — and cannot play itself — the league runners-up take the second seat.
+The **Super Cup** seats the National Cup holders against the champions. If one club won both
+— and cannot play itself — the league runners-up take the second seat.
 
 Names are local throughout: Itavrnai's Wyrmfire Cup, Drakonhold League Cup, Emberforge
-Trophy, Hatchling Vase and Wyrmcrown Shield; Wyrmwoode's Cwpan Wyrmwoode, Cwpan y
-Cynghrair, Tlws yr Her, Cwpan yr Amaturiaid and Darian Wyrmwoode; Qamaria's Kas Qamaria,
-Kas ad-Dawri, Kas al-Ittihad, Kas al-Hawa and Kas al-Abtal.
+Trophy, Hatchling Vase and Wyrmcrown Shield; Wyrmwoode's Cwpan Wyrmwoode, Cwpan y Cynghrair,
+Tlws yr Her, Cwpan yr Amaturiaid and Darian Wyrmwoode; Qamaria's Kas Qamaria, Kas ad-Dawri,
+Kas al-Ittihad, Kas al-Hawa and Kas al-Abtal.
 
-Within a nation each cup runs on its own lane of weeks, so two cups a club could enter
-never fall on the same night. The Semi-Pro and Amateur Cups share a lane, since no club
-is in both.
+Within a nation each cup runs on its own lane of weeks, so two cups a club could enter never
+fall on the same night. The Semi-Pro and Amateur Cups share a lane, since no club is in both.
 
 ### Club
 
@@ -175,8 +188,8 @@ is in both.
 | MSC Super Cup | the four holders in a group, then a final | wks 47–50 |
 | **MSC Ultimate Championship** | Coronation winner v Super Cup winner | **wk 52** |
 
-**The cascade.** The three league competitions run as a chain, UEFA-style, and the
-calendar enforces it:
+**The cascade.** The three league competitions run as a chain, UEFA-style, and the calendar
+enforces it:
 
 | | Draw | Qualifying | Receives |
 |---|---|---|---|
@@ -184,32 +197,32 @@ calendar enforces it:
 | Challengers League | wk 6 | wks 7, 9 | the 16 knocked out of Champions Cup qualifying |
 | Conference Trophy | wk 10 | wks 11, 13 | the 16 knocked out of Challengers qualifying |
 
-Each competition is drawn only after the one above has finished qualifying, so the
-clubs dropping down are already known. They enter seeded, straight into the group
-stage. The Conference's own 32 qualifiers come entirely from the smaller associations,
-so the third tier is theirs plus whoever falls out of the second.
+Each competition is drawn only after the one above has finished qualifying, so the clubs
+dropping down are already known. They enter seeded, straight into the group stage. The
+Conference's own 32 qualifiers come entirely from the smaller associations, so the third
+tier is theirs plus whoever falls out of the second.
 
 Only qualifying is staggered. Once the groups begin no club is in more than one of the
-three, so they share a calendar from there: group stage in weeks 16, 19, 22, 25, 28 and
-30, round of 16 in 32 and 34, quarter finals in 36 and 38, semi finals in 40 and 42, and
-all three finals on the same night in week 44.
+three, so they share a calendar from there: group stage in weeks 16, 19, 22, 25, 28 and 30,
+round of 16 in 32 and 34, quarter finals in 36 and 38, semi finals in 40 and 42, and all
+three finals on the same night in week 44.
 
 **The off-weeks.** The Cup Winners Cup and the Coronation both draw on clubs already
-committed elsewhere, so neither is ever played on a night the big three are using. The
-Cup Winners Cup takes weeks 17 and 23 for its preliminary, 29 and 31, 33 and 35, 37 and
-39, with its final in 43; the Coronation takes 12, 14, 18, 21, 24 and 27, then 41, before
-its own final in 45.
+committed elsewhere, so neither is ever played on a night the big three are using. The Cup
+Winners Cup takes weeks 17 and 23 for its preliminary, 29 and 31, 33 and 35, 37 and 39, with
+its final in 43; the Coronation takes 12, 14, 18, 21, 24 and 27, then 41, before its own
+final in 45.
 
 **The Cup Winners Cup** takes the main domestic trophy of each of the 24 associations and
 nothing else — League, Semi-Pro, Amateur and Super Cups are all still played, but none of
 them qualifies. The eight best-ranked holders go straight to the round of 16 and the other
 sixteen contest a preliminary, so eight winners join eight byes.
 
-**The Coronation** gives every club in the Commission a road in. Nine qualifiers drawn on
-the Commission's own lines — blocmates together, the unregioned associations pooled with
-their nearest affiliates — between them enter all 2,144 and send exactly **256** through,
-the engine's ceiling for a single competition. The tournament opens straight at a Round of
-256: no preliminary, no byes, nothing seeded.
+**The Coronation** gives every club in the Commission a road in. Nine qualifiers drawn on the
+Commission's own lines — blocmates together, the unregioned associations pooled with their
+nearest affiliates — between them enter all 2,144 and send exactly **256** through, the
+engine's ceiling for a single competition. The tournament opens straight at a Round of 256:
+no preliminary, no byes, nothing seeded.
 
 | Qualifier | Clubs | Berths | Rate |
 |---|---|---|---|
@@ -223,39 +236,39 @@ the engine's ceiling for a single competition. The tournament opens straight at 
 | Open South — Sindhara, Hanseong, Mazamba | 192 | 12 | 1 in 16 |
 | Open Reach — Qamaria, Selanting, Norvalia | 192 | 12 | 1 in 16 |
 
-The three Open groups are the affiliates, and they qualify at half a bloc's rate — one
-club in sixteen against one in eight. Forty berths between them, rather than the
-sixty-eight a flat rate would hand them.
+The three Open groups are the affiliates, and they qualify at half a bloc's rate — one club
+in sixteen against one in eight. Forty berths between them, rather than the sixty-eight a
+flat rate would hand them.
 
-Rates only halve and the field is fixed at 256, so those berths have to go somewhere.
-They go to the Commonwealth, at one in four: the smallest bloc by clubs, and the one
-carrying New Bradman.
+Rates only halve and the field is fixed at 256, so those berths have to go somewhere. They
+go to the Commonwealth, at one in four: the smallest bloc by clubs, and the one carrying New
+Bradman.
 
 **One naming rule everywhere.** Every knockout round in the world is a **Round of N**, a
-**Quarter Final**, a **Semi Final** or a **Final**. Where a field is not a power of two,
-the opening round is a **Preliminary Round** that seeds the surplus out and lands exactly
-on one — the Cup Winners Cup's 24 down to 16, the Itavrnai Hatchling Vase's 96 down to 64.
-Quarter Final, Semi Final and Final are only used where a competition plays to a single
-winner, so the Coronation qualifiers — which stop early and send several through — name
-their rounds for the field they start with throughout.
+**Quarter Final**, a **Semi Final** or a **Final**. Where a field is not a power of two, the
+opening round is a **Preliminary Round** that seeds the surplus out and lands exactly on one
+— the Cup Winners Cup's 24 down to 16, the Itavrnai Hatchling Vase's 96 down to 64. Quarter
+Final, Semi Final and Final are only used where a competition plays to a single winner, so
+the Coronation qualifiers — which stop early and send several through — name their rounds
+for the field they start with throughout.
 
 **Every seat belongs to someone.** Where a competition inherits named clubs, each seat is
-written on its own incrementing threshold with its own fallback behind it, the way the
-stock European Cup does — an association's cup winner, and that same association's league
-if the cup went uncontested. A gap is never filled by whichever entry happens to sit first
-in the list.
+written on its own incrementing threshold with its own fallback behind it, the way the stock
+European Cup does — an association's cup winner, and that same association's league if the
+cup went uncontested. A gap is never filled by whichever entry happens to sit first in the
+list.
 
-**When one club wins two things.** The Super Cup seats the four continental holders, but
-the Cup Winners Cup does not exclude the other three, so a club can arrive with two
-trophies and leave a seat empty; beaten finalists fill any gap. The same goes one round
-later — the Coronation winner may also have won the Super Cup final, and cannot play
-itself, so the beaten finalist steps up to contest the Ultimate Championship, and the
-group table behind them after that.
+**When one club wins two things.** The Super Cup seats the four continental holders, but the
+Cup Winners Cup does not exclude the other three, so a club can arrive with two trophies and
+leave a seat empty; beaten finalists fill any gap. The same goes one round later — the
+Coronation winner may also have won the Super Cup final, and cannot play itself, so the
+beaten finalist steps up to contest the Ultimate Championship, and the group table behind
+them after that.
 
-Weeks 43 to 52 are the finale: the Cup Winners Cup final in 43, the three continental
-finals together in 44, the Coronation final in 45, the last domestic silverware in 46,
-the Super Cup group across 47 to 49 and its final in 50, internationals alone in 51, and
-the Ultimate Championship alone in week 52.
+Weeks 43 to 52 are the finale: the Cup Winners Cup final in 43, the three continental finals
+together in 44, the Coronation final in 45, the last domestic silverware in 46, the Super Cup
+group across 47 to 49 and its final in 50, internationals alone in 51, and the Ultimate
+Championship alone in week 52.
 
 ### National teams
 
@@ -269,16 +282,16 @@ the Ultimate Championship alone in week 52.
 | MSC Associates Trophy | the unregioned ten | every 4 years from 2004 | 6–32 |
 | Friendly windows × 3 | everyone | yearly | 8, 24, 44 |
 
-The three cycles interlock, so no two of them ever share a year — the World Cup from 2002
-on a four-year offset, the Nations League from 2003 on a two-year one, and the bloc
+The three cycles interlock, so no two of them ever share a year — the World Cup from 2002 on
+a four-year offset, the Nations League from 2003 on a two-year one, and the bloc
 championships from 2004 on a four-year one, midway between World Cups:
 
 | 2029 | 2030 | 2031 | 2032 | 2033 |
 |---|---|---|---|---|
 | Nations League | World Cup | Nations League | bloc championships | Nations League |
 
-The suggested start year of 2029 is therefore a Nations League season running into the
-2030 World Cup. Friendly windows run every year regardless.
+The suggested start year of 2029 is therefore a Nations League season running into the 2030
+World Cup. Friendly windows run every year regardless.
 
 Every nation has exactly one bloc-level championship, and the four cover all 24 with no
 overlap. The **Nexxus Drako Shield** is the bloc championship for the Itavrnai Union *and*
@@ -288,25 +301,25 @@ the New Bradmanian Commonwealth, contested together — neither holds one of its
 
 ## Scouting
 
-Eight providers and 23 packages, modelled one-for-one on the game's own eight
-scouting providers. Every header value — price drift, offer chance and kinds,
-discounts, rotating slots, small-club terms — and every coverage and freshness figure
-is carried over from the stock provider each one stands in for, and so is every price.
+Eight providers and 23 packages, modelled one-for-one on the game's own eight scouting
+providers. Every header value — price drift, offer chance and kinds, discounts, rotating
+slots, small-club terms — and every coverage and freshness figure is carried over from the
+stock provider each one stands in for, and so is every price.
 
 Three things are changed, and only three:
 
-**The markets.** One `Kind global` desk per provider, named for the provider, in the
-stock global-market shape — Global price factor set, Core/Regional/Export zeroed, no
-home nation and no home region. The stock local and regional markets give their home
-association a cheaper rate than everyone else and put its name on the shop front; with
-24 member associations that would mean 24 storefronts per provider, so every desk here
-sells to every member club on the same terms.
+**The markets.** One `Kind global` desk per provider, named for the provider, in the stock
+global-market shape — Global price factor set, Core/Regional/Export zeroed, no home nation
+and no home region. The stock local and regional markets give their home association a
+cheaper rate than everyone else and put its name on the shop front; with 24 member
+associations that would mean 24 storefronts per provider, so every desk here sells to every
+member club on the same terms.
 
 **The tiers.** Several stock providers build their ladder out of selection counts —
-RegionScope One / Three, FutureXI Corridor 3 / 6 / 8, LowerLine Select 3 / 6 / 8. The
-game does not enforce `Scope selections`, so those tiers are all the same package at
-different prices. Each ladder is rebuilt out of what a package actually tells you,
-which is what the game shows in its *Benefit* column:
+RegionScope One / Three, FutureXI Corridor 3 / 6 / 8, LowerLine Select 3 / 6 / 8. The game
+does not enforce `Scope selections`, so those tiers are all the same package at different
+prices. Each ladder is rebuilt out of what a package actually tells you, which is what the
+game shows in its *Benefit* column:
 
 | Fields | Reads in game as |
 |---|---|
@@ -315,9 +328,9 @@ which is what the game shows in its *Benefit* column:
 | `identity market-contract` | Player search + market and contract |
 | `identity sporting development market-contract` | + skills + potential + market |
 
-Age band, division range, market statuses and professional-only carry the rest —
-HatchlingXI steps u21 → u23, DeepFlight steps second-tier-down → ninth-tier-down,
-LedgerPulse steps free agents → listed → everyone.
+Age band, division range, market statuses and professional-only carry the rest — HatchlingXI
+steps u21 → u23, DeepFlight steps second-tier-down → ninth-tier-down, LedgerPulse steps free
+agents → listed → everyone.
 
 **The names.** MSC ones, with no association named anywhere.
 
@@ -337,12 +350,12 @@ LedgerPulse steps free agents → listed → everyone.
 ## Names
 
 Each nation reads its own pair of lists, 420 given names and 900 surnames, about 29,500
-names across 48 files. Nineteen nations draw on a real name-frequency corpus covering
-around a hundred countries, filtered per nation and restricted to entries that survive a
-Windows-1252 round trip; male and female given names are both included. Welsh and Scots
-are curated by hand and extended along authentic patterns — `ap`/`ab` patronymics,
-`Mac`/`Mc` stems — because the corpus only knows "GB". The five invented nations are
-generated from syllable sets in their own register.
+names across 48 files. Nineteen nations draw on a real name-frequency corpus covering around
+a hundred countries, filtered per nation and restricted to entries that survive a
+Windows-1252 round trip; male and female given names are both included. Welsh and Scots are
+curated by hand and extended along authentic patterns — `ap`/`ab` patronymics, `Mac`/`Mc`
+stems — because the corpus only knows "GB". The five invented nations are generated from
+syllable sets in their own register.
 
 Within the Itavrnai Union, Galatyan and Commonwealth blocs, each nation keeps its own
 register as 70% of its lists and takes the rest from its neighbours. Cyberya and the
@@ -352,36 +365,44 @@ unregioned ten stay pure.
 
 ## Notes and known limits
 
-**Encoding.** Every data file is ANSI (Windows-1252), matching the stock data, so
-accented names load correctly rather than as mojibake. League, Nationalities and provider
-files use CRLF; the name lists use bare LF with no trailing newline. Don't re-save any of
-them as UTF-8. This README is the exception — it is UTF-8, being documentation rather
-than game data.
+**Encoding.** Every data file is ANSI (Windows-1252), matching the stock data, so accented
+names load correctly rather than as mojibake. League, Team, Nationalities and provider files
+use CRLF; the name lists use bare LF with no trailing newline. Don't re-save any of them as
+UTF-8. This README is the exception — it is UTF-8, being documentation rather than game data.
 
-**Two undocumented engine limits** shaped this world. A pyramid cannot exceed **12
-tiers**, which is why the Itavrnai Union runs 12 flights of 18, 22 and 24 clubs rather
-than 16 of 16. A competition cannot exceed **256 teams**, which is why the Coronation is
-nine qualifiers feeding a final tournament rather than one 2,144-club bracket. Neither
-limit appears in the manual.
+**Kit colours** are the game's own colour names rather than hex codes. The 21 names the stock
+data uses are `amber`, `black`, `blue`, `brown`, `claret`, `darkblue`, `darkgray`,
+`darkgreen`, `darkred`, `gold`, `green`, `lightblue`, `lightgreen`, `lightyellow`, `midblue`,
+`orange`, `red`, `redwine`, `violet`, `white` and `yellow`, applied to `shirt`, `sleeves`,
+`stripes`, `shorts` and `socks`. Hex codes are not used anywhere in the stock data.
 
-**A venue counts as an entry.** `+ add 1 venue` occupies a seat in the competition's
-field, so a 24-team tournament with a fixed venue has room for 23 more adds. This is not
-documented either, and it is worth knowing before you edit any of the international
-competitions.
+**`! appear`.** The stock national-team files carry a line the ones here do not — `! appear
+1 9 9` for Moldova, `! appear 0 0 0 1` for Zimbabwe — three or four integers that appear to
+shape the look of generated players. It is left off here because the values are undocumented.
 
-**Comment character.** These files use `#`, matching the game's own shipped data. The
-manual specifies `;`. Every comment sits on its own line and never trails a value, so if
-a future build enforces the manual it is a find-and-replace.
+**Two undocumented engine limits** shaped this world. A pyramid cannot exceed **12 tiers**,
+which is why the Itavrnai Union runs 12 flights of 18, 22 and 24 clubs rather than 16 of 16.
+A competition cannot exceed **256 teams**, which is why the Coronation is nine qualifiers
+feeding a final tournament rather than one 2,144-club bracket. Neither limit appears in the
+manual.
 
-**Squads.** Every club but AFC Nexxus Drako has its players generated from its nation's
-name lists at career start. Add more `Data\Team\<Club>.txt` files if you want fixed kits,
+**A venue counts as an entry.** `+ add 1 venue` occupies a seat in the competition's field,
+so a 24-team tournament with a fixed venue has room for 23 more adds. This is not documented
+either, and it is worth knowing before you edit any of the international competitions.
+
+**Comment character.** These files use `#`, matching the game's own shipped data. The manual
+specifies `;`. Every comment sits on its own line and never trails a value, so if a future
+build enforces the manual it is a find-and-replace.
+
+**Squads.** Every club but AFC Nexxus Drako has its players generated from its nation's name
+lists at career start. Add more `Data\Team\<Club>.txt` files if you want fixed kits,
 reputations or squads for particular clubs.
 
 **Create a Club.** Some cups have been reported failing with *"Cup could not be played
 because only 0 of at least 2 valid teams were available"* in a Create a Club career, in
-builds where the same world runs cleanly as a watcher career. This looks like an engine
-path rather than a data fault, and a bug report has been written up for it. The cups that
-fail are byte-identical to ones that don't apart from their name, country and reputation.
+builds where the same world runs cleanly as a watcher career. This looks like an engine path
+rather than a data fault, and a bug report has been written up for it. The cups that fail are
+byte-identical to ones that don't apart from their name, country and reputation.
 
 ---
 
@@ -389,6 +410,6 @@ fail are byte-identical to ones that don't apart from their name, country and re
 
 Built by **Nexxus Drako**, with Claude's assistance.
 
-Vyktoria and New Bradman are drawn from their NationStates league threads. Everything
-else — the other 22 nations, the blocs, the competitions and the name lists — is original
-to this world.
+Vyktoria and New Bradman are drawn from their NationStates league threads. Everything else —
+the other 22 nations, the blocs, the competitions and the name lists — is original to this
+world.
