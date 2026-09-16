@@ -6,13 +6,13 @@ A standalone football world for **Championship Soccer**.
 that runs from a 2,144-club Coronation down to a single match for everything in week 52.
 
 **Created by Nexxus Drako, with Claude's assistance.**
-Version 1.0.2 · Every club, nation and competition is fictional.
+Version 1.0.3 · Every club, nation and competition is fictional.
 
 ---
 
 ## Install
 
-**Step 1 — the world.** Put the `Multiverse Sporting Commission v1.0.2` folder (or its zip)
+**Step 1 — the world.** Put the `Multiverse Sporting Commission v1.0.3` folder (or its zip)
 into:
 
 ```
@@ -198,7 +198,7 @@ final in 45.
 **The Cup Winners Cup** takes the main domestic trophy of each of the 24 associations and
 nothing else — League, Semi-Pro, Amateur and Super Cups are all still played, but none of
 them qualifies. The eight best-ranked holders go straight to the round of 16 and the other
-sixteen contest a preliminary, so eight winners join eight byes.
+sixteen contest the Round of 24, so eight winners join eight byes.
 
 **The Coronation** gives every club in the Commission a road in. Nine qualifiers drawn on the
 Commission's own lines — blocmates together, the unregioned associations pooled with their
@@ -227,12 +227,14 @@ go to the Commonwealth, at one in four: the smallest bloc by clubs, and the one 
 Bradman.
 
 **One naming rule everywhere.** Every knockout round in the world is a **Round of N**, a
-**Quarter Final**, a **Semi Final** or a **Final**. Where a field is not a power of two, the
-opening round is a **Preliminary Round** that seeds the surplus out and lands exactly on one
-— the Cup Winners Cup's 24 down to 16, the Itavrnai Hatchling Vase's 96 down to 64. Quarter
-Final, Semi Final and Final are only used where a competition plays to a single winner, so
-the Coronation qualifiers — which stop early and send several through — name their rounds
-for the field they start with throughout.
+**Quarter Final**, a **Semi Final** or a **Final**, and a round is named for the field it
+starts with. Nothing is called a Preliminary Round. Where a field is not a power of two the
+opening round still takes its own number and seeds the surplus out — the MSC Cup Winners
+Cup opens at a Round of 24 that lands on 16, the Itavrnai Hatchling Vase at a Round of 96
+that lands on 64, the Emberforge Trophy at a Round of 88 and the Drakonhold League Cup at a
+Round of 72. Quarter Final, Semi Final and Final are only used where a competition plays to
+a single winner, so the Coronation qualifiers — which stop early and send several through —
+name their rounds for the field they start with throughout.
 
 **Every seat belongs to someone.** Where a competition inherits named clubs, each seat is
 written on its own incrementing threshold with its own fallback behind it, the way the stock

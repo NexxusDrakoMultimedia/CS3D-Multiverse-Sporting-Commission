@@ -27,7 +27,7 @@
 + reputation 14
 # Tiers 1 to 4, entering by division.
 + draw 3
-+ round 1 "Preliminary Round" 57-72 4
++ round 1 "Round of 72" 57-72 4
 + add 18 from "Itavrnai Prime Flight"
 + add 18 from "Itavrnai First Flight"
 + add 18 from "Itavrnai Second Flight"
@@ -44,7 +44,7 @@
 + reputation 11
 # Tiers 5 to 8, entering by division.
 + draw 4
-+ round 1 "Preliminary Round" 41-88 5
++ round 1 "Round of 88" 41-88 5
 + add 22 from "Itavrnai Fourth Flight"
 + add 22 from "Itavrnai Fifth Flight"
 + add 22 from "Itavrnai Sixth Flight"
@@ -61,7 +61,7 @@
 + reputation 8
 # Tiers 9 to 12, entering by division.
 + draw 4
-+ round 1 "Preliminary Round" 33-96 5
++ round 1 "Round of 96" 33-96 5
 + add 24 from "Itavrnai Eighth Flight"
 + add 24 from "Itavrnai Ninth Flight"
 + add 24 from "Itavrnai Tenth Flight"

@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.3 — no Preliminary Rounds
+
+**Every opening round is now named for its field.** Four competitions opened on a round
+called "Preliminary Round"; each now takes the Round of N name its field calls for. Nothing
+about the draws, the seeding or the weeks changed — only the round names.
+
+| Competition | Field | Was | Now |
+|---|---|---|---|
+| MSC Cup Winners Cup | 24 | Preliminary Round | Round of 24 |
+| Drakonhold League Cup | 72 | Preliminary Round | Round of 72 |
+| Emberforge Trophy | 88 | Preliminary Round | Round of 88 |
+| Hatchling Vase | 96 | Preliminary Round | Round of 96 |
+
+The name "Preliminary Round" no longer appears anywhere in the world. Where a field is not
+a power of two, the opening round seeds the surplus out exactly as before, under its own
+number.
+
+---
+
 ## 1.0.2 — colours removed
 
 The named colours and national-team files from 1.0.1 did not work in game, and neither did

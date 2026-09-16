@@ -151,8 +151,8 @@
 + reputation 16
 + international
 # 24 cup winners: the top eight are seeded straight to the round of 16 and
-# the other sixteen play a preliminary, so eight winners join eight byes.
-+ round 1 "Preliminary Round" 9-24
+# the other sixteen play the opening round, so eight winners join eight byes.
++ round 1 "Round of 24" 9-24
 + week 17 23
 + draw 10
 # the main domestic trophy of every member association - 24 of them, each
